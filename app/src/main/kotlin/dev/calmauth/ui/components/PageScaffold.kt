@@ -3,6 +3,7 @@ package dev.calmauth.ui.components
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -18,7 +19,7 @@ fun PageScaffold(
     modifier: Modifier = Modifier,
     contentPadding: PaddingValues = PaddingValues(horizontal = 24.dp, vertical = 12.dp),
     verticalArrangement: Arrangement.Vertical = Arrangement.Top,
-    content: @Composable () -> Unit,
+    content: @Composable ColumnScope.() -> Unit,
 ) {
     Surface(
         modifier = modifier.fillMaxSize(),

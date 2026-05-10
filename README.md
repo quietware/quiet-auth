@@ -47,13 +47,21 @@ app/
 
 ## Build
 
-Open the project in Android Studio (Hedgehog or newer). On first sync, Android Studio will download the configured Gradle distribution declared in `gradle/wrapper/gradle-wrapper.properties`. Then:
+You need a **JDK 17+** with `javac` on the path (or configure toolchains — see below). The Android SDK must be installed (`ANDROID_HOME`).
+
+Open the project in Android Studio (Hedgehog or newer). On first sync, Gradle downloads the wrapper distribution from `gradle/wrapper/gradle-wrapper.properties`. Then:
 
 ```
 ./gradlew assembleDebug
 ./gradlew test
 ./gradlew installDebug    # connected device / emulator
 ```
+
+### JDK toolchain (CLI without a local JDK)
+
+This project uses **Kotlin JVM toolchain 17** and the [Foojay Resolver](https://github.com/gradle/foojay-toolchains) convention plugin in [`settings.gradle.kts`](settings.gradle.kts), so Gradle can **download a matching JDK automatically** when none is installed locally (requires network on first run).
+
+If you prefer a fixed JDK, install `openjdk-17-jdk` / Android Studio’s bundled JBR and ensure `JAVA_HOME` points at it.
 
 > If you don't have the Gradle wrapper jar yet (e.g. fresh clone before opening in Android Studio), run once: `gradle wrapper` from a host with Gradle installed, or let Android Studio create it during the initial sync.
 

@@ -37,6 +37,6 @@
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:theme="@style/Theme.CalmAuth.Capture"
-            tools:replace="screenOrientation" />
+            tools:replace="screenOrientation,android:theme" />
     </application>
 </manifest>

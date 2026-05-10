@@ -2,8 +2,8 @@ package dev.calmauth.ui.viewmodel
 
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import dev.calmauth.CalmAuthApp
 import dev.calmauth.auth.BiometricAuth
