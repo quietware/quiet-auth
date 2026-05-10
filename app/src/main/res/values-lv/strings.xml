@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Atrodiet mieru pirms pierakstīšanās</string>
+    <string name="onboardingSubtitle">Apzinīga un privāta pierakstīšanās plūsma, kas saglabā fokusu tur, kur tas ir svarīgākais.</string>
+    <string name="onboardingPinHint">PIN ir izvēles. Tas aizsargā lokālu piekļuvi jūsu žetoniem šajā ierīcē. Varat to ieslēgt jebkurā brīdī Iestatījumos.</string>
+    <string name="continueWithoutPin">Turpināt bez PIN</string>
+    <string name="protectWithPin">Aizsargāt lietotni ar PIN</string>
+    <string name="begin">Sākt</string>
+    <string name="secureTagline">Droši. Maigi. Apzināti minimāli.</string>
+
+    <string name="twofaTitle">Jūsu 2FA konti</string>
+    <string name="twofaSubtitle">Autentifikatora ieraksti tiek droši ielādēti no lokālās šifrētās krātuves.</string>
+    <string name="add2fa">Pievienot 2FA</string>
+    <string name="loadingAccounts">Ielādē 2FA kontus…</string>
+    <string name="emptyAccounts">Vēl nav 2FA kontu. Pieskarieties Pievienot 2FA, lai izveidotu pirmo ierakstu.</string>
+
+    <string name="add2faTitle">Pievienot jaunu 2FA</string>
+    <string name="add2faSubtitle">Pievienojiet autentifikatora datus, lai visi vienreizējie kodi būtu vienā drošā vietā.</string>
+    <string name="serviceName">Pakalpojuma nosaukums</string>
+    <string name="servicePlaceholder">piem. GitHub</string>
+    <string name="account">Konts</string>
+    <string name="accountPlaceholder">piem. dominik.dev</string>
+    <string name="secretKey">Slepenā atslēga</string>
+    <string name="secretPlaceholder">Ielīmējiet iestatīšanas atslēgu</string>
+    <string name="save2fa">Saglabāt 2FA</string>
+    <string name="cancel">Atcelt</string>
+    <string name="missingFieldsTitle">Trūkst lauku</string>
+    <string name="missingFieldsMessage">Aizpildiet pakalpojuma nosaukumu, kontu un slepeno atslēgu.</string>
+
+    <string name="qrTitle">Skenēt 2FA QR kodu</string>
+    <string name="qrSubtitle">Vērst kameru uz QR kodu no pakalpojuma iestatīšanas ekrāna.</string>
+    <string name="qrPermissionRequired">Lai skenētu 2FA QR kodus, nepieciešama kameras atļauja.</string>
+    <string name="enableCamera">Ieslēgt kameru</string>
+    <string name="invalidQrTitle">Nederīgs QR</string>
+    <string name="invalidQrMessage">Šis QR kods nav derīgs 2FA iestatīšanas kods.</string>
+    <string name="qrAddedTitle">2FA pievienota</string>
+    <string name="qrAddedMessage">Konts pievienots no QR koda.</string>
+    <string name="addManually">Pievienot manuāli</string>
+
+    <string name="delete">Dzēst</string>
+    <string name="deleteTokenTitle">Dzēst žetonu?</string>
+    <string name="deleteTokenMessage">Šis 2FA žetons tiks neatgriezeniski noņemts no ierīces.</string>
+    <string name="confirmDelete">Dzēst žetonu</string>
+
+    <string name="pinSetupSubtitle">Iestatiet 4 ciparu PIN lietotnes pierakstam un piekļuves aizsardzībai žetoniem.</string>
+    <string name="pinSetupSubtitleOptional">Izveidojiet 4 ciparu PIN, lai aizsargātu piekļuvi žetoniem šajā ierīcē.</string>
+    <string name="pinVerifyDisableSubtitle">Ievadiet PIN, lai izslēgtu PIN aizsardzību.</string>
+    <string name="pinProtectionDisabledMessage">PIN aizsardzība ir izslēgta.</string>
+    <string name="pinUnlockTitle">Atbloķēt CalmAuth</string>
+    <string name="pinUnlockSubtitle">Ievadiet PIN piekļuvei žetoniem.</string>
+    <string name="pinCodePlaceholder">Ievadiet 4 ciparus</string>
+    <string name="pinConfirmPlaceholder">Atkārtojiet PIN</string>
+    <string name="pinInvalidTitle">Nederīgs PIN</string>
+    <string name="pinInvalidMessage">PIN jāsatur tieši 4 cipari.</string>
+    <string name="pinMismatchTitle">PIN nesakrīt</string>
+    <string name="pinMismatchMessage">Apstiprinājuma PIN jāsakrīt.</string>
+    <string name="pinIncorrectTitle">Nepareizs PIN</string>
+    <string name="pinIncorrectMessage">Ievadītais PIN ir nepareizs.</string>
+    <string name="pinStorageErrorTitle">Nevar saglabāt PIN</string>
+    <string name="pinStorageErrorMessage">PIN neizdevās saglabāt drošā krātuvē. Mēģiniet vēlreiz.</string>
+    <string name="continueLabel">Turpināt</string>
+    <string name="useBiometrics">Lietot biometriju</string>
+    <string name="biometricUnlockFailedMessage">Biometriskā verifikācija neizdevās. Varat atbloķēt ar PIN.</string>
+    <string name="unlockingApp">Pārbauda piekļuvi…</string>
+
+    <string name="settingsCta">Iestatījumi</string>
+    <string name="settingsTitle">Iestatījumi</string>
+    <string name="settingsSubtitle">Eksportēt un atjaunot ierakstus kā CSV failu. Ja PIN aizsardzība ir ieslēgta, vispirms atbloķējiet lietotni. Rezerves kopija nav šifrēta — saglabājiet privātu.</string>
+    <string name="settingsBack">Atpakaļ</string>
+    <string name="pinProtectionSettingTitle">PIN aizsardzība</string>
+    <string name="pinProtectionSettingDescription">Pieprasīt PIN atverot lietotni. Ieslēdziet, ja citi var izmantot ierīci.</string>
+    <string name="sessionExpiredMessage">Sesija beidzās. Atbloķējiet lietotni un mēģiniet vēlreiz.</string>
+    <string name="biometricsSettingTitle">Biometriskā atbloķēšana</string>
+    <string name="biometricsSettingDescription">Lietojiet pirkstu nospiedumu vai sejas atbloķēšanu PIN ekrānā.</string>
+    <string name="biometricsUnavailableMessage">Biometrija šajā ierīcē nav pieejama.</string>
+    <string name="biometricSettingsErrorTitle">Neizdevās atjaunināt biometriju</string>
+    <string name="biometricSettingsErrorMessage">Mēģiniet vēlreiz pēc atbloķēšanas ar PIN.</string>
+
+    <string name="createBackup">Eksportēt CSV rezerves kopiju</string>
+    <string name="restoreBackup">Atjaunot no CSV kopijas</string>
+    <string name="backupCreatedTitle">Rezerves kopija izveidota</string>
+    <string name="saveBackupDialogTitle">Izvēlieties, kur saglabāt kopiju</string>
+    <string name="backupErrorTitle">Rezerves kopijas izveide neizdevās</string>
+    <string name="backupErrorMessage">Neizdevās izveidot rezerves kopijas failu.</string>
+    <string name="backupSessionExpiredMessage">Sesija beidzās. Atbloķējiet lietotni ar PIN un mēģiniet vēlreiz.</string>
+    <string name="restoreSuccessTitle">Atjaunošana pabeigta</string>
+    <string name="restoreErrorTitle">Atjaunošana neizdevās</string>
+    <string name="restoreErrorMessage">Neizdevās atjaunot datus. Pārbaudiet, vai fails ir derīga CalmAuth CSV rezerves kopija.</string>
+    <string name="creatingBackupProgress">Veido rezerves kopiju…</string>
+    <string name="restoringBackupProgress">Atjauno kopiju…</string>
+    <string name="backupProcessingHint">Pēc darbības izvēles process turpinās atsevišķā ekrānā.</string>
+
+    <string name="tokenNotFound">Žetons nav atrasts.</string>
+    <string name="backToTokens">Atpakaļ pie žetoniem</string>
+    <string name="tokenCode">Kods</string>
+    <string name="codeExpiresIn">Beidzas pēc</string>
+
+    <string name="developerModeTitle">Izstrādātāja režīms</string>
+    <string name="developerModeSubtitle">Bīstama zona lokālajam lietotnes stāvoklim. Tikai testēšanai.</string>
+    <string name="developerResetStorage">Atiestatīt visu lietotnes krātuvi</string>
+    <string name="developerRemovePin">Noņemt PIN</string>
+    <string name="developerRemoveBiometrics">Noņemt biometriju</string>
+    <string name="developerResetStorageTitle">Atiestatīt lietotnes krātuvi?</string>
+    <string name="developerResetStorageConfirmMessage">Tiks dzēsti visi lokālie dati, ieskaitot PIN, biometriju un 2FA ierakstus.</string>
+    <string name="developerRemovePinTitle">Noņemt PIN?</string>
+    <string name="developerRemovePinConfirmMessage">Tiks noņemta PIN aizsardzība un biometriskās atbloķēšanas konfigurācija.</string>
+    <string name="developerRemoveBiometricsTitle">Noņemt biometriju?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">Tiks izslēgta biometriskā atbloķēšana šai lietotnei.</string>
+    <string name="developerConfirmAction">Apstiprināt</string>
+    <string name="developerActionSuccessTitle">Gatavs</string>
+    <string name="developerActionErrorTitle">Darbība neizdevās</string>
+    <string name="developerActionErrorMessage">Neizdevās pabeigt darbību. Mēģiniet vēlreiz.</string>
+    <string name="developerResetStorageSuccessMessage">Visa lietotnes krātuve ir atiestatīta.</string>
+    <string name="developerRemovePinSuccessMessage">PIN ir noņemts.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Biometriskā atbloķēšana ir noņemta.</string>
+</resources>

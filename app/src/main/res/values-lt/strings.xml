@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Raskite ramybę prieš prisijungdami</string>
+    <string name="onboardingSubtitle">Dėmesingas ir privatus prisijungimo srautas, kad jūsų dėmesys liktų ten, kur svarbiausia.</string>
+    <string name="onboardingPinHint">PIN neprivalomas. Jis saugo vietinę prieigą prie žetonų šiame įrenginyje. Galite įjungti bet kuriuo metu Nustatymuose.</string>
+    <string name="continueWithoutPin">Tęsti be PIN</string>
+    <string name="protectWithPin">Apsaugoti programą PIN</string>
+    <string name="begin">Pradėti</string>
+    <string name="secureTagline">Saugiai. Švelniai. Apgalvotai paprasta.</string>
+
+    <string name="twofaTitle">Jūsų 2FA paskyros</string>
+    <string name="twofaSubtitle">Autentifikatoriaus įrašai įkeliami saugiai iš vietinės užšifruotos saugyklos.</string>
+    <string name="add2fa">Pridėti 2FA</string>
+    <string name="loadingAccounts">Įkeliamos 2FA paskyros…</string>
+    <string name="emptyAccounts">Dar nėra 2FA paskyrų. Bakstelėkite Pridėti 2FA, kad sukurtumėte pirmą įrašą.</string>
+
+    <string name="add2faTitle">Pridėti naują 2FA</string>
+    <string name="add2faSubtitle">Pridėkite autentifikatoriaus duomenis, kad visi vienkartiniai kodai būtų vienoje saugioje vietoje.</string>
+    <string name="serviceName">Paslaugos pavadinimas</string>
+    <string name="servicePlaceholder">pvz. GitHub</string>
+    <string name="account">Paskyra</string>
+    <string name="accountPlaceholder">pvz. dominik.dev</string>
+    <string name="secretKey">Slaptas raktas</string>
+    <string name="secretPlaceholder">Įklijuokite sąrankos raktą</string>
+    <string name="save2fa">Išsaugoti 2FA</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="missingFieldsTitle">Trūksta laukų</string>
+    <string name="missingFieldsMessage">Užpildykite paslaugos pavadinimą, paskyrą ir slaptą raktą.</string>
+
+    <string name="qrTitle">Skenuoti 2FA QR kodą</string>
+    <string name="qrSubtitle">Nukreipkite kamerą į QR kodą iš paslaugos sąrankos ekrano.</string>
+    <string name="qrPermissionRequired">Norint skenuoti 2FA QR kodus, reikia kameros leidimo.</string>
+    <string name="enableCamera">Įjungti kamerą</string>
+    <string name="invalidQrTitle">Netinkamas QR</string>
+    <string name="invalidQrMessage">Šis QR kodas nėra tinkamas 2FA sąrankos kodas.</string>
+    <string name="qrAddedTitle">2FA pridėta</string>
+    <string name="qrAddedMessage">Paskyra pridėta iš QR kodo.</string>
+    <string name="addManually">Pridėti rankiniu būdu</string>
+
+    <string name="delete">Ištrinti</string>
+    <string name="deleteTokenTitle">Ištrinti žetoną?</string>
+    <string name="deleteTokenMessage">Šis 2FA žetonas bus visam laikui pašalintas iš įrenginio.</string>
+    <string name="confirmDelete">Ištrinti žetoną</string>
+
+    <string name="pinSetupSubtitle">Nustatykite 4 skaitmenų PIN programai ir prieigai prie žetonų saugoti.</string>
+    <string name="pinSetupSubtitleOptional">Sukurkite 4 skaitmenų PIN, kad apsaugotumėte prieigą prie žetonų šiame įrenginyje.</string>
+    <string name="pinVerifyDisableSubtitle">Įveskite PIN, kad išjungtumėte PIN apsaugą.</string>
+    <string name="pinProtectionDisabledMessage">PIN apsauga išjungta.</string>
+    <string name="pinUnlockTitle">Atrakinti CalmAuth</string>
+    <string name="pinUnlockSubtitle">Įveskite PIN, kad pasiektumėte žetonus.</string>
+    <string name="pinCodePlaceholder">Įveskite 4 skaitmenis</string>
+    <string name="pinConfirmPlaceholder">Pakartokite PIN</string>
+    <string name="pinInvalidTitle">Netinkamas PIN</string>
+    <string name="pinInvalidMessage">PIN turi būti tiksliai 4 skaitmenys.</string>
+    <string name="pinMismatchTitle">PIN nesutampa</string>
+    <string name="pinMismatchMessage">Patvirtinimo PIN turi sutapti.</string>
+    <string name="pinIncorrectTitle">Neteisingas PIN</string>
+    <string name="pinIncorrectMessage">Įvestas PIN neteisingas.</string>
+    <string name="pinStorageErrorTitle">Nepavyko išsaugoti PIN</string>
+    <string name="pinStorageErrorMessage">Nepavyko išsaugoti PIN saugioje saugykloje. Bandykite dar kartą.</string>
+    <string name="continueLabel">Tęsti</string>
+    <string name="useBiometrics">Naudoti biometriją</string>
+    <string name="biometricUnlockFailedMessage">Biometrinis patvirtinimas nepavyko. Galite atrakinti PIN.</string>
+    <string name="unlockingApp">Tikrinama prieiga…</string>
+
+    <string name="settingsCta">Nustatymai</string>
+    <string name="settingsTitle">Nustatymai</string>
+    <string name="settingsSubtitle">Eksportuoti ir atkurti įrašus kaip CSV failą. Kai PIN apsauga įjungta, pirma atrakinkite programą. Atsarginė kopija nėra užšifruota — laikykite privačiai.</string>
+    <string name="settingsBack">Atgal</string>
+    <string name="pinProtectionSettingTitle">PIN apsauga</string>
+    <string name="pinProtectionSettingDescription">Reikalauti PIN atveriant programą. Įjunkite, jei įrenginiu gali naudotis kiti.</string>
+    <string name="sessionExpiredMessage">Sesija baigėsi. Atrakinkite programą ir bandykite dar kartą.</string>
+    <string name="biometricsSettingTitle">Biometrinis atrakinimas</string>
+    <string name="biometricsSettingDescription">Naudokite piršto atspaudą ar veidą PIN ekrane.</string>
+    <string name="biometricsUnavailableMessage">Šiame įrenginyje biometrija nepasiekiama.</string>
+    <string name="biometricSettingsErrorTitle">Nepavyko atnaujinti biometrijos</string>
+    <string name="biometricSettingsErrorMessage">Bandykite dar kartą atrakinę programą PIN.</string>
+
+    <string name="createBackup">Eksportuoti CSV atsarginę kopiją</string>
+    <string name="restoreBackup">Atkurti iš CSV kopijos</string>
+    <string name="backupCreatedTitle">Atsarginė kopija sukurta</string>
+    <string name="saveBackupDialogTitle">Pasirinkite, kur išsaugoti kopiją</string>
+    <string name="backupErrorTitle">Kopijos kūrimas nepavyko</string>
+    <string name="backupErrorMessage">Nepavyko sukurti atsarginės kopijos failo.</string>
+    <string name="backupSessionExpiredMessage">Sesija baigėsi. Atrakinkite programą PIN ir bandykite dar kartą.</string>
+    <string name="restoreSuccessTitle">Atkūrimas baigtas</string>
+    <string name="restoreErrorTitle">Atkūrimas nepavyko</string>
+    <string name="restoreErrorMessage">Nepavyko atkurti duomenų. Įsitikinkite, kad failas yra tinkama CalmAuth CSV kopija.</string>
+    <string name="creatingBackupProgress">Kuriama atsarginė kopija…</string>
+    <string name="restoringBackupProgress">Atkuriama kopija…</string>
+    <string name="backupProcessingHint">Pasirinkus veiksmą procesas vyksta atskirame ekrane.</string>
+
+    <string name="tokenNotFound">Žetonas nerastas.</string>
+    <string name="backToTokens">Atgal prie žetonų</string>
+    <string name="tokenCode">Kodas</string>
+    <string name="codeExpiresIn">Baigiasi po</string>
+
+    <string name="developerModeTitle">Kūrėjo režimas</string>
+    <string name="developerModeSubtitle">Pavojinga zona vietinei programos būsenai. Tik testavimui.</string>
+    <string name="developerResetStorage">Atstatyti visą programos saugyklą</string>
+    <string name="developerRemovePin">Pašalinti PIN</string>
+    <string name="developerRemoveBiometrics">Pašalinti biometriją</string>
+    <string name="developerResetStorageTitle">Atstatyti programos saugyklą?</string>
+    <string name="developerResetStorageConfirmMessage">Bus ištrinti visi vietiniai duomenys, įskaitant PIN, biometriją ir 2FA įrašus.</string>
+    <string name="developerRemovePinTitle">Pašalinti PIN?</string>
+    <string name="developerRemovePinConfirmMessage">Bus pašalinta PIN apsauga ir biometrinio atrakinimo konfigūracija.</string>
+    <string name="developerRemoveBiometricsTitle">Pašalinti biometriją?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">Bus išjungtas biometrinis atrakinimas šiai programai.</string>
+    <string name="developerConfirmAction">Patvirtinti</string>
+    <string name="developerActionSuccessTitle">Atlikta</string>
+    <string name="developerActionErrorTitle">Veiksmas nepavyko</string>
+    <string name="developerActionErrorMessage">Nepavyko užbaigti veiksmo. Bandykite dar kartą.</string>
+    <string name="developerResetStorageSuccessMessage">Visa programos saugykla atstatyta.</string>
+    <string name="developerRemovePinSuccessMessage">PIN pašalintas.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Biometrinis atrakinimas pašalintas.</string>
+</resources>
