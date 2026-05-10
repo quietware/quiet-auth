@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Retrouvez votre calme avant de vous connecter</string>
+    <string name="onboardingSubtitle">Un parcours attentif et privé qui garde votre attention là où elle compte.</string>
+    <string name="onboardingPinHint">Le code PIN est facultatif. Il protège l\'accès local à vos jetons sur cet appareil. Vous pouvez l\'activer à tout moment dans Réglages.</string>
+    <string name="continueWithoutPin">Continuer sans code PIN</string>
+    <string name="protectWithPin">Protéger l\'app avec un code PIN</string>
+    <string name="begin">Commencer</string>
+    <string name="secureTagline">Sûr. Doux. Volontairement minimal.</string>
+
+    <string name="twofaTitle">Vos comptes 2FA</string>
+    <string name="twofaSubtitle">Vos entrées d\'authentification sont chargées en toute sécurité depuis le stockage chiffré local.</string>
+    <string name="add2fa">Ajouter 2FA</string>
+    <string name="loadingAccounts">Chargement des comptes 2FA…</string>
+    <string name="emptyAccounts">Aucun compte 2FA pour le moment. Touchez Ajouter 2FA pour créer votre première entrée.</string>
+
+    <string name="add2faTitle">Ajouter une 2FA</string>
+    <string name="add2faSubtitle">Ajoutez les informations d\'authentification pour regrouper vos codes à usage unique en un lieu sécurisé.</string>
+    <string name="serviceName">Nom du service</string>
+    <string name="servicePlaceholder">ex. GitHub</string>
+    <string name="account">Compte</string>
+    <string name="accountPlaceholder">ex. dominik.dev</string>
+    <string name="secretKey">Clé secrète</string>
+    <string name="secretPlaceholder">Coller la clé de configuration</string>
+    <string name="save2fa">Enregistrer la 2FA</string>
+    <string name="cancel">Annuler</string>
+    <string name="missingFieldsTitle">Champs manquants</string>
+    <string name="missingFieldsMessage">Veuillez renseigner le nom du service, le compte et la clé secrète.</string>
+
+    <string name="qrTitle">Scanner le QR code 2FA</string>
+    <string name="qrSubtitle">Dirigez l\'appareil photo vers le QR code affiché lors de la configuration du service.</string>
+    <string name="qrPermissionRequired">L\'accès à la caméra est nécessaire pour scanner les QR codes 2FA.</string>
+    <string name="enableCamera">Activer la caméra</string>
+    <string name="invalidQrTitle">QR code invalide</string>
+    <string name="invalidQrMessage">Ce QR code n\'est pas un code de configuration 2FA valide.</string>
+    <string name="qrAddedTitle">2FA ajoutée</string>
+    <string name="qrAddedMessage">Le compte a été ajouté à partir du QR code.</string>
+    <string name="addManually">Ajouter manuellement</string>
+
+    <string name="delete">Supprimer</string>
+    <string name="deleteTokenTitle">Supprimer le jeton ?</string>
+    <string name="deleteTokenMessage">Ce jeton 2FA sera définitivement retiré de votre appareil.</string>
+    <string name="confirmDelete">Supprimer le jeton</string>
+
+    <string name="pinSetupSubtitle">Définissez un code PIN à 4 chiffres pour configurer l\'accès à l\'app et protéger vos jetons.</string>
+    <string name="pinSetupSubtitleOptional">Créez un code PIN à 4 chiffres pour protéger l\'accès à vos jetons sur cet appareil.</string>
+    <string name="pinVerifyDisableSubtitle">Saisissez votre code PIN pour désactiver la protection par PIN.</string>
+    <string name="pinProtectionDisabledMessage">La protection par PIN est désactivée.</string>
+    <string name="pinUnlockTitle">Déverrouiller CalmAuth</string>
+    <string name="pinUnlockSubtitle">Entrez votre code PIN pour accéder à vos jetons.</string>
+    <string name="pinCodePlaceholder">Entrez 4 chiffres</string>
+    <string name="pinConfirmPlaceholder">Confirmez votre code PIN</string>
+    <string name="pinInvalidTitle">Code PIN invalide</string>
+    <string name="pinInvalidMessage">Le code PIN doit comporter exactement 4 chiffres.</string>
+    <string name="pinMismatchTitle">Les codes PIN ne correspondent pas</string>
+    <string name="pinMismatchMessage">Le code de confirmation doit être identique.</string>
+    <string name="pinIncorrectTitle">Code PIN incorrect</string>
+    <string name="pinIncorrectMessage">Le code PIN saisi est incorrect.</string>
+    <string name="pinStorageErrorTitle">Impossible d\'enregistrer le PIN</string>
+    <string name="pinStorageErrorMessage">Le code PIN n\'a pas pu être enregistré dans le stockage sécurisé. Réessayez.</string>
+    <string name="continueLabel">Continuer</string>
+    <string name="useBiometrics">Utiliser la biométrie</string>
+    <string name="biometricUnlockFailedMessage">Échec de la vérification biométrique. Vous pouvez déverrouiller avec le code PIN.</string>
+    <string name="unlockingApp">Vérification de l\'accès…</string>
+
+    <string name="settingsCta">Réglages</string>
+    <string name="settingsTitle">Réglages</string>
+    <string name="settingsSubtitle">Exporter et restaurer les entrées au format CSV. Si la protection par PIN est activée, déverrouillez d\'abord l\'app pour les sauvegardes. Le fichier de sauvegarde n\'est pas chiffré — gardez-le confidentiel.</string>
+    <string name="settingsBack">Retour</string>
+    <string name="pinProtectionSettingTitle">Protection par PIN</string>
+    <string name="pinProtectionSettingDescription">Exiger un code PIN à l\'ouverture de l\'app. Activez cette option si d\'autres peuvent utiliser votre appareil.</string>
+    <string name="sessionExpiredMessage">Votre session a expiré. Déverrouillez l\'app et réessayez.</string>
+    <string name="biometricsSettingTitle">Déverrouillage biométrique</string>
+    <string name="biometricsSettingDescription">Utilisez l\'empreinte ou la reconnaissance faciale sur l\'écran du code PIN.</string>
+    <string name="biometricsUnavailableMessage">La biométrie n\'est pas disponible sur cet appareil.</string>
+    <string name="biometricSettingsErrorTitle">Impossible de mettre à jour la biométrie</string>
+    <string name="biometricSettingsErrorMessage">Réessayez après avoir déverrouillé l\'app avec votre code PIN.</string>
+
+    <string name="createBackup">Exporter la sauvegarde CSV</string>
+    <string name="restoreBackup">Restaurer depuis une sauvegarde CSV</string>
+    <string name="backupCreatedTitle">Sauvegarde créée</string>
+    <string name="saveBackupDialogTitle">Choisir l\'emplacement de la sauvegarde</string>
+    <string name="backupErrorTitle">Échec de la sauvegarde</string>
+    <string name="backupErrorMessage">Impossible de créer le fichier de sauvegarde.</string>
+    <string name="backupSessionExpiredMessage">Session expirée. Déverrouillez l\'app avec votre code PIN et réessayez.</string>
+    <string name="restoreSuccessTitle">Restauration terminée</string>
+    <string name="restoreErrorTitle">Échec de la restauration</string>
+    <string name="restoreErrorMessage">Impossible de restaurer les données. Vérifiez que le fichier est une sauvegarde CSV CalmAuth.</string>
+    <string name="creatingBackupProgress">Création de la sauvegarde…</string>
+    <string name="restoringBackupProgress">Restauration…</string>
+    <string name="backupProcessingHint">Après votre choix, le traitement se poursuit sur un écran séparé.</string>
+
+    <string name="tokenNotFound">Jeton introuvable.</string>
+    <string name="backToTokens">Retour aux jetons</string>
+    <string name="tokenCode">Code</string>
+    <string name="codeExpiresIn">Expire dans</string>
+
+    <string name="developerModeTitle">Mode développeur</string>
+    <string name="developerModeSubtitle">Zone sensible pour l\'état local de l\'app. Réservé aux tests.</string>
+    <string name="developerResetStorage">Réinitialiser tout le stockage de l\'app</string>
+    <string name="developerRemovePin">Supprimer le code PIN</string>
+    <string name="developerRemoveBiometrics">Supprimer la biométrie</string>
+    <string name="developerResetStorageTitle">Réinitialiser le stockage de l\'app ?</string>
+    <string name="developerResetStorageConfirmMessage">Toutes les données locales seront supprimées, y compris le PIN, la biométrie et les entrées 2FA.</string>
+    <string name="developerRemovePinTitle">Supprimer le code PIN ?</string>
+    <string name="developerRemovePinConfirmMessage">La protection par PIN et la configuration du déverrouillage biométrique seront supprimées.</string>
+    <string name="developerRemoveBiometricsTitle">Supprimer la biométrie ?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">Le déverrouillage biométrique sera désactivé pour cette app.</string>
+    <string name="developerConfirmAction">Confirmer</string>
+    <string name="developerActionSuccessTitle">Terminé</string>
+    <string name="developerActionErrorTitle">Action échouée</string>
+    <string name="developerActionErrorMessage">Impossible d\'effectuer cette action. Réessayez.</string>
+    <string name="developerResetStorageSuccessMessage">Le stockage de l\'app a été réinitialisé.</string>
+    <string name="developerRemovePinSuccessMessage">Le code PIN a été supprimé.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Le déverrouillage biométrique a été supprimé.</string>
+</resources>

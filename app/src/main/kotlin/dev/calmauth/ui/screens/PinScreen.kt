@@ -38,6 +38,7 @@ import dev.calmauth.R
 import dev.calmauth.ui.components.PageScaffold
 import dev.calmauth.ui.components.PrimaryButton
 import dev.calmauth.ui.components.SecondaryButton
+import dev.calmauth.ui.nav.PinRouteMode
 import dev.calmauth.ui.viewmodel.PinViewModel
 import kotlinx.coroutines.launch
 
@@ -46,7 +47,8 @@ private const val PIN_LENGTH = 4
 @Composable
 fun PinScreen(
     viewModel: PinViewModel,
-    onUnlocked: () -> Unit,
+    mode: String,
+    onFinished: () -> Unit,
 ) {
     val state by viewModel.state.collectAsState()
     val context = LocalContext.current
@@ -57,29 +59,52 @@ fun PinScreen(
     var biometricAttempted by remember { mutableStateOf(false) }
     var biometricBusy by remember { mutableStateOf(false) }
 
-    LaunchedEffect(state.hasPin, state.isUnlocked, state.isLoading) {
-        if (!state.isLoading && state.hasPin && state.isUnlocked) onUnlocked()
+    val setupLike = mode == PinRouteMode.SETUP
+    val verifyDisable = mode == PinRouteMode.VERIFY_DISABLE
+    val unlockLike = mode == PinRouteMode.UNLOCK || verifyDisable
+
+    LaunchedEffect(state.hasPin, state.isPinEnabled, state.isUnlocked, state.isLoading, mode) {
+        val shouldAutoNavigate =
+            !state.isLoading &&
+                state.isPinEnabled &&
+                state.hasPin &&
+                state.isUnlocked &&
+                !verifyDisable
+        if (shouldAutoNavigate) onFinished()
     }
 
-    LaunchedEffect(state.hasPin, state.hasBiometricUnlock, state.isUnlocked, state.isLoading) {
+    LaunchedEffect(
+        mode,
+        state.hasPin,
+        state.hasBiometricUnlock,
+        state.isPinEnabled,
+        state.isUnlocked,
+        state.isLoading,
+    ) {
         if (
-            !state.isLoading && state.hasPin && state.hasBiometricUnlock &&
-            !state.isUnlocked && !biometricAttempted
+            mode != PinRouteMode.UNLOCK ||
+            state.isLoading ||
+            !state.isPinEnabled ||
+            !state.hasPin ||
+            !state.hasBiometricUnlock ||
+            state.isUnlocked ||
+            biometricAttempted
         ) {
-            biometricAttempted = true
-            biometricBusy = true
-            val ok = viewModel.unlockWithBiometrics(
-                title = context.getString(R.string.pinUnlockTitle),
-                cancelLabel = context.getString(R.string.cancel),
-            )
-            biometricBusy = false
-            if (!ok) {
-                Toast.makeText(
-                    context,
-                    context.getString(R.string.biometricUnlockFailedMessage),
-                    Toast.LENGTH_SHORT,
-                ).show()
-            }
+            return@LaunchedEffect
+        }
+        biometricAttempted = true
+        biometricBusy = true
+        val ok = viewModel.unlockWithBiometrics(
+            title = context.getString(R.string.pinUnlockTitle),
+            cancelLabel = context.getString(R.string.cancel),
+        )
+        biometricBusy = false
+        if (!ok) {
+            Toast.makeText(
+                context,
+                context.getString(R.string.biometricUnlockFailedMessage),
+                Toast.LENGTH_SHORT,
+            ).show()
         }
     }
 
@@ -97,38 +122,57 @@ fun PinScreen(
             toast(R.string.pinInvalidTitle, R.string.pinInvalidMessage)
             return
         }
-        if (!state.hasPin) {
-            if (firstPin == null) {
-                if (!viewModel.validatePinFormat(trimmed)) {
-                    toast(R.string.pinInvalidTitle, R.string.pinInvalidMessage)
+        when {
+            verifyDisable -> {
+                if (!viewModel.disablePinProtectionAfterVerification(trimmed)) {
+                    toast(R.string.pinIncorrectTitle, R.string.pinIncorrectMessage)
+                    pin = ""
+                } else {
+                    Toast.makeText(
+                        context,
+                        context.getString(R.string.pinProtectionDisabledMessage),
+                        Toast.LENGTH_SHORT,
+                    ).show()
+                    onFinished()
+                }
+            }
+            setupLike -> {
+                if (firstPin == null) {
+                    if (!viewModel.validatePinFormat(trimmed)) {
+                        toast(R.string.pinInvalidTitle, R.string.pinInvalidMessage)
+                        return
+                    }
+                    firstPin = trimmed
+                    pin = ""
                     return
                 }
-                firstPin = trimmed
-                pin = ""
-                return
+                if (trimmed != firstPin) {
+                    toast(R.string.pinMismatchTitle, R.string.pinMismatchMessage)
+                    firstPin = null
+                    pin = ""
+                    return
+                }
+                if (!viewModel.setPin(trimmed)) {
+                    toast(R.string.pinStorageErrorTitle, R.string.pinStorageErrorMessage)
+                    return
+                }
             }
-            if (trimmed != firstPin) {
-                toast(R.string.pinMismatchTitle, R.string.pinMismatchMessage)
-                firstPin = null
-                pin = ""
-                return
+            unlockLike && state.hasPin -> {
+                if (!viewModel.unlockWithPin(trimmed)) {
+                    toast(R.string.pinIncorrectTitle, R.string.pinIncorrectMessage)
+                    pin = ""
+                }
             }
-            if (!viewModel.setPin(trimmed)) {
-                toast(R.string.pinStorageErrorTitle, R.string.pinStorageErrorMessage)
-                return
-            }
-            return
-        }
-        if (!viewModel.unlockWithPin(trimmed)) {
-            toast(R.string.pinIncorrectTitle, R.string.pinIncorrectMessage)
-            pin = ""
+            else -> Unit
         }
     }
 
     val subtitle = when {
-        state.hasPin -> stringResource(R.string.pinUnlockSubtitle)
-        firstPin != null -> stringResource(R.string.pinConfirmPlaceholder)
-        else -> stringResource(R.string.pinSetupSubtitle)
+        verifyDisable -> stringResource(R.string.pinVerifyDisableSubtitle)
+        state.hasPin && unlockLike -> stringResource(R.string.pinUnlockSubtitle)
+        setupLike && firstPin != null -> stringResource(R.string.pinConfirmPlaceholder)
+        setupLike -> stringResource(R.string.pinSetupSubtitleOptional)
+        else -> stringResource(R.string.pinUnlockSubtitle)
     }
 
     PageScaffold {
@@ -172,7 +216,12 @@ fun PinScreen(
         )
 
         Spacer(Modifier.height(8.dp))
-        if (state.hasPin && state.isBiometricSupported) {
+        if (
+            mode == PinRouteMode.UNLOCK &&
+            state.isPinEnabled &&
+            state.hasPin &&
+            state.isBiometricSupported
+        ) {
             SecondaryButton(
                 text = if (biometricBusy) stringResource(R.string.unlockingApp) else stringResource(R.string.useBiometrics),
                 onClick = {

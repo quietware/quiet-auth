@@ -28,6 +28,7 @@ class MainActivity : FragmentActivity() {
                     pinViewModel = pinViewModel,
                     twoFAViewModel = twoFAViewModel,
                     backupIO = app.backupIO,
+                    pinRepository = app.pinRepository,
                 )
             }
         }

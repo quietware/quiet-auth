@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Találj nyugalmat bejelentkezés előtt</string>
+    <string name="onboardingSubtitle">Figyelmes, privát folyamat, amely ott tartja a fókuszt, ahol számít.</string>
+    <string name="onboardingPinHint">A PIN opcionális. Helyi hozzáférést véd a tokenekhez ezen az eszközön. A Beállításokban bármikor bekapcsolható.</string>
+    <string name="continueWithoutPin">Folytatás PIN nélkül</string>
+    <string name="protectWithPin">Alkalmazás védelme PIN-nel</string>
+    <string name="begin">Kezdés</string>
+    <string name="secureTagline">Biztonságos. Lágy. Szándékosan minimalista.</string>
+
+    <string name="twofaTitle">2FA-fiókjaid</string>
+    <string name="twofaSubtitle">A hitelesítő bejegyzéseid biztonságosan töltődnek a helyi titkosított tárból.</string>
+    <string name="add2fa">2FA hozzáadása</string>
+    <string name="loadingAccounts">2FA-fiókok betöltése…</string>
+    <string name="emptyAccounts">Még nincs 2FA-fiók. Koppints a 2FA hozzáadása gombra az első bejegyzéshez.</string>
+
+    <string name="add2faTitle">Új 2FA hozzáadása</string>
+    <string name="add2faSubtitle">Add meg a hitelesítő adataid, hogy az egyszer használatos kódok egy biztonságos helyen legyenek.</string>
+    <string name="serviceName">Szolgáltatás neve</string>
+    <string name="servicePlaceholder">pl. GitHub</string>
+    <string name="account">Fiók</string>
+    <string name="accountPlaceholder">pl. dominik.dev</string>
+    <string name="secretKey">Titkos kulcs</string>
+    <string name="secretPlaceholder">Illeszd be a beállítási kulcsot</string>
+    <string name="save2fa">2FA mentése</string>
+    <string name="cancel">Mégse</string>
+    <string name="missingFieldsTitle">Hiányzó mezők</string>
+    <string name="missingFieldsMessage">Töltsd ki a szolgáltatás nevét, a fiókot és a titkos kulcsot.</string>
+
+    <string name="qrTitle">2FA QR-kód beolvasása</string>
+    <string name="qrSubtitle">Irányítsd a kamerát a szolgáltatás beállító képernyőjén lévő QR-kódra.</string>
+    <string name="qrPermissionRequired">A 2FA QR-kódok beolvasásához kameraengedély szükséges.</string>
+    <string name="enableCamera">Kamera bekapcsolása</string>
+    <string name="invalidQrTitle">Érvénytelen QR</string>
+    <string name="invalidQrMessage">Ez a QR-kód nem érvényes 2FA-beállító kód.</string>
+    <string name="qrAddedTitle">2FA hozzáadva</string>
+    <string name="qrAddedMessage">A fiók a QR-kódból lett hozzáadva.</string>
+    <string name="addManually">Kézi hozzáadás</string>
+
+    <string name="delete">Törlés</string>
+    <string name="deleteTokenTitle">Törlöd a tokent?</string>
+    <string name="deleteTokenMessage">Ez a 2FA-token véglegesen törlődik az eszközről.</string>
+    <string name="confirmDelete">Token törlése</string>
+
+    <string name="pinSetupSubtitle">Állíts be 4 számjegyű PIN-t az alkalmazás-hozzáféréshez és a tokenek védelméhez.</string>
+    <string name="pinSetupSubtitleOptional">Hozz létre 4 számjegyű PIN-t a tokenekhez való hozzáférés védelméhez ezen az eszközön.</string>
+    <string name="pinVerifyDisableSubtitle">Add meg a PIN-t a PIN-védelem kikapcsolásához.</string>
+    <string name="pinProtectionDisabledMessage">A PIN-védelem ki van kapcsolva.</string>
+    <string name="pinUnlockTitle">CalmAuth feloldása</string>
+    <string name="pinUnlockSubtitle">Add meg a PIN-t a tokenek eléréséhez.</string>
+    <string name="pinCodePlaceholder">4 számjegy</string>
+    <string name="pinConfirmPlaceholder">PIN megismétlése</string>
+    <string name="pinInvalidTitle">Érvénytelen PIN</string>
+    <string name="pinInvalidMessage">A PIN pontosan 4 számjegyű legyen.</string>
+    <string name="pinMismatchTitle">A PIN nem egyezik</string>
+    <string name="pinMismatchMessage">A megerősítő PIN-nek egyeznie kell.</string>
+    <string name="pinIncorrectTitle">Hibás PIN</string>
+    <string name="pinIncorrectMessage">A megadott PIN helytelen.</string>
+    <string name="pinStorageErrorTitle">PIN nem menthető</string>
+    <string name="pinStorageErrorMessage">A PIN nem menthető a biztonságos tárba. Próbáld újra.</string>
+    <string name="continueLabel">Tovább</string>
+    <string name="useBiometrics">Biometria használata</string>
+    <string name="biometricUnlockFailedMessage">Biometrikus ellenőrzés sikertelen. PIN-nel is feloldhatod.</string>
+    <string name="unlockingApp">Hozzáférés ellenőrzése…</string>
+
+    <string name="settingsCta">Beállítások</string>
+    <string name="settingsTitle">Beállítások</string>
+    <string name="settingsSubtitle">Bejegyzések exportálása és visszaállítása CSV-fájlként. Ha a PIN-védelem be van kapcsolva, először oldd fel az alkalmazást a mentéshez. A fájl nincs titkosítva — tartsd bizalmasan.</string>
+    <string name="settingsBack">Vissza</string>
+    <string name="pinProtectionSettingTitle">PIN-védelem</string>
+    <string name="pinProtectionSettingDescription">PIN kérése az alkalmazás megnyitásakor. Kapcsold be, ha mások is használhatják az eszközt.</string>
+    <string name="sessionExpiredMessage">A munkamenet lejárt. Oldd fel az alkalmazást, és próbáld újra.</string>
+    <string name="biometricsSettingTitle">Biometrikus feloldás</string>
+    <string name="biometricsSettingDescription">Ujjlenyomat vagy arc a PIN-képernyőn.</string>
+    <string name="biometricsUnavailableMessage">Biometria nem érhető el ezen az eszközön.</string>
+    <string name="biometricSettingsErrorTitle">Biometria nem frissíthető</string>
+    <string name="biometricSettingsErrorMessage">Próbáld újra, miután PIN-nel feloldottad az alkalmazást.</string>
+
+    <string name="createBackup">CSV biztonsági mentés exportálása</string>
+    <string name="restoreBackup">Visszaállítás CSV-ből</string>
+    <string name="backupCreatedTitle">Mentés elkészült</string>
+    <string name="saveBackupDialogTitle">Válaszd ki a mentés helyét</string>
+    <string name="backupErrorTitle">Mentés sikertelen</string>
+    <string name="backupErrorMessage">A mentési fájl nem hozható létre.</string>
+    <string name="backupSessionExpiredMessage">Munkamenet lejárt. Oldd fel PIN-nel az alkalmazást, és próbáld újra.</string>
+    <string name="restoreSuccessTitle">Visszaállítás kész</string>
+    <string name="restoreErrorTitle">Visszaállítás sikertelen</string>
+    <string name="restoreErrorMessage">Az adatok nem állíthatók vissza. Ellenőrizd, hogy a fájl CalmAuth CSV mentés-e.</string>
+    <string name="creatingBackupProgress">Mentés készítése…</string>
+    <string name="restoringBackupProgress">Visszaállítás…</string>
+    <string name="backupProcessingHint">A választás után a folyamat külön képernyőn fut.</string>
+
+    <string name="tokenNotFound">Token nem található.</string>
+    <string name="backToTokens">Vissza a tokenekhez</string>
+    <string name="tokenCode">Kód</string>
+    <string name="codeExpiresIn">Lejár</string>
+
+    <string name="developerModeTitle">Fejlesztői mód</string>
+    <string name="developerModeSubtitle">Kockázatos zóna a helyi alkalmazásállapothoz. Csak tesztelésre.</string>
+    <string name="developerResetStorage">Teljes alkalmazástár törlése</string>
+    <string name="developerRemovePin">PIN eltávolítása</string>
+    <string name="developerRemoveBiometrics">Biometria eltávolítása</string>
+    <string name="developerResetStorageTitle">Törlöd az alkalmazástárat?</string>
+    <string name="developerResetStorageConfirmMessage">Minden helyi adat törlődik, beleértve a PIN-t, biometriát és 2FA-bejegyzéseket.</string>
+    <string name="developerRemovePinTitle">Eltávolítod a PIN-t?</string>
+    <string name="developerRemovePinConfirmMessage">Eltávolítja a PIN-védelmet és a biometrikus feloldás beállítását.</string>
+    <string name="developerRemoveBiometricsTitle">Eltávolítod a biometriát?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">A biometrikus feloldás kikapcsolódik ennél az alkalmazásnál.</string>
+    <string name="developerConfirmAction">Megerősítés</string>
+    <string name="developerActionSuccessTitle">Kész</string>
+    <string name="developerActionErrorTitle">Művelet sikertelen</string>
+    <string name="developerActionErrorMessage">A művelet nem hajtható végre. Próbáld újra.</string>
+    <string name="developerResetStorageSuccessMessage">Az alkalmazástár törölve lett.</string>
+    <string name="developerRemovePinSuccessMessage">A PIN eltávolítva.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Biometrikus feloldás eltávolítva.</string>
+</resources>

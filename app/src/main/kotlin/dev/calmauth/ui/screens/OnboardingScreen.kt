@@ -26,10 +26,12 @@ import androidx.compose.ui.res.stringResource
 import dev.calmauth.R
 import dev.calmauth.ui.components.PageScaffold
 import dev.calmauth.ui.components.PrimaryButton
+import dev.calmauth.ui.components.SecondaryButton
 
 @Composable
 fun OnboardingScreen(
-    onBegin: () -> Unit,
+    onContinueWithoutPin: () -> Unit,
+    onProtectWithPin: () -> Unit,
     onDeveloperMode: () -> Unit,
 ) {
     val tapCounter = remember { intArrayOf(0) }
@@ -91,7 +93,7 @@ fun OnboardingScreen(
                 }
                 Spacer(Modifier.height(20.dp))
                 Text(
-                    text = stringResource(R.string.secureTagline),
+                    text = stringResource(R.string.onboardingPinHint),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     textAlign = TextAlign.Center,
@@ -100,8 +102,13 @@ fun OnboardingScreen(
         }
 
         PrimaryButton(
-            text = stringResource(R.string.begin),
-            onClick = onBegin,
+            text = stringResource(R.string.continueWithoutPin),
+            onClick = onContinueWithoutPin,
+        )
+        Spacer(Modifier.height(8.dp))
+        SecondaryButton(
+            text = stringResource(R.string.protectWithPin),
+            onClick = onProtectWithPin,
         )
     }
 }

@@ -3,6 +3,9 @@
     <string name="appName">CalmAuth</string>
     <string name="onboardingTitle">Odzyskaj spokój przed logowaniem</string>
     <string name="onboardingSubtitle">Uważny i prywatny przepływ logowania, zaprojektowany, by utrzymać Twój fokus.</string>
+    <string name="onboardingPinHint">PIN jest opcjonalny. Chroni lokalny dostęp do tokenów na tym urządzeniu. Włączysz go w każdej chwili w Ustawieniach.</string>
+    <string name="continueWithoutPin">Kontynuuj bez PIN-u</string>
+    <string name="protectWithPin">Chroń aplikację PIN-em</string>
     <string name="begin">Start</string>
     <string name="secureTagline">Bezpiecznie. Łagodnie. Minimalistycznie.</string>
 
@@ -41,6 +44,9 @@
     <string name="confirmDelete">Usuń token</string>
 
     <string name="pinSetupSubtitle">Ustaw 4-cyfrowy PIN, aby skonfigurować logowanie do aplikacji i zabezpieczyć dostęp do tokenów.</string>
+    <string name="pinSetupSubtitleOptional">Utwórz 4-cyfrowy PIN, aby chronić dostęp do tokenów na tym urządzeniu.</string>
+    <string name="pinVerifyDisableSubtitle">Wpisz PIN, aby wyłączyć ochronę PIN-em.</string>
+    <string name="pinProtectionDisabledMessage">Ochrona PIN-em jest wyłączona.</string>
     <string name="pinUnlockTitle">Odblokuj CalmAuth</string>
     <string name="pinUnlockSubtitle">Wpisz PIN, aby uzyskać dostęp do tokenów.</string>
     <string name="pinCodePlaceholder">Wpisz 4 cyfry</string>
@@ -60,8 +66,11 @@
 
     <string name="settingsCta">Ustawienia</string>
     <string name="settingsTitle">Ustawienia</string>
-    <string name="settingsSubtitle">Eksport i przywracanie wpisów jako plik CSV. PIN chroni tylko dostęp do aplikacji — plik backupu nie jest szyfrowany, przechowuj go bezpiecznie.</string>
+    <string name="settingsSubtitle">Eksport i przywracanie wpisów jako plik CSV. Przy włączonej ochronie PIN-em najpierw odblokuj aplikację. Plik backupu nie jest szyfrowany — przechowuj go bezpiecznie.</string>
     <string name="settingsBack">Powrót</string>
+    <string name="pinProtectionSettingTitle">Ochrona PIN-em</string>
+    <string name="pinProtectionSettingDescription">Wymagaj PIN-u przy otwieraniu aplikacji. Włącz, jeśli inni mogą korzystać z urządzenia.</string>
+    <string name="sessionExpiredMessage">Sesja wygasła. Odblokuj aplikację i spróbuj ponownie.</string>
     <string name="biometricsSettingTitle">Odblokowanie biometryczne</string>
     <string name="biometricsSettingDescription">Użyj odcisku palca lub twarzy na ekranie PIN.</string>
     <string name="biometricsUnavailableMessage">Biometria nie jest dostępna na tym urządzeniu.</string>

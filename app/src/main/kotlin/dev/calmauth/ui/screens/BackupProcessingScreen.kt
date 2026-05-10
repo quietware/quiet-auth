@@ -38,6 +38,7 @@ import dev.calmauth.domain.parseBackupCsv
 import dev.calmauth.domain.twoFAItemsToCsv
 import dev.calmauth.ui.viewmodel.PinViewModel
 import dev.calmauth.ui.viewmodel.TwoFAViewModel
+import dev.calmauth.ui.viewmodel.sessionReadyForSensitiveActions
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -108,9 +109,9 @@ fun BackupProcessingScreen(
         }
     }
 
-    LaunchedEffect(action, pin.isUnlocked, pin.sessionPin) {
-        if (!pin.isUnlocked || pin.sessionPin == null) {
-            status = context.getString(R.string.backupSessionExpiredMessage)
+    LaunchedEffect(action, pin.sessionReadyForSensitiveActions) {
+        if (!pin.sessionReadyForSensitiveActions) {
+            status = context.getString(R.string.sessionExpiredMessage)
             delay(900)
             onLocked()
             return@LaunchedEffect

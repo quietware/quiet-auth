@@ -50,11 +50,11 @@ fun TokenDetailsScreen(
     val context = LocalContext.current
     val nowMs by useCurrentTime()
 
-    LaunchedEffect(pin.isLoading, pin.isUnlocked) {
-        if (!pin.isLoading && !pin.isUnlocked) onLocked()
+    LaunchedEffect(pin.isLoading, pin.isPinEnabled, pin.isUnlocked) {
+        if (!pin.isLoading && pin.isPinEnabled && !pin.isUnlocked) onLocked()
     }
 
-    if (pin.isLoading || !pin.isUnlocked) {
+    if (pin.isLoading || (pin.isPinEnabled && !pin.isUnlocked)) {
         PageScaffold {
             Text(
                 text = stringResource(R.string.unlockingApp),

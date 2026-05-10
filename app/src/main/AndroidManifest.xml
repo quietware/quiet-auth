@@ -16,6 +16,7 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/appName"
+        android:localeConfig="@xml/locale_config"
         android:supportsRtl="true"
         android:theme="@style/Theme.CalmAuth"
         tools:targetApi="34">

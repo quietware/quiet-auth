@@ -3,6 +3,9 @@
     <string name="appName">CalmAuth</string>
     <string name="onboardingTitle">Find your calm before you sign in</string>
     <string name="onboardingSubtitle">A mindful and private login flow designed to keep your focus where it matters most.</string>
+    <string name="onboardingPinHint">A PIN is optional. It protects local access to your tokens on this device. You can turn it on anytime in Settings.</string>
+    <string name="continueWithoutPin">Continue without PIN</string>
+    <string name="protectWithPin">Protect app with PIN</string>
     <string name="begin">Begin</string>
     <string name="secureTagline">Secure. Gentle. Intentionally minimal.</string>
 
@@ -41,6 +44,9 @@
     <string name="confirmDelete">Delete token</string>
 
     <string name="pinSetupSubtitle">Set a 4-digit PIN to set up app sign-in and protect access to your tokens.</string>
+    <string name="pinSetupSubtitleOptional">Create a 4-digit PIN to protect access to your tokens on this device.</string>
+    <string name="pinVerifyDisableSubtitle">Enter your PIN to turn off PIN protection.</string>
+    <string name="pinProtectionDisabledMessage">PIN protection is off.</string>
     <string name="pinUnlockTitle">Unlock CalmAuth</string>
     <string name="pinUnlockSubtitle">Enter your PIN to access your tokens.</string>
     <string name="pinCodePlaceholder">Enter 4 digits</string>
@@ -60,8 +66,11 @@
 
     <string name="settingsCta">Settings</string>
     <string name="settingsTitle">Settings</string>
-    <string name="settingsSubtitle">Export and restore entries as a CSV file. Your PIN only unlocks the app — the backup file is not encrypted, so keep it private.</string>
+    <string name="settingsSubtitle">Export and restore entries as a CSV file. When PIN protection is on, unlock the app first for backup actions. The backup file is not encrypted — keep it private.</string>
     <string name="settingsBack">Back</string>
+    <string name="pinProtectionSettingTitle">PIN protection</string>
+    <string name="pinProtectionSettingDescription">Require a PIN when opening the app. Turn this on if others may use your device.</string>
+    <string name="sessionExpiredMessage">Your session ended. Unlock the app and try again.</string>
     <string name="biometricsSettingTitle">Biometric unlock</string>
     <string name="biometricsSettingDescription">Use fingerprint or face unlock on the PIN screen.</string>
     <string name="biometricsUnavailableMessage">Biometrics are not available on this device.</string>

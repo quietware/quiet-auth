@@ -31,6 +31,7 @@ import dev.calmauth.ui.components.PageScaffold
 import dev.calmauth.ui.components.PrimaryButton
 import dev.calmauth.ui.components.SecondaryButton
 import dev.calmauth.ui.viewmodel.PinViewModel
+import dev.calmauth.ui.viewmodel.sessionReadyForSensitiveActions
 import kotlinx.coroutines.launch
 
 @Composable
@@ -39,16 +40,18 @@ fun SettingsScreen(
     onBack: () -> Unit,
     onCreateBackup: () -> Unit,
     onRestoreBackup: () -> Unit,
+    onEnablePinProtection: () -> Unit,
+    onDisablePinProtection: () -> Unit,
 ) {
     val pin by pinViewModel.state.collectAsState()
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
 
-    fun ensureUnlocked(titleRes: Int): Boolean {
-        if (!pin.isUnlocked || pin.sessionPin == null) {
+    fun ensureSessionReady(titleRes: Int): Boolean {
+        if (!pin.sessionReadyForSensitiveActions) {
             AlertDialog.Builder(context)
                 .setTitle(titleRes)
-                .setMessage(R.string.backupSessionExpiredMessage)
+                .setMessage(R.string.sessionExpiredMessage)
                 .setPositiveButton(android.R.string.ok, null)
                 .show()
             return false
@@ -94,50 +97,87 @@ fun SettingsScreen(
         ) {
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = stringResource(R.string.biometricsSettingTitle),
+                    text = stringResource(R.string.pinProtectionSettingTitle),
                     style = MaterialTheme.typography.titleLarge,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    text = if (pin.isBiometricSupported)
-                        stringResource(R.string.biometricsSettingDescription)
-                    else
-                        stringResource(R.string.biometricsUnavailableMessage),
+                    text = stringResource(R.string.pinProtectionSettingDescription),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
             Switch(
-                checked = pin.hasBiometricUnlock,
+                checked = pin.isPinEnabled,
                 onCheckedChange = { next ->
-                    if (ensureUnlocked(R.string.biometricSettingsErrorTitle)) {
-                        scope.launch {
-                            val ok = pinViewModel.setBiometricUnlockEnabled(
-                                next,
-                                title = context.getString(R.string.biometricsSettingTitle),
-                                cancelLabel = context.getString(R.string.cancel),
-                            )
-                            if (!ok) {
-                                AlertDialog.Builder(context)
-                                    .setTitle(R.string.biometricSettingsErrorTitle)
-                                    .setMessage(R.string.biometricSettingsErrorMessage)
-                                    .setPositiveButton(android.R.string.ok, null)
-                                    .show()
-                            }
-                        }
+                    if (next) {
+                        onEnablePinProtection()
+                    } else if (pin.isPinEnabled) {
+                        onDisablePinProtection()
                     }
                 },
-                enabled = pin.isBiometricSupported && pin.isUnlocked && pin.sessionPin != null,
             )
+        }
+
+        if (pin.isPinEnabled) {
+            Spacer(Modifier.height(24.dp))
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(12.dp))
+                    .border(BorderStroke(1.dp, MaterialTheme.colorScheme.outline), RoundedCornerShape(12.dp))
+                    .background(MaterialTheme.colorScheme.surface)
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = stringResource(R.string.biometricsSettingTitle),
+                        style = MaterialTheme.typography.titleLarge,
+                        color = MaterialTheme.colorScheme.onSurface,
+                    )
+                    Text(
+                        text = if (pin.isBiometricSupported)
+                            stringResource(R.string.biometricsSettingDescription)
+                        else
+                            stringResource(R.string.biometricsUnavailableMessage),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+                Switch(
+                    checked = pin.hasBiometricUnlock,
+                    onCheckedChange = { next ->
+                        if (ensureSessionReady(R.string.biometricSettingsErrorTitle)) {
+                            scope.launch {
+                                val ok = pinViewModel.setBiometricUnlockEnabled(
+                                    next,
+                                    title = context.getString(R.string.biometricsSettingTitle),
+                                    cancelLabel = context.getString(R.string.cancel),
+                                )
+                                if (!ok) {
+                                    AlertDialog.Builder(context)
+                                        .setTitle(R.string.biometricSettingsErrorTitle)
+                                        .setMessage(R.string.biometricSettingsErrorMessage)
+                                        .setPositiveButton(android.R.string.ok, null)
+                                        .show()
+                                }
+                            }
+                        }
+                    },
+                    enabled = pin.isBiometricSupported && pin.sessionReadyForSensitiveActions,
+                )
+            }
         }
 
         Spacer(Modifier.height(24.dp))
         PrimaryButton(text = stringResource(R.string.createBackup), onClick = {
-            if (ensureUnlocked(R.string.backupErrorTitle)) onCreateBackup()
+            if (ensureSessionReady(R.string.backupErrorTitle)) onCreateBackup()
         })
         Spacer(Modifier.height(8.dp))
         SecondaryButton(text = stringResource(R.string.restoreBackup), onClick = {
-            if (ensureUnlocked(R.string.restoreErrorTitle)) onRestoreBackup()
+            if (ensureSessionReady(R.string.restoreErrorTitle)) onRestoreBackup()
         })
 
         Spacer(Modifier.height(16.dp))

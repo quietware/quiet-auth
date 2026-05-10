@@ -15,7 +15,22 @@ android {
         versionCode = 1
         versionName = "1.0.0"
 
-        resourceConfigurations += listOf("en", "pl")
+        // Packaged locale variants: default `values/` is English; qualified folders below.
+        resourceConfigurations += listOf(
+            "cs",
+            "de",
+            "el",
+            "es",
+            "fr",
+            "hu",
+            "it",
+            "nl",
+            "pl",
+            "pt-rPT",
+            "ro",
+            "sv",
+            "uk",
+        )
     }
 
     buildTypes {

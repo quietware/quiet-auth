@@ -13,6 +13,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
 import dev.calmauth.R
+import dev.calmauth.data.PinRepository
 import dev.calmauth.ui.components.PageScaffold
 import dev.calmauth.ui.components.PrimaryButton
 import dev.calmauth.ui.components.SecondaryButton
@@ -23,6 +24,7 @@ import dev.calmauth.ui.viewmodel.TwoFAViewModel
 fun DeveloperModeScreen(
     pinViewModel: PinViewModel,
     twoFAViewModel: TwoFAViewModel,
+    pinRepository: PinRepository,
     onBack: () -> Unit,
     onAfterReset: () -> Unit,
 ) {
@@ -85,6 +87,7 @@ fun DeveloperModeScreen(
                 messageRes = R.string.developerResetStorageConfirmMessage,
                 successMessageRes = R.string.developerResetStorageSuccessMessage,
                 action = {
+                    pinRepository.clearOnboardingCompleted()
                     val pinRemoved = pinViewModel.removePin()
                     twoFAViewModel.replaceAll(emptyList())
                     pinRemoved
@@ -98,7 +101,10 @@ fun DeveloperModeScreen(
                 titleRes = R.string.developerRemovePinTitle,
                 messageRes = R.string.developerRemovePinConfirmMessage,
                 successMessageRes = R.string.developerRemovePinSuccessMessage,
-                action = { pinViewModel.removePin() },
+                action = {
+                    pinRepository.clearOnboardingCompleted()
+                    pinViewModel.removePin()
+                },
                 navigateAfter = true,
             )
         })

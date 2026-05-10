@@ -22,11 +22,16 @@ import java.lang.ref.WeakReference
 data class PinUiState(
     val isLoading: Boolean = true,
     val hasPin: Boolean = false,
+    val isPinEnabled: Boolean = false,
     val isUnlocked: Boolean = false,
     val isBiometricSupported: Boolean = false,
     val hasBiometricUnlock: Boolean = false,
     val sessionPin: String? = null,
 )
+
+/** Backup / biometrics require an authenticated session; without PIN protection there is no PIN secret. */
+val PinUiState.sessionReadyForSensitiveActions: Boolean
+    get() = !isPinEnabled || (isUnlocked && sessionPin != null)
 
 class PinViewModel(
     private val pinRepository: PinRepository,
@@ -43,7 +48,9 @@ class PinViewModel(
         viewModelScope.launch {
             sessionLock.locked.collect { locked ->
                 if (locked) {
-                    _state.value = _state.value.copy(isUnlocked = false, sessionPin = null)
+                    if (_state.value.isPinEnabled) {
+                        _state.value = _state.value.copy(isUnlocked = false, sessionPin = null)
+                    }
                     sessionLock.consumeLockSignal()
                 }
             }
@@ -53,18 +60,32 @@ class PinViewModel(
 
     private fun refreshFromStorage() {
         val activity = activityRef.get()
-        val hash = pinRepository.loadPinHash()
+        var hash = pinRepository.loadPinHash()
+        var pinEnabled = pinRepository.loadPinProtectionEnabled()
+
+        if (pinEnabled && hash == null) {
+            pinRepository.setPinProtectionEnabled(false)
+        }
+        if (!pinEnabled && hash != null) {
+            pinRepository.clearPin()
+        }
+
+        hash = pinRepository.loadPinHash()
+        pinEnabled = pinRepository.loadPinProtectionEnabled()
         val biometricEnabled = pinRepository.isBiometricEnabled()
         val biometricSupported = activity?.let {
             BiometricAuth.isAvailable(it) == BiometricAvailability.AVAILABLE
         } ?: false
         storedHash = hash
+        val unlocked = !pinEnabled
         _state.value = PinUiState(
             isLoading = false,
             hasPin = hash != null,
-            isUnlocked = false,
+            isPinEnabled = pinEnabled,
+            isUnlocked = unlocked,
             isBiometricSupported = biometricSupported,
             hasBiometricUnlock = biometricEnabled,
+            sessionPin = null,
         )
     }
 
@@ -72,15 +93,20 @@ class PinViewModel(
 
     fun verifyPin(pin: String): Boolean = storedHash?.let { hashPin(pin) == it } == true
 
+    /**
+     * Creates PIN credentials and enables protection (onboarding or Settings).
+     */
     fun setPin(pin: String): Boolean {
         if (!PIN_REGEX.matches(pin)) return false
         val hash = hashPin(pin)
         return runCatching {
             pinRepository.savePinHash(hash)
+            pinRepository.setPinProtectionEnabled(true)
             storedHash = hash
             tryEnableBiometricUnlock(pin)
             _state.value = _state.value.copy(
                 hasPin = true,
+                isPinEnabled = true,
                 isUnlocked = true,
                 sessionPin = pin,
                 isBiometricSupported = activityRef.get()?.let {
@@ -108,7 +134,7 @@ class PinViewModel(
         title: String,
         cancelLabel: String,
     ): Boolean {
-        if (storedHash == null || !pinRepository.isBiometricEnabled()) return false
+        if (!_state.value.isPinEnabled || storedHash == null || !pinRepository.isBiometricEnabled()) return false
         val activity = activityRef.get() ?: return false
         val result = BiometricAuth.authenticate(activity, title = title, cancelLabel = cancelLabel)
         if (result is BiometricResult.Error) return false
@@ -121,6 +147,7 @@ class PinViewModel(
         title: String,
         cancelLabel: String,
     ): Boolean {
+        if (!_state.value.isPinEnabled) return false
         if (!enabled) {
             pinRepository.clearBiometric()
             _state.value = _state.value.copy(hasBiometricUnlock = false)
@@ -131,6 +158,7 @@ class PinViewModel(
     }
 
     private fun tryEnableBiometricUnlock(pin: String): Boolean {
+        if (!_state.value.isPinEnabled) return false
         val activity = activityRef.get() ?: return false
         if (BiometricAuth.isAvailable(activity) != BiometricAvailability.AVAILABLE) {
             pinRepository.clearBiometric()
@@ -147,6 +175,7 @@ class PinViewModel(
         title: String,
         cancelLabel: String,
     ): Boolean {
+        if (!_state.value.isPinEnabled) return false
         val activity = activityRef.get() ?: return false
         if (BiometricAuth.isAvailable(activity) != BiometricAvailability.AVAILABLE) {
             return false
@@ -162,20 +191,37 @@ class PinViewModel(
         _state.value = _state.value.copy(isUnlocked = false, sessionPin = null)
     }
 
+    fun disablePinProtectionAfterVerification(pin: String): Boolean {
+        if (!_state.value.isPinEnabled || !verifyPin(pin)) return false
+        return runCatching {
+            pinRepository.clearPin()
+            storedHash = null
+            applyUnprotectedState()
+            true
+        }.getOrElse { false }
+    }
+
     fun removePin(): Boolean = runCatching {
         pinRepository.clearPin()
         storedHash = null
+        applyUnprotectedState()
+        true
+    }.getOrElse { false }
+
+    private fun applyUnprotectedState() {
+        val biometricSupported = activityRef.get()?.let {
+            BiometricAuth.isAvailable(it) == BiometricAvailability.AVAILABLE
+        } ?: false
         _state.value = PinUiState(
             isLoading = false,
             hasPin = false,
-            isUnlocked = false,
-            isBiometricSupported = activityRef.get()?.let {
-                BiometricAuth.isAvailable(it) == BiometricAvailability.AVAILABLE
-            } ?: false,
+            isPinEnabled = false,
+            isUnlocked = true,
+            isBiometricSupported = biometricSupported,
             hasBiometricUnlock = false,
+            sessionPin = null,
         )
-        true
-    }.getOrElse { false }
+    }
 
     fun removeBiometrics(): Boolean = runCatching {
         pinRepository.clearBiometric()

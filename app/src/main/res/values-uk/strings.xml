@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Знайдіть спокій перед входом</string>
+    <string name="onboardingSubtitle">Уважний і приватний процес, який тримає фокус там, де це важливо.</string>
+    <string name="onboardingPinHint">PIN необов\'язковий. Він захищає локальний доступ до ваших токенів на цьому пристрої. Увімкнути можна будь-коли в Налаштуваннях.</string>
+    <string name="continueWithoutPin">Продовжити без PIN</string>
+    <string name="protectWithPin">Захистити застосунок PIN</string>
+    <string name="begin">Почати</string>
+    <string name="secureTagline">Безпечно. М\'яко. Навмисно мінімалістично.</string>
+
+    <string name="twofaTitle">Ваші облікові записи 2FA</string>
+    <string name="twofaSubtitle">Записи автентифікатора безпечно завантажуються з локального зашифрованого сховища.</string>
+    <string name="add2fa">Додати 2FA</string>
+    <string name="loadingAccounts">Завантаження облікових записів 2FA…</string>
+    <string name="emptyAccounts">Поки немає облікових записів 2FA. Натисніть Додати 2FA, щоб створити перший запис.</string>
+
+    <string name="add2faTitle">Додати нову 2FA</string>
+    <string name="add2faSubtitle">Додайте дані автентифікатора, щоб усі одноразові коди були в одному безпечному місці.</string>
+    <string name="serviceName">Назва сервісу</string>
+    <string name="servicePlaceholder">напр. GitHub</string>
+    <string name="account">Обліковий запис</string>
+    <string name="accountPlaceholder">напр. dominik.dev</string>
+    <string name="secretKey">Секретний ключ</string>
+    <string name="secretPlaceholder">Вставте ключ налаштування</string>
+    <string name="save2fa">Зберегти 2FA</string>
+    <string name="cancel">Скасувати</string>
+    <string name="missingFieldsTitle">Не всі поля заповнені</string>
+    <string name="missingFieldsMessage">Заповніть назву сервісу, обліковий запис і секретний ключ.</string>
+
+    <string name="qrTitle">Сканувати QR-код 2FA</string>
+    <string name="qrSubtitle">Наведіть камеру на QR-код з екрана налаштування сервісу.</string>
+    <string name="qrPermissionRequired">Для сканування QR-кодів 2FA потрібен дозвіл камери.</string>
+    <string name="enableCamera">Увімкнути камеру</string>
+    <string name="invalidQrTitle">Недійсний QR</string>
+    <string name="invalidQrMessage">Цей QR-код не є дійсним кодом налаштування 2FA.</string>
+    <string name="qrAddedTitle">2FA додано</string>
+    <string name="qrAddedMessage">Обліковий запис додано з QR-коду.</string>
+    <string name="addManually">Додати вручну</string>
+
+    <string name="delete">Видалити</string>
+    <string name="deleteTokenTitle">Видалити токен?</string>
+    <string name="deleteTokenMessage">Цей токен 2FA буде назавжди видалено з пристрою.</string>
+    <string name="confirmDelete">Видалити токен</string>
+
+    <string name="pinSetupSubtitle">Встановіть 4-значний PIN для входу в застосунок і захисту токенів.</string>
+    <string name="pinSetupSubtitleOptional">Створіть 4-значний PIN для захисту доступу до токенів на цьому пристрої.</string>
+    <string name="pinVerifyDisableSubtitle">Введіть PIN, щоб вимкнути захист PIN.</string>
+    <string name="pinProtectionDisabledMessage">Захист PIN вимкнено.</string>
+    <string name="pinUnlockTitle">Розблокувати CalmAuth</string>
+    <string name="pinUnlockSubtitle">Введіть PIN для доступу до токенів.</string>
+    <string name="pinCodePlaceholder">Введіть 4 цифри</string>
+    <string name="pinConfirmPlaceholder">Повторіть PIN</string>
+    <string name="pinInvalidTitle">Недійсний PIN</string>
+    <string name="pinInvalidMessage">PIN має містити рівно 4 цифри.</string>
+    <string name="pinMismatchTitle">PIN не збігається</string>
+    <string name="pinMismatchMessage">PIN підтвердження має збігатися.</string>
+    <string name="pinIncorrectTitle">Невірний PIN</string>
+    <string name="pinIncorrectMessage">Введений PIN невірний.</string>
+    <string name="pinStorageErrorTitle">Не вдалося зберегти PIN</string>
+    <string name="pinStorageErrorMessage">PIN не вдалося зберегти в безпечному сховищі. Спробуйте ще раз.</string>
+    <string name="continueLabel">Далі</string>
+    <string name="useBiometrics">Використати біометрію</string>
+    <string name="biometricUnlockFailedMessage">Біометричну перевірку не пройдено. Можна розблокувати PIN.</string>
+    <string name="unlockingApp">Перевірка доступу…</string>
+
+    <string name="settingsCta">Налаштування</string>
+    <string name="settingsTitle">Налаштування</string>
+    <string name="settingsSubtitle">Експорт і відновлення записів у файл CSV. Якщо захист PIN увімкнено, спочатку розблокуйте застосунок для резервних копій. Файл не шифрується — зберігайте його приватно.</string>
+    <string name="settingsBack">Назад</string>
+    <string name="pinProtectionSettingTitle">Захист PIN</string>
+    <string name="pinProtectionSettingDescription">Вимагати PIN під час відкриття застосунку. Увімкніть, якщо пристроєм можуть користуватися інші.</string>
+    <string name="sessionExpiredMessage">Сесію завершено. Розблокуйте застосунок і спробуйте ще раз.</string>
+    <string name="biometricsSettingTitle">Біометричне розблокування</string>
+    <string name="biometricsSettingDescription">Відбиток або обличчя на екрані PIN.</string>
+    <string name="biometricsUnavailableMessage">Біометрія недоступна на цьому пристрої.</string>
+    <string name="biometricSettingsErrorTitle">Не вдалося оновити біометрію</string>
+    <string name="biometricSettingsErrorMessage">Спробуйте ще раз після розблокування застосунку PIN.</string>
+
+    <string name="createBackup">Експорт резервної копії CSV</string>
+    <string name="restoreBackup">Відновити з CSV</string>
+    <string name="backupCreatedTitle">Резервну копію створено</string>
+    <string name="saveBackupDialogTitle">Оберіть місце для збереження</string>
+    <string name="backupErrorTitle">Помилка резервної копії</string>
+    <string name="backupErrorMessage">Не вдалося створити файл резервної копії.</string>
+    <string name="backupSessionExpiredMessage">Сесію завершено. Розблокуйте застосунок PIN і спробуйте ще раз.</string>
+    <string name="restoreSuccessTitle">Відновлення завершено</string>
+    <string name="restoreErrorTitle">Помилка відновлення</string>
+    <string name="restoreErrorMessage">Не вдалося відновити дані. Переконайтеся, що файл — резервна копія CSV CalmAuth.</string>
+    <string name="creatingBackupProgress">Створення резервної копії…</string>
+    <string name="restoringBackupProgress">Відновлення…</string>
+    <string name="backupProcessingHint">Після вибору процес триває на окремому екрані.</string>
+
+    <string name="tokenNotFound">Токен не знайдено.</string>
+    <string name="backToTokens">До токенів</string>
+    <string name="tokenCode">Код</string>
+    <string name="codeExpiresIn">Закінчується через</string>
+
+    <string name="developerModeTitle">Режим розробника</string>
+    <string name="developerModeSubtitle">Небезпечна зона для локального стану застосунку. Лише для тестів.</string>
+    <string name="developerResetStorage">Скинути все сховище застосунку</string>
+    <string name="developerRemovePin">Прибрати PIN</string>
+    <string name="developerRemoveBiometrics">Прибрати біометрію</string>
+    <string name="developerResetStorageTitle">Скинути сховище?</string>
+    <string name="developerResetStorageConfirmMessage">Буде видалено всі локальні дані, включно з PIN, біометрією та записами 2FA.</string>
+    <string name="developerRemovePinTitle">Прибрати PIN?</string>
+    <string name="developerRemovePinConfirmMessage">Буде вимкнено захист PIN і налаштування біометричного розблокування.</string>
+    <string name="developerRemoveBiometricsTitle">Прибрати біометрію?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">Біометричне розблокування для цього застосунку буде вимкнено.</string>
+    <string name="developerConfirmAction">Підтвердити</string>
+    <string name="developerActionSuccessTitle">Готово</string>
+    <string name="developerActionErrorTitle">Дія не виконана</string>
+    <string name="developerActionErrorMessage">Не вдалося виконати дію. Спробуйте ще раз.</string>
+    <string name="developerResetStorageSuccessMessage">Сховище застосунку скинуто.</string>
+    <string name="developerRemovePinSuccessMessage">PIN видалено.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Біометричне розблокування видалено.</string>
+</resources>
