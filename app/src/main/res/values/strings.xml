@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Settings</string>
     <string name="settingsTitle">Settings</string>
-    <string name="settingsSubtitle">Export and restore entries as a CSV file. When PIN protection is on, unlock the app first for backup actions. The backup file is not encrypted — keep it private.</string>
+    <string name="settingsHubSubtitle">Security, backups, and advanced actions for local data.</string>
+    <string name="settingsSecurityTitle">Security</string>
+    <string name="settingsSecuritySubtitle">Use a PIN and optional biometrics to control who can open the app on this device.</string>
+    <string name="settingsBackupTitle">Backup</string>
+    <string name="settingsBackupSubtitle">Export and restore entries as a CSV file. When PIN protection is on, unlock the app first for backup actions. The backup file is not encrypted — keep it private.</string>
     <string name="settingsBack">Back</string>
     <string name="pinProtectionSettingTitle">PIN protection</string>
     <string name="pinProtectionSettingDescription">Require a PIN when opening the app. Turn this on if others may use your device.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Code</string>
     <string name="codeExpiresIn">Expires in</string>
 
-    <string name="developerModeTitle">Developer mode</string>
-    <string name="developerModeSubtitle">Danger zone for local app state. Use only for testing.</string>
+    <string name="dangerZoneTitle">Danger zone</string>
+    <string name="dangerZoneSubtitle">Destructive actions for local app state. Use only for testing.</string>
     <string name="developerResetStorage">Reset all app storage</string>
     <string name="developerRemovePin">Remove PIN</string>
     <string name="developerRemoveBiometrics">Remove biometrics</string>

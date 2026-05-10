@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Iestatījumi</string>
     <string name="settingsTitle">Iestatījumi</string>
-    <string name="settingsSubtitle">Eksportēt un atjaunot ierakstus kā CSV failu. Ja PIN aizsardzība ir ieslēgta, vispirms atbloķējiet lietotni. Rezerves kopija nav šifrēta — saglabājiet privātu.</string>
+    <string name="settingsHubSubtitle">Drošība, rezerves kopijas un paplašinātas darbības lokālajiem datiem.</string>
+    <string name="settingsSecurityTitle">Drošība</string>
+    <string name="settingsSecuritySubtitle">PIN un izvēles biometrija nosaka, kurš var atvērt lietotni šajā ierīcē.</string>
+    <string name="settingsBackupTitle">Rezerves kopija</string>
+    <string name="settingsBackupSubtitle">Eksportēt un atjaunot ierakstus kā CSV failu. Ja PIN aizsardzība ir ieslēgta, vispirms atbloķējiet lietotni. Rezerves kopija nav šifrēta — saglabājiet privātu.</string>
     <string name="settingsBack">Atpakaļ</string>
     <string name="pinProtectionSettingTitle">PIN aizsardzība</string>
     <string name="pinProtectionSettingDescription">Pieprasīt PIN atverot lietotni. Ieslēdziet, ja citi var izmantot ierīci.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kods</string>
     <string name="codeExpiresIn">Beidzas pēc</string>
 
-    <string name="developerModeTitle">Izstrādātāja režīms</string>
-    <string name="developerModeSubtitle">Bīstama zona lokālajam lietotnes stāvoklim. Tikai testēšanai.</string>
+    <string name="dangerZoneTitle">Bīstamā zona</string>
+    <string name="dangerZoneSubtitle">Bīstama zona lokālajam lietotnes stāvoklim. Tikai testēšanai.</string>
     <string name="developerResetStorage">Atiestatīt visu lietotnes krātuvi</string>
     <string name="developerRemovePin">Noņemt PIN</string>
     <string name="developerRemoveBiometrics">Noņemt biometriju</string>

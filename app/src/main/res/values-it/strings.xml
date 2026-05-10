@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Impostazioni</string>
     <string name="settingsTitle">Impostazioni</string>
-    <string name="settingsSubtitle">Esporta e ripristina le voci come file CSV. Se la protezione PIN è attiva, sblocca prima l\'app per il backup. Il file non è crittografato: tienilo riservato.</string>
+    <string name="settingsHubSubtitle">Sicurezza, backup e azioni avanzate per i dati locali.</string>
+    <string name="settingsSecurityTitle">Sicurezza</string>
+    <string name="settingsSecuritySubtitle">Il PIN e la biometria opzionale controllano chi può aprire l\'app su questo dispositivo.</string>
+    <string name="settingsBackupTitle">Backup</string>
+    <string name="settingsBackupSubtitle">Esporta e ripristina le voci come file CSV. Se la protezione PIN è attiva, sblocca prima l\'app per il backup. Il file non è crittografato: tienilo riservato.</string>
     <string name="settingsBack">Indietro</string>
     <string name="pinProtectionSettingTitle">Protezione PIN</string>
     <string name="pinProtectionSettingDescription">Richiedi un PIN all\'apertura dell\'app. Attiva se altri possono usare il dispositivo.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Codice</string>
     <string name="codeExpiresIn">Scade tra</string>
 
-    <string name="developerModeTitle">Modalità sviluppatore</string>
-    <string name="developerModeSubtitle">Zona pericolosa per lo stato locale dell\'app. Solo per test.</string>
+    <string name="dangerZoneTitle">Zona pericolosa</string>
+    <string name="dangerZoneSubtitle">Zona pericolosa per lo stato locale dell\'app. Solo per test.</string>
     <string name="developerResetStorage">Reimposta tutta la memoria dell\'app</string>
     <string name="developerRemovePin">Rimuovi PIN</string>
     <string name="developerRemoveBiometrics">Rimuovi biometria</string>

@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Налаштування</string>
     <string name="settingsTitle">Налаштування</string>
-    <string name="settingsSubtitle">Експорт і відновлення записів у файл CSV. Якщо захист PIN увімкнено, спочатку розблокуйте застосунок для резервних копій. Файл не шифрується — зберігайте його приватно.</string>
+    <string name="settingsHubSubtitle">Безпека, резервні копії та розширені дії для локальних даних.</string>
+    <string name="settingsSecurityTitle">Безпека</string>
+    <string name="settingsSecuritySubtitle">PIN і необов\'язкова біометрія визначають, хто може відкрити застосунок на цьому пристрої.</string>
+    <string name="settingsBackupTitle">Резервна копія</string>
+    <string name="settingsBackupSubtitle">Експорт і відновлення записів у файл CSV. Якщо захист PIN увімкнено, спочатку розблокуйте застосунок для резервних копій. Файл не шифрується — зберігайте його приватно.</string>
     <string name="settingsBack">Назад</string>
     <string name="pinProtectionSettingTitle">Захист PIN</string>
     <string name="pinProtectionSettingDescription">Вимагати PIN під час відкриття застосунку. Увімкніть, якщо пристроєм можуть користуватися інші.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Код</string>
     <string name="codeExpiresIn">Закінчується через</string>
 
-    <string name="developerModeTitle">Режим розробника</string>
-    <string name="developerModeSubtitle">Небезпечна зона для локального стану застосунку. Лише для тестів.</string>
+    <string name="dangerZoneTitle">Небезпечна зона</string>
+    <string name="dangerZoneSubtitle">Небезпечна зона для локального стану застосунку. Лише для тестів.</string>
     <string name="developerResetStorage">Скинути все сховище застосунку</string>
     <string name="developerRemovePin">Прибрати PIN</string>
     <string name="developerRemoveBiometrics">Прибрати біометрію</string>

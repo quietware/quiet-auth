@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Настройки</string>
     <string name="settingsTitle">Настройки</string>
-    <string name="settingsSubtitle">Експорт и възстановяване на записи като CSV файл. При включена PIN защита първо отключете приложението. Резервният файл не е шифрован — пазете го поверителен.</string>
+    <string name="settingsHubSubtitle">Сигурност, резервни копия и разширени действия за локални данни.</string>
+    <string name="settingsSecurityTitle">Сигурност</string>
+    <string name="settingsSecuritySubtitle">PIN и по желание биометрия определят кой може да отвори приложението на това устройство.</string>
+    <string name="settingsBackupTitle">Резервно копие</string>
+    <string name="settingsBackupSubtitle">Експорт и възстановяване на записи като CSV файл. При включена PIN защита първо отключете приложението. Резервният файл не е шифрован — пазете го поверителен.</string>
     <string name="settingsBack">Назад</string>
     <string name="pinProtectionSettingTitle">PIN защита</string>
     <string name="pinProtectionSettingDescription">Изисквай PIN при отваряне на приложението. Включете, ако други ползват устройството.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Код</string>
     <string name="codeExpiresIn">Изтича след</string>
 
-    <string name="developerModeTitle">Режим за разработчици</string>
-    <string name="developerModeSubtitle">Опасна зона за локалното състояние на приложението. Само за тестове.</string>
+    <string name="dangerZoneTitle">Опасна зона</string>
+    <string name="dangerZoneSubtitle">Опасна зона за локалното състояние на приложението. Само за тестове.</string>
     <string name="developerResetStorage">Нулирай всички данни на приложението</string>
     <string name="developerRemovePin">Премахни PIN</string>
     <string name="developerRemoveBiometrics">Премахни биометрия</string>

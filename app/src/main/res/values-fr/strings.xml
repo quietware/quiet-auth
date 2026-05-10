@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Réglages</string>
     <string name="settingsTitle">Réglages</string>
-    <string name="settingsSubtitle">Exporter et restaurer les entrées au format CSV. Si la protection par PIN est activée, déverrouillez d\'abord l\'app pour les sauvegardes. Le fichier de sauvegarde n\'est pas chiffré — gardez-le confidentiel.</string>
+    <string name="settingsHubSubtitle">Sécurité, sauvegardes et actions avancées pour les données locales.</string>
+    <string name="settingsSecurityTitle">Sécurité</string>
+    <string name="settingsSecuritySubtitle">Le code PIN et la biométrie optionnelle déterminent qui peut ouvrir l\'app sur cet appareil.</string>
+    <string name="settingsBackupTitle">Sauvegarde</string>
+    <string name="settingsBackupSubtitle">Exporter et restaurer les entrées au format CSV. Si la protection par PIN est activée, déverrouillez d\'abord l\'app pour les sauvegardes. Le fichier de sauvegarde n\'est pas chiffré — gardez-le confidentiel.</string>
     <string name="settingsBack">Retour</string>
     <string name="pinProtectionSettingTitle">Protection par PIN</string>
     <string name="pinProtectionSettingDescription">Exiger un code PIN à l\'ouverture de l\'app. Activez cette option si d\'autres peuvent utiliser votre appareil.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Code</string>
     <string name="codeExpiresIn">Expire dans</string>
 
-    <string name="developerModeTitle">Mode développeur</string>
-    <string name="developerModeSubtitle">Zone sensible pour l\'état local de l\'app. Réservé aux tests.</string>
+    <string name="dangerZoneTitle">Zone à risque</string>
+    <string name="dangerZoneSubtitle">Zone sensible pour l\'état local de l\'app. Réservé aux tests.</string>
     <string name="developerResetStorage">Réinitialiser tout le stockage de l\'app</string>
     <string name="developerRemovePin">Supprimer le code PIN</string>
     <string name="developerRemoveBiometrics">Supprimer la biométrie</string>

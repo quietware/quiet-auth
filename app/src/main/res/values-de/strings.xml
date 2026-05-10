@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Einstellungen</string>
     <string name="settingsTitle">Einstellungen</string>
-    <string name="settingsSubtitle">Einträge als CSV exportieren und wiederherstellen. Wenn der PIN-Schutz aktiv ist, entsperre die App zuerst für Backup-Aktionen. Die Backup-Datei ist nicht verschlüsselt — behandle sie vertraulich.</string>
+    <string name="settingsHubSubtitle">Sicherheit, Backups und erweiterte Aktionen für lokale Daten.</string>
+    <string name="settingsSecurityTitle">Sicherheit</string>
+    <string name="settingsSecuritySubtitle">PIN und optionale Biometrie steuern, wer die App auf diesem Gerät öffnen darf.</string>
+    <string name="settingsBackupTitle">Backup</string>
+    <string name="settingsBackupSubtitle">Einträge als CSV exportieren und wiederherstellen. Wenn der PIN-Schutz aktiv ist, entsperre die App zuerst für Backup-Aktionen. Die Backup-Datei ist nicht verschlüsselt — behandle sie vertraulich.</string>
     <string name="settingsBack">Zurück</string>
     <string name="pinProtectionSettingTitle">PIN-Schutz</string>
     <string name="pinProtectionSettingDescription">PIN beim Öffnen der App verlangen. Aktiviere dies, wenn andere dein Gerät nutzen könnten.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Code</string>
     <string name="codeExpiresIn">Läuft ab in</string>
 
-    <string name="developerModeTitle">Entwicklermodus</string>
-    <string name="developerModeSubtitle">Gefahrenbereich für lokalen App-Zustand. Nur zum Testen verwenden.</string>
+    <string name="dangerZoneTitle">Gefahrenbereich</string>
+    <string name="dangerZoneSubtitle">Gefahrenbereich für lokalen App-Zustand. Nur zum Testen verwenden.</string>
     <string name="developerResetStorage">Gesamten App-Speicher zurücksetzen</string>
     <string name="developerRemovePin">PIN entfernen</string>
     <string name="developerRemoveBiometrics">Biometrie entfernen</string>

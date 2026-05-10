@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Nustatymai</string>
     <string name="settingsTitle">Nustatymai</string>
-    <string name="settingsSubtitle">Eksportuoti ir atkurti įrašus kaip CSV failą. Kai PIN apsauga įjungta, pirma atrakinkite programą. Atsarginė kopija nėra užšifruota — laikykite privačiai.</string>
+    <string name="settingsHubSubtitle">Saugumas, atsarginės kopijos ir išplėstiniai veiksmai vietiniams duomenims.</string>
+    <string name="settingsSecurityTitle">Saugumas</string>
+    <string name="settingsSecuritySubtitle">PIN ir pasirenkama biometrija valdo, kas gali atverti programą šiame įrenginyje.</string>
+    <string name="settingsBackupTitle">Atsarginė kopija</string>
+    <string name="settingsBackupSubtitle">Eksportuoti ir atkurti įrašus kaip CSV failą. Kai PIN apsauga įjungta, pirma atrakinkite programą. Atsarginė kopija nėra užšifruota — laikykite privačiai.</string>
     <string name="settingsBack">Atgal</string>
     <string name="pinProtectionSettingTitle">PIN apsauga</string>
     <string name="pinProtectionSettingDescription">Reikalauti PIN atveriant programą. Įjunkite, jei įrenginiu gali naudotis kiti.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kodas</string>
     <string name="codeExpiresIn">Baigiasi po</string>
 
-    <string name="developerModeTitle">Kūrėjo režimas</string>
-    <string name="developerModeSubtitle">Pavojinga zona vietinei programos būsenai. Tik testavimui.</string>
+    <string name="dangerZoneTitle">Pavojinga zona</string>
+    <string name="dangerZoneSubtitle">Pavojinga zona vietinei programos būsenai. Tik testavimui.</string>
     <string name="developerResetStorage">Atstatyti visą programos saugyklą</string>
     <string name="developerRemovePin">Pašalinti PIN</string>
     <string name="developerRemoveBiometrics">Pašalinti biometriją</string>

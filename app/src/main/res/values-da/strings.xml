@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Indstillinger</string>
     <string name="settingsTitle">Indstillinger</string>
-    <string name="settingsSubtitle">Eksportér og gendan poster som CSV-fil. Når PIN-beskyttelse er slået til, skal du først låse appen op. Backupfilen er ikke krypteret — hold den privat.</string>
+    <string name="settingsHubSubtitle">Sikkerhed, sikkerhedskopier og avancerede handlinger for lokale data.</string>
+    <string name="settingsSecurityTitle">Sikkerhed</string>
+    <string name="settingsSecuritySubtitle">PIN og valgfri biometri styrer, hvem der kan åbne appen på denne enhed.</string>
+    <string name="settingsBackupTitle">Backup</string>
+    <string name="settingsBackupSubtitle">Eksportér og gendan poster som CSV-fil. Når PIN-beskyttelse er slået til, skal du først låse appen op. Backupfilen er ikke krypteret — hold den privat.</string>
     <string name="settingsBack">Tilbage</string>
     <string name="pinProtectionSettingTitle">PIN-beskyttelse</string>
     <string name="pinProtectionSettingDescription">Kræv PIN ved åbning af appen. Slå til, hvis andre kan bruge din enhed.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kode</string>
     <string name="codeExpiresIn">Udløber om</string>
 
-    <string name="developerModeTitle">Udviklertilstand</string>
-    <string name="developerModeSubtitle">Farezone for lokal appstatus. Kun til test.</string>
+    <string name="dangerZoneTitle">Farezone</string>
+    <string name="dangerZoneSubtitle">Farezone for lokal appstatus. Kun til test.</string>
     <string name="developerResetStorage">Nulstil al applagring</string>
     <string name="developerRemovePin">Fjern PIN</string>
     <string name="developerRemoveBiometrics">Fjern biometri</string>

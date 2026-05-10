@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Beállítások</string>
     <string name="settingsTitle">Beállítások</string>
-    <string name="settingsSubtitle">Bejegyzések exportálása és visszaállítása CSV-fájlként. Ha a PIN-védelem be van kapcsolva, először oldd fel az alkalmazást a mentéshez. A fájl nincs titkosítva — tartsd bizalmasan.</string>
+    <string name="settingsHubSubtitle">Biztonság, biztonsági mentések és speciális műveletek helyi adatokhoz.</string>
+    <string name="settingsSecurityTitle">Biztonság</string>
+    <string name="settingsSecuritySubtitle">A PIN és az opcionális biometria szabályozza, ki nyithatja meg az alkalmazást ezen az eszközön.</string>
+    <string name="settingsBackupTitle">Biztonsági mentés</string>
+    <string name="settingsBackupSubtitle">Bejegyzések exportálása és visszaállítása CSV-fájlként. Ha a PIN-védelem be van kapcsolva, először oldd fel az alkalmazást a mentéshez. A fájl nincs titkosítva — tartsd bizalmasan.</string>
     <string name="settingsBack">Vissza</string>
     <string name="pinProtectionSettingTitle">PIN-védelem</string>
     <string name="pinProtectionSettingDescription">PIN kérése az alkalmazás megnyitásakor. Kapcsold be, ha mások is használhatják az eszközt.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kód</string>
     <string name="codeExpiresIn">Lejár</string>
 
-    <string name="developerModeTitle">Fejlesztői mód</string>
-    <string name="developerModeSubtitle">Kockázatos zóna a helyi alkalmazásállapothoz. Csak tesztelésre.</string>
+    <string name="dangerZoneTitle">Veszélyzóna</string>
+    <string name="dangerZoneSubtitle">Kockázatos zóna a helyi alkalmazásállapothoz. Csak tesztelésre.</string>
     <string name="developerResetStorage">Teljes alkalmazástár törlése</string>
     <string name="developerRemovePin">PIN eltávolítása</string>
     <string name="developerRemoveBiometrics">Biometria eltávolítása</string>

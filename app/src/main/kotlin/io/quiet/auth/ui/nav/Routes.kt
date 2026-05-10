@@ -10,6 +10,9 @@ object Routes {
     const val ADD_TWOFA = "add-2fa"
     const val ADD_TWOFA_QR = "add-2fa-qr"
     const val SETTINGS = "settings"
+    const val SETTINGS_SECURITY = "settings/security"
+    const val SETTINGS_BACKUP = "settings/backup"
+    const val SETTINGS_DANGER_ZONE = "settings/danger-zone"
     const val BACKUP_PROCESSING = "backup-processing/{action}"
     const val DEVELOPER_MODE = "developer-mode"
 

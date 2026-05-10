@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Stillingar</string>
     <string name="settingsTitle">Stillingar</string>
-    <string name="settingsSubtitle">Flytja út og endurheimta færslur sem CSV skrá. Þegar PIN vernd er á skaltu fyrst opna appið. Öryggisafrit er ekki dulkóðað — haltu því leynilegu.</string>
+    <string name="settingsHubSubtitle">Öryggi, öryggisafrit og ítarlegar aðgerðir fyrir staðvæg gögn.</string>
+    <string name="settingsSecurityTitle">Öryggi</string>
+    <string name="settingsSecuritySubtitle">PIN og valkvæð lífkenni stjórna því hver getur opnað appið á þessu tæki.</string>
+    <string name="settingsBackupTitle">Öryggisafrit</string>
+    <string name="settingsBackupSubtitle">Flytja út og endurheimta færslur sem CSV skrá. Þegar PIN vernd er á skaltu fyrst opna appið. Öryggisafrit er ekki dulkóðað — haltu því leynilegu.</string>
     <string name="settingsBack">Til baka</string>
     <string name="pinProtectionSettingTitle">PIN vernd</string>
     <string name="pinProtectionSettingDescription">Krefjast PIN við opnun appsins. Kveiktu ef aðrir geta notað tækið.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kóði</string>
     <string name="codeExpiresIn">Rennur út eftir</string>
 
-    <string name="developerModeTitle">Forritarahamur</string>
-    <string name="developerModeSubtitle">Hættusvæði fyrir staðvært ástand appsins. Aðeins til prófunar.</string>
+    <string name="dangerZoneTitle">Hættusvæði</string>
+    <string name="dangerZoneSubtitle">Hættusvæði fyrir staðvært ástand appsins. Aðeins til prófunar.</string>
     <string name="developerResetStorage">Endurstilla alla app geymslu</string>
     <string name="developerRemovePin">Fjarlægja PIN</string>
     <string name="developerRemoveBiometrics">Fjarlægja lífeinda auðkenni</string>

@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Nastavení</string>
     <string name="settingsTitle">Nastavení</string>
-    <string name="settingsSubtitle">Exportujte a obnovujte záznamy jako CSV. Je-li zapnutá ochrana PINem, nejdříve aplikaci odemkněte pro zálohy. Soubor není šifrovaný — chraňte ho.</string>
+    <string name="settingsHubSubtitle">Zabezpečení, zálohy a pokročilé akce pro místní data.</string>
+    <string name="settingsSecurityTitle">Zabezpečení</string>
+    <string name="settingsSecuritySubtitle">PIN a volitelná biometrie určují, kdo může otevřít aplikaci na tomto zařízení.</string>
+    <string name="settingsBackupTitle">Záloha</string>
+    <string name="settingsBackupSubtitle">Exportujte a obnovujte záznamy jako CSV. Je-li zapnutá ochrana PINem, nejdříve aplikaci odemkněte pro zálohy. Soubor není šifrovaný — chraňte ho.</string>
     <string name="settingsBack">Zpět</string>
     <string name="pinProtectionSettingTitle">Ochrana PINem</string>
     <string name="pinProtectionSettingDescription">Vyžadovat PIN při otevření aplikace. Zapněte, pokud zařízení mohou používat i jiní.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kód</string>
     <string name="codeExpiresIn">Vyprší za</string>
 
-    <string name="developerModeTitle">Režim vývojáře</string>
-    <string name="developerModeSubtitle">Riziková zóna pro místní stav aplikace. Pouze pro testování.</string>
+    <string name="dangerZoneTitle">Nebezpečná zóna</string>
+    <string name="dangerZoneSubtitle">Riziková zóna pro místní stav aplikace. Pouze pro testování.</string>
     <string name="developerResetStorage">Smazat veškeré úložiště aplikace</string>
     <string name="developerRemovePin">Odstranit PIN</string>
     <string name="developerRemoveBiometrics">Odstranit biometrii</string>

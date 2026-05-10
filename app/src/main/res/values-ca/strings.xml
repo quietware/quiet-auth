@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Configuració</string>
     <string name="settingsTitle">Configuració</string>
-    <string name="settingsSubtitle">Exporta i restaura entrades com a fitxer CSV. Si la protecció amb PIN està activa, primer desbloqueja l\'app. La còpia de seguretat no està xifrada — mantingues-la privada.</string>
+    <string name="settingsHubSubtitle">Seguretat, còpies de seguretat i accions avançades per a dades locals.</string>
+    <string name="settingsSecurityTitle">Seguretat</string>
+    <string name="settingsSecuritySubtitle">El PIN i la biometria opcional controlen qui pot obrir l\'app en aquest dispositiu.</string>
+    <string name="settingsBackupTitle">Còpia de seguretat</string>
+    <string name="settingsBackupSubtitle">Exporta i restaura entrades com a fitxer CSV. Si la protecció amb PIN està activa, primer desbloqueja l\'app. La còpia de seguretat no està xifrada — mantingues-la privada.</string>
     <string name="settingsBack">Enrere</string>
     <string name="pinProtectionSettingTitle">Protecció amb PIN</string>
     <string name="pinProtectionSettingDescription">Exigeix PIN en obrir l\'app. Activa-ho si altres poden usar el dispositiu.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Codi</string>
     <string name="codeExpiresIn">Caduca en</string>
 
-    <string name="developerModeTitle">Mode desenvolupador</string>
-    <string name="developerModeSubtitle">Zona de perill per l\'estat local de l\'app. Només per proves.</string>
+    <string name="dangerZoneTitle">Zona de perill</string>
+    <string name="dangerZoneSubtitle">Zona de perill per l\'estat local de l\'app. Només per proves.</string>
     <string name="developerResetStorage">Restablir tot l\'emmagatzematge</string>
     <string name="developerRemovePin">Eliminar PIN</string>
     <string name="developerRemoveBiometrics">Eliminar biometria</string>

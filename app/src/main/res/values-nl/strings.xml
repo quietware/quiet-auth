@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Instellingen</string>
     <string name="settingsTitle">Instellingen</string>
-    <string name="settingsSubtitle">Exporteer en herstel items als CSV-bestand. Als pincodebeveiliging aan staat, ontgrendel eerst de app voor back-ups. Het bestand is niet versleuteld — houd het privé.</string>
+    <string name="settingsHubSubtitle">Beveiliging, back-ups en geavanceerde acties voor lokale gegevens.</string>
+    <string name="settingsSecurityTitle">Beveiliging</string>
+    <string name="settingsSecuritySubtitle">PIN en optionele biometrie bepalen wie de app op dit apparaat kan openen.</string>
+    <string name="settingsBackupTitle">Back-up</string>
+    <string name="settingsBackupSubtitle">Exporteer en herstel items als CSV-bestand. Als pincodebeveiliging aan staat, ontgrendel eerst de app voor back-ups. Het bestand is niet versleuteld — houd het privé.</string>
     <string name="settingsBack">Terug</string>
     <string name="pinProtectionSettingTitle">Pincodebeveiliging</string>
     <string name="pinProtectionSettingDescription">Pincode vereisen bij het openen van de app. Zet aan als anderen dit apparaat kunnen gebruiken.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Code</string>
     <string name="codeExpiresIn">Verloopt over</string>
 
-    <string name="developerModeTitle">Ontwikkelaarsmodus</string>
-    <string name="developerModeSubtitle">Gevarenzone voor lokale app-status. Alleen voor testen.</string>
+    <string name="dangerZoneTitle">Gevarenzone</string>
+    <string name="dangerZoneSubtitle">Gevarenzone voor lokale app-status. Alleen voor testen.</string>
     <string name="developerResetStorage">Alle app-opslag wissen</string>
     <string name="developerRemovePin">Pincode verwijderen</string>
     <string name="developerRemoveBiometrics">Biometrie verwijderen</string>

@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Issettjar</string>
     <string name="settingsTitle">Issettjar</string>
-    <string name="settingsSubtitle">Esporta u rkuprera entrati bħala fajl CSV. Meta l-protezzjoni bil-PIN hija attiva, iftaħ l-app l-ewwel għal azzjonijiet ta\' backup. Il-fajl tal-backup mhux kriptat — żommu privat.</string>
+    <string name="settingsHubSubtitle">Sigurtà, kopji ta\' sigurtà u azzjonijiet avvanzati għal data lokali.</string>
+    <string name="settingsSecurityTitle">Sigurtà</string>
+    <string name="settingsSecuritySubtitle">Il-PIN u l-bijometrika fakultattiva jikkontrollaw min jista\' jiftaħ l-app fuq dan it-tagħmir.</string>
+    <string name="settingsBackupTitle">Backup</string>
+    <string name="settingsBackupSubtitle">Esporta u rkuprera entrati bħala fajl CSV. Meta l-protezzjoni bil-PIN hija attiva, iftaħ l-app l-ewwel għal azzjonijiet ta\' backup. Il-fajl tal-backup mhux kriptat — żommu privat.</string>
     <string name="settingsBack">Lura</string>
     <string name="pinProtectionSettingTitle">Protezzjoni bil-PIN</string>
     <string name="pinProtectionSettingDescription">Talbet PIN meta tiftaħ l-app. Attiva jekk oħrajn jistgħu jużaw it-tagħmir tiegħek.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kod</string>
     <string name="codeExpiresIn">Jiskadi fi</string>
 
-    <string name="developerModeTitle">Modalità żviluppatur</string>
-    <string name="developerModeSubtitle">Żona ta\' periklu għall-istat lokali tal-app. Uża biss għal test.</string>
+    <string name="dangerZoneTitle">Żona ta\' periklu</string>
+    <string name="dangerZoneSubtitle">Żona ta\' periklu għall-istat lokali tal-app. Uża biss għal test.</string>
     <string name="developerResetStorage">Irrisettja l-memorja kollha tal-app</string>
     <string name="developerRemovePin">Neħħi l-PIN</string>
     <string name="developerRemoveBiometrics">Neħħi l-bijometrika</string>

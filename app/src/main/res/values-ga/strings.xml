@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Socruithe</string>
     <string name="settingsTitle">Socruithe</string>
-    <string name="settingsSubtitle">Easpórtáil agus athchóirigh iontrálacha mar chomhad CSV. Nuair atá cosaint PIN air, díghlasáil an aip ar dtús don chúltaca. Níl an comhad cúltaca criptithe — coinnigh príobháideach é.</string>
+    <string name="settingsHubSubtitle">Slándáil, cúltacaí agus gníomhartha ardrochtana do shonraí áitiúla.</string>
+    <string name="settingsSecurityTitle">Slándáil</string>
+    <string name="settingsSecuritySubtitle">Rialaíonn PIN agus bitheolaíocht roghnach cé atá in ann an aip a oscailt ar an bhfeiste seo.</string>
+    <string name="settingsBackupTitle">Cúltaca</string>
+    <string name="settingsBackupSubtitle">Easpórtáil agus athchóirigh iontrálacha mar chomhad CSV. Nuair atá cosaint PIN air, díghlasáil an aip ar dtús don chúltaca. Níl an comhad cúltaca criptithe — coinnigh príobháideach é.</string>
     <string name="settingsBack">Ar ais</string>
     <string name="pinProtectionSettingTitle">Cosaint PIN</string>
     <string name="pinProtectionSettingDescription">Éiligh PIN agus an aip á hoscailt. Cas air má fhéadfadh daoine eile an gléas a úsáid.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Cód</string>
     <string name="codeExpiresIn">In éag i</string>
 
-    <string name="developerModeTitle">Mód forbróra</string>
-    <string name="developerModeSubtitle">Ceantar contúirte don staid áitiúil na haipe. Ní úsáid ach le haghaidh tástála.</string>
+    <string name="dangerZoneTitle">Ceantar contúirte</string>
+    <string name="dangerZoneSubtitle">Ceantar contúirte don staid áitiúil na haipe. Ní úsáid ach le haghaidh tástála.</string>
     <string name="developerResetStorage">Athshocraigh stóráil iomlán na haipe</string>
     <string name="developerRemovePin">Bain PIN</string>
     <string name="developerRemoveBiometrics">Bain bithmhéadracht</string>

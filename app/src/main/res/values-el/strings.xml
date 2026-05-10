@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Ρυθμίσεις</string>
     <string name="settingsTitle">Ρυθμίσεις</string>
-    <string name="settingsSubtitle">Εξαγωγή και επαναφορά καταχωρίσεων ως αρχείο CSV. Εάν η προστασία PIN είναι ενεργή, ξεκλειδώστε πρώτα την εφαρμογή για δημιουργία αντιγράφων. Το αρχείο δεν είναι κρυπτογραφημένο — κρατήστε το ιδιωτικό.</string>
+    <string name="settingsHubSubtitle">Ασφάλεια, αντίγραφα ασφαλείας και προηγμένες ενέργειες για τοπικά δεδομένα.</string>
+    <string name="settingsSecurityTitle">Ασφάλεια</string>
+    <string name="settingsSecuritySubtitle">Το PIN και η προαιρετική βιομετρία καθορίζουν ποιος μπορεί να ανοίξει την εφαρμογή σε αυτή τη συσκευή.</string>
+    <string name="settingsBackupTitle">Αντίγραφο ασφαλείας</string>
+    <string name="settingsBackupSubtitle">Εξαγωγή και επαναφορά καταχωρίσεων ως αρχείο CSV. Εάν η προστασία PIN είναι ενεργή, ξεκλειδώστε πρώτα την εφαρμογή για δημιουργία αντιγράφων. Το αρχείο δεν είναι κρυπτογραφημένο — κρατήστε το ιδιωτικό.</string>
     <string name="settingsBack">Πίσω</string>
     <string name="pinProtectionSettingTitle">Προστασία PIN</string>
     <string name="pinProtectionSettingDescription">Απαίτηση PIN κατά το άνοιγμα της εφαρμογής. Ενεργοποιήστε αν άλλοι χρησιμοποιούν τη συσκευή.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Κωδικός</string>
     <string name="codeExpiresIn">Λήγει σε</string>
 
-    <string name="developerModeTitle">Λειτουργία προγραμματιστή</string>
-    <string name="developerModeSubtitle">Επικίνδυνη ζώνη για την τοπική κατάσταση της εφαρμογής. Μόνο για δοκιμές.</string>
+    <string name="dangerZoneTitle">Επικίνδυνη ζώνη</string>
+    <string name="dangerZoneSubtitle">Επικίνδυνη ζώνη για την τοπική κατάσταση της εφαρμογής. Μόνο για δοκιμές.</string>
     <string name="developerResetStorage">Επαναφορά όλης της αποθήκευσης εφαρμογής</string>
     <string name="developerRemovePin">Αφαίρεση PIN</string>
     <string name="developerRemoveBiometrics">Αφαίρεση βιομετρίας</string>

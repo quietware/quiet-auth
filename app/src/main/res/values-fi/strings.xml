@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Asetukset</string>
     <string name="settingsTitle">Asetukset</string>
-    <string name="settingsSubtitle">Vie ja palauta merkinnät CSV-tiedostona. Kun PIN-suojaus on päällä, avaa sovellus ensin. Varmuuskopiotiedosto ei ole salattu — pidä se yksityisenä.</string>
+    <string name="settingsHubSubtitle">Turvallisuus, varmuuskopiot ja edistyneet toiminnot paikallisille tiedoille.</string>
+    <string name="settingsSecurityTitle">Turvallisuus</string>
+    <string name="settingsSecuritySubtitle">PIN ja valinnainen biometria hallitsevat, kuka voi avata sovelluksen tällä laitteella.</string>
+    <string name="settingsBackupTitle">Varmuuskopio</string>
+    <string name="settingsBackupSubtitle">Vie ja palauta merkinnät CSV-tiedostona. Kun PIN-suojaus on päällä, avaa sovellus ensin. Varmuuskopiotiedosto ei ole salattu — pidä se yksityisenä.</string>
     <string name="settingsBack">Takaisin</string>
     <string name="pinProtectionSettingTitle">PIN-suojaus</string>
     <string name="pinProtectionSettingDescription">Vaadi PIN sovelluksen avauksessa. Ota käyttöön, jos muut käyttävät laitetta.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Koodi</string>
     <string name="codeExpiresIn">Vanhenee</string>
 
-    <string name="developerModeTitle">Kehittäjätila</string>
-    <string name="developerModeSubtitle">Vaaravyöhyke paikalliselle sovellustilalle. Vain testaukseen.</string>
+    <string name="dangerZoneTitle">Vaaravyöhyke</string>
+    <string name="dangerZoneSubtitle">Vaaravyöhyke paikalliselle sovellustilalle. Vain testaukseen.</string>
     <string name="developerResetStorage">Tyhjennä kaikki sovelluksen tallennustila</string>
     <string name="developerRemovePin">Poista PIN</string>
     <string name="developerRemoveBiometrics">Poista biometria</string>

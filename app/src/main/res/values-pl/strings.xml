@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Ustawienia</string>
     <string name="settingsTitle">Ustawienia</string>
-    <string name="settingsSubtitle">Eksport i przywracanie wpisów jako plik CSV. Przy włączonej ochronie PIN-em najpierw odblokuj aplikację. Plik backupu nie jest szyfrowany — przechowuj go bezpiecznie.</string>
+    <string name="settingsHubSubtitle">Bezpieczeństwo, kopie zapasowe i zaawansowane działania na lokalnych danych.</string>
+    <string name="settingsSecurityTitle">Bezpieczeństwo</string>
+    <string name="settingsSecuritySubtitle">PIN i opcjonalna biometria decydują, kto może otworzyć aplikację na tym urządzeniu.</string>
+    <string name="settingsBackupTitle">Kopia zapasowa</string>
+    <string name="settingsBackupSubtitle">Eksport i przywracanie wpisów jako plik CSV. Przy włączonej ochronie PIN-em najpierw odblokuj aplikację. Plik backupu nie jest szyfrowany — przechowuj go bezpiecznie.</string>
     <string name="settingsBack">Powrót</string>
     <string name="pinProtectionSettingTitle">Ochrona PIN-em</string>
     <string name="pinProtectionSettingDescription">Wymagaj PIN-u przy otwieraniu aplikacji. Włącz, jeśli inni mogą korzystać z urządzenia.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kod</string>
     <string name="codeExpiresIn">Wygasa za</string>
 
-    <string name="developerModeTitle">Tryb developera</string>
-    <string name="developerModeSubtitle">Strefa ryzyka dla lokalnego stanu aplikacji. Używaj tylko do testów.</string>
+    <string name="dangerZoneTitle">Strefa ryzyka</string>
+    <string name="dangerZoneSubtitle">Strefa ryzyka dla lokalnego stanu aplikacji. Używaj tylko do testów.</string>
     <string name="developerResetStorage">Wyczyść cały storage aplikacji</string>
     <string name="developerRemovePin">Usuń PIN</string>
     <string name="developerRemoveBiometrics">Usuń biometrię</string>

@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Seaded</string>
     <string name="settingsTitle">Seaded</string>
-    <string name="settingsSubtitle">Ekspordi ja taasta kirjed CSV-failina. Kui PIN-kaitse on sees, ava esmalt rakendus. Varukoopia ei ole krüptitud — hoia seda privaatselt.</string>
+    <string name="settingsHubSubtitle">Turvalisus, varukoopiad ja täpsemad toimingud kohalike andmetega.</string>
+    <string name="settingsSecurityTitle">Turvalisus</string>
+    <string name="settingsSecuritySubtitle">PIN ja valikuline biomeetria määravad, kes saab sellel seadmel rakendust avada.</string>
+    <string name="settingsBackupTitle">Varukoopia</string>
+    <string name="settingsBackupSubtitle">Ekspordi ja taasta kirjed CSV-failina. Kui PIN-kaitse on sees, ava esmalt rakendus. Varukoopia ei ole krüptitud — hoia seda privaatselt.</string>
     <string name="settingsBack">Tagasi</string>
     <string name="pinProtectionSettingTitle">PIN-kaitse</string>
     <string name="pinProtectionSettingDescription">Nõua PIN-i rakenduse avamisel. Lülita sisse, kui teised võivad seadet kasutada.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Kood</string>
     <string name="codeExpiresIn">Aegub</string>
 
-    <string name="developerModeTitle">Arendaja režiim</string>
-    <string name="developerModeSubtitle">Ohtlik tsoon kohaliku rakenduse oleku jaoks. Ainult testimiseks.</string>
+    <string name="dangerZoneTitle">Ohtlik tsoon</string>
+    <string name="dangerZoneSubtitle">Ohtlik tsoon kohaliku rakenduse oleku jaoks. Ainult testimiseks.</string>
     <string name="developerResetStorage">Lähtesta kogu rakenduse salvest</string>
     <string name="developerRemovePin">Eemalda PIN</string>
     <string name="developerRemoveBiometrics">Eemalda biomeetria</string>

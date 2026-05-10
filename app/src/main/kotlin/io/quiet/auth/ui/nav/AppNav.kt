@@ -16,14 +16,18 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import io.quiet.auth.R
 import io.quiet.auth.data.BackupIO
 import io.quiet.auth.data.PinRepository
 import io.quiet.auth.ui.screens.AddTwoFAQrScreen
 import io.quiet.auth.ui.screens.AddTwoFAScreen
 import io.quiet.auth.ui.screens.BackupProcessingScreen
+import io.quiet.auth.ui.screens.DangerZoneScreen
 import io.quiet.auth.ui.screens.DeveloperModeScreen
 import io.quiet.auth.ui.screens.OnboardingScreen
 import io.quiet.auth.ui.screens.PinScreen
+import io.quiet.auth.ui.screens.SettingsBackupScreen
+import io.quiet.auth.ui.screens.SettingsSecurityScreen
 import io.quiet.auth.ui.screens.SettingsScreen
 import io.quiet.auth.ui.screens.TokenDetailsScreen
 import io.quiet.auth.ui.screens.TwoFAsScreen
@@ -94,7 +98,8 @@ fun AppNav(
                     when (mode) {
                         PinRouteMode.VERIFY_DISABLE -> navController.popBackStack()
                         PinRouteMode.SETUP -> when (previousRoute) {
-                            Routes.SETTINGS -> navController.popBackStack()
+                            Routes.SETTINGS, Routes.SETTINGS_SECURITY ->
+                                navController.popBackStack()
                             else -> {
                                 pinRepository.setOnboardingCompleted()
                                 navController.navigate(Routes.TWOFAS) {
@@ -157,16 +162,44 @@ fun AppNav(
         }
         composable(Routes.SETTINGS) {
             SettingsScreen(
+                onBack = { navController.popBackStack() },
+                onSecurity = { navController.navigate(Routes.SETTINGS_SECURITY) },
+                onBackup = { navController.navigate(Routes.SETTINGS_BACKUP) },
+                onDangerZone = { navController.navigate(Routes.SETTINGS_DANGER_ZONE) },
+            )
+        }
+        composable(Routes.SETTINGS_SECURITY) {
+            SettingsSecurityScreen(
                 pinViewModel = pinViewModel,
                 onBack = { navController.popBackStack() },
-                onCreateBackup = { navController.navigate(Routes.backupProcessing("create")) },
-                onRestoreBackup = { navController.navigate(Routes.backupProcessing("restore")) },
                 onEnablePinProtection = {
                     navController.navigate(Routes.pin(PinRouteMode.SETUP))
                 },
                 onDisablePinProtection = {
                     navController.navigate(Routes.pin(PinRouteMode.VERIFY_DISABLE))
                 },
+            )
+        }
+        composable(Routes.SETTINGS_BACKUP) {
+            SettingsBackupScreen(
+                pinViewModel = pinViewModel,
+                onBack = { navController.popBackStack() },
+                onCreateBackup = { navController.navigate(Routes.backupProcessing("create")) },
+                onRestoreBackup = { navController.navigate(Routes.backupProcessing("restore")) },
+            )
+        }
+        composable(Routes.SETTINGS_DANGER_ZONE) {
+            DangerZoneScreen(
+                pinViewModel = pinViewModel,
+                twoFAViewModel = twoFAViewModel,
+                pinRepository = pinRepository,
+                onBack = { navController.popBackStack() },
+                onAfterReset = {
+                    navController.navigate(Routes.ONBOARDING) {
+                        popUpTo(Routes.ONBOARDING) { inclusive = true }
+                    }
+                },
+                backButtonLabelRes = R.string.settingsBack,
             )
         }
         composable(
@@ -180,8 +213,11 @@ fun AppNav(
                 twoFAViewModel = twoFAViewModel,
                 backupIO = backupIO,
                 onFinished = {
-                    navController.navigate(Routes.TWOFAS) {
-                        popUpTo(Routes.TWOFAS) { inclusive = true }
+                    val popped = navController.popBackStack(Routes.SETTINGS_BACKUP, inclusive = false)
+                    if (!popped) {
+                        navController.navigate(Routes.TWOFAS) {
+                            popUpTo(Routes.TWOFAS) { inclusive = true }
+                        }
                     }
                 },
                 onLocked = { navController.navigateToUnlockPin() },

@@ -66,7 +66,11 @@
 
     <string name="settingsCta">Nastavitve</string>
     <string name="settingsTitle">Nastavitve</string>
-    <string name="settingsSubtitle">Izvozi in obnovi vnose kot CSV datoteko. Če je PIN zaščita vključena, najprej odklenite aplikacijo. Varnostna kopija ni šifrirana — hranite jo zasebno.</string>
+    <string name="settingsHubSubtitle">Varnost, varnostne kopije in napredna dejanja za lokalne podatke.</string>
+    <string name="settingsSecurityTitle">Varnost</string>
+    <string name="settingsSecuritySubtitle">PIN in izbirna biometrija določata, kdo lahko odpre aplikacijo na tej napravi.</string>
+    <string name="settingsBackupTitle">Varnostna kopija</string>
+    <string name="settingsBackupSubtitle">Izvozi in obnovi vnose kot CSV datoteko. Če je PIN zaščita vključena, najprej odklenite aplikacijo. Varnostna kopija ni šifrirana — hranite jo zasebno.</string>
     <string name="settingsBack">Nazaj</string>
     <string name="pinProtectionSettingTitle">PIN zaščita</string>
     <string name="pinProtectionSettingDescription">Zahtevaj PIN ob odpiranju aplikacije. Vklopite, če napravo lahko uporabljajo drugi.</string>
@@ -96,8 +100,8 @@
     <string name="tokenCode">Koda</string>
     <string name="codeExpiresIn">Poteče čez</string>
 
-    <string name="developerModeTitle">Način razvijalca</string>
-    <string name="developerModeSubtitle">Nevarno območje za lokalno stanje aplikacije. Samo za testiranje.</string>
+    <string name="dangerZoneTitle">Nevarno območje</string>
+    <string name="dangerZoneSubtitle">Nevarno območje za lokalno stanje aplikacije. Samo za testiranje.</string>
     <string name="developerResetStorage">Ponastavi celotno shrambo aplikacije</string>
     <string name="developerRemovePin">Odstrani PIN</string>
     <string name="developerRemoveBiometrics">Odstrani biometrijo</string>
