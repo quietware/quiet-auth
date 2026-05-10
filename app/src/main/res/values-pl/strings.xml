@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Odzyskaj spokój przed logowaniem</string>
+    <string name="onboardingSubtitle">Uważny i prywatny przepływ logowania, zaprojektowany, by utrzymać Twój fokus.</string>
+    <string name="begin">Start</string>
+    <string name="secureTagline">Bezpiecznie. Łagodnie. Minimalistycznie.</string>
+
+    <string name="twofaTitle">Twoje konta 2FA</string>
+    <string name="twofaSubtitle">Twoje wpisy uwierzytelniające są ładowane bezpiecznie z lokalnego magazynu szyfrowanego.</string>
+    <string name="add2fa">Dodaj 2FA</string>
+    <string name="loadingAccounts">Wczytywanie kont 2FA…</string>
+    <string name="emptyAccounts">Brak kont 2FA. Kliknij Dodaj 2FA, aby dodać pierwszy wpis.</string>
+
+    <string name="add2faTitle">Dodaj nowe 2FA</string>
+    <string name="add2faSubtitle">Dodaj dane uwierzytelniające, aby trzymać wszystkie kody jednorazowe w jednym miejscu.</string>
+    <string name="serviceName">Nazwa serwisu</string>
+    <string name="servicePlaceholder">np. GitHub</string>
+    <string name="account">Konto</string>
+    <string name="accountPlaceholder">np. dominik.dev</string>
+    <string name="secretKey">Klucz tajny</string>
+    <string name="secretPlaceholder">Wklej klucz konfiguracyjny</string>
+    <string name="save2fa">Zapisz 2FA</string>
+    <string name="cancel">Anuluj</string>
+    <string name="missingFieldsTitle">Brakujące pola</string>
+    <string name="missingFieldsMessage">Uzupełnij nazwę serwisu, konto i klucz tajny.</string>
+
+    <string name="qrTitle">Zeskanuj kod QR 2FA</string>
+    <string name="qrSubtitle">Skieruj aparat na kod QR z ekranu konfiguracji usługi.</string>
+    <string name="qrPermissionRequired">Uprawnienie do aparatu jest wymagane do skanowania kodów QR 2FA.</string>
+    <string name="enableCamera">Włącz aparat</string>
+    <string name="invalidQrTitle">Nieprawidłowy kod QR</string>
+    <string name="invalidQrMessage">Ten kod QR nie jest poprawnym kodem konfiguracji 2FA.</string>
+    <string name="qrAddedTitle">Dodano 2FA</string>
+    <string name="qrAddedMessage">Konto zostało dodane z kodu QR.</string>
+    <string name="addManually">Dodaj ręcznie</string>
+
+    <string name="delete">Usuń</string>
+    <string name="deleteTokenTitle">Usunąć token?</string>
+    <string name="deleteTokenMessage">Ten token 2FA zostanie trwale usunięty z urządzenia.</string>
+    <string name="confirmDelete">Usuń token</string>
+
+    <string name="pinSetupSubtitle">Ustaw 4-cyfrowy PIN, aby skonfigurować logowanie do aplikacji i zabezpieczyć dostęp do tokenów.</string>
+    <string name="pinUnlockTitle">Odblokuj CalmAuth</string>
+    <string name="pinUnlockSubtitle">Wpisz PIN, aby uzyskać dostęp do tokenów.</string>
+    <string name="pinCodePlaceholder">Wpisz 4 cyfry</string>
+    <string name="pinConfirmPlaceholder">Wpisz PIN ponownie</string>
+    <string name="pinInvalidTitle">Nieprawidłowy PIN</string>
+    <string name="pinInvalidMessage">PIN musi składać się dokładnie z 4 cyfr.</string>
+    <string name="pinMismatchTitle">PIN nie pasuje</string>
+    <string name="pinMismatchMessage">PIN i potwierdzenie muszą być identyczne.</string>
+    <string name="pinIncorrectTitle">Błędny PIN</string>
+    <string name="pinIncorrectMessage">Wprowadzony PIN jest niepoprawny.</string>
+    <string name="pinStorageErrorTitle">Nie można zapisać PIN-u</string>
+    <string name="pinStorageErrorMessage">Nie udało się zapisać PIN-u w bezpiecznym magazynie. Spróbuj ponownie.</string>
+    <string name="continueLabel">Kontynuuj</string>
+    <string name="useBiometrics">Użyj biometrii</string>
+    <string name="biometricUnlockFailedMessage">Weryfikacja biometryczna nie powiodła się. Możesz odblokować aplikację PIN-em.</string>
+    <string name="unlockingApp">Weryfikowanie dostępu…</string>
+
+    <string name="settingsCta">Ustawienia</string>
+    <string name="settingsTitle">Ustawienia</string>
+    <string name="settingsSubtitle">Eksport i przywracanie wpisów jako plik CSV. PIN chroni tylko dostęp do aplikacji — plik backupu nie jest szyfrowany, przechowuj go bezpiecznie.</string>
+    <string name="settingsBack">Powrót</string>
+    <string name="biometricsSettingTitle">Odblokowanie biometryczne</string>
+    <string name="biometricsSettingDescription">Użyj odcisku palca lub twarzy na ekranie PIN.</string>
+    <string name="biometricsUnavailableMessage">Biometria nie jest dostępna na tym urządzeniu.</string>
+    <string name="biometricSettingsErrorTitle">Nie można zmienić ustawień biometrii</string>
+    <string name="biometricSettingsErrorMessage">Spróbuj ponownie po odblokowaniu aplikacji PIN-em.</string>
+
+    <string name="createBackup">Eksportuj backup CSV</string>
+    <string name="restoreBackup">Przywróć z pliku CSV</string>
+    <string name="backupCreatedTitle">Backup utworzony</string>
+    <string name="saveBackupDialogTitle">Wybierz miejsce zapisu backupu</string>
+    <string name="backupErrorTitle">Błąd backupu</string>
+    <string name="backupErrorMessage">Nie udało się utworzyć pliku backupu.</string>
+    <string name="backupSessionExpiredMessage">Sesja wygasła. Odblokuj aplikację PIN-em i spróbuj ponownie.</string>
+    <string name="restoreSuccessTitle">Przywracanie zakończone</string>
+    <string name="restoreErrorTitle">Błąd przywracania</string>
+    <string name="restoreErrorMessage">Nie udało się przywrócić danych. Sprawdź, czy plik jest poprawnym backupem CSV z CalmAuth.</string>
+    <string name="creatingBackupProgress">Tworzenie backupu…</string>
+    <string name="restoringBackupProgress">Przywracanie backupu…</string>
+    <string name="backupProcessingHint">Po wybraniu akcji proces uruchomi się na osobnym ekranie.</string>
+
+    <string name="tokenNotFound">Nie znaleziono tokenu.</string>
+    <string name="backToTokens">Powrót do tokenów</string>
+    <string name="tokenCode">Kod</string>
+    <string name="codeExpiresIn">Wygasa za</string>
+
+    <string name="developerModeTitle">Tryb developera</string>
+    <string name="developerModeSubtitle">Strefa ryzyka dla lokalnego stanu aplikacji. Używaj tylko do testów.</string>
+    <string name="developerResetStorage">Wyczyść cały storage aplikacji</string>
+    <string name="developerRemovePin">Usuń PIN</string>
+    <string name="developerRemoveBiometrics">Usuń biometrię</string>
+    <string name="developerResetStorageTitle">Wyczyścić storage aplikacji?</string>
+    <string name="developerResetStorageConfirmMessage">To usunie wszystkie lokalne dane aplikacji, w tym PIN, biometrię i wpisy 2FA.</string>
+    <string name="developerRemovePinTitle">Usunąć PIN?</string>
+    <string name="developerRemovePinConfirmMessage">To usunie ochronę PIN-em i konfigurację odblokowania biometrycznego.</string>
+    <string name="developerRemoveBiometricsTitle">Usunąć biometrię?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">To wyłączy odblokowanie biometryczne dla tej aplikacji.</string>
+    <string name="developerConfirmAction">Potwierdź</string>
+    <string name="developerActionSuccessTitle">Gotowe</string>
+    <string name="developerActionErrorTitle">Akcja nie powiodła się</string>
+    <string name="developerActionErrorMessage">Nie udało się wykonać akcji. Spróbuj ponownie.</string>
+    <string name="developerResetStorageSuccessMessage">Storage aplikacji został wyczyszczony.</string>
+    <string name="developerRemovePinSuccessMessage">PIN został usunięty.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Odblokowanie biometryczne zostało usunięte.</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">CalmAuth</string>
+    <string name="onboardingTitle">Find your calm before you sign in</string>
+    <string name="onboardingSubtitle">A mindful and private login flow designed to keep your focus where it matters most.</string>
+    <string name="begin">Begin</string>
+    <string name="secureTagline">Secure. Gentle. Intentionally minimal.</string>
+
+    <string name="twofaTitle">Your 2FA Accounts</string>
+    <string name="twofaSubtitle">Your personal authenticator entries loaded securely from local encrypted storage.</string>
+    <string name="add2fa">Add 2FA</string>
+    <string name="loadingAccounts">Loading your 2FA accounts…</string>
+    <string name="emptyAccounts">No 2FA accounts yet. Tap Add 2FA to create your first entry.</string>
+
+    <string name="add2faTitle">Add new 2FA</string>
+    <string name="add2faSubtitle">Add your authenticator details to keep all one-time codes in one secure place.</string>
+    <string name="serviceName">Service name</string>
+    <string name="servicePlaceholder">e.g. GitHub</string>
+    <string name="account">Account</string>
+    <string name="accountPlaceholder">e.g. dominik.dev</string>
+    <string name="secretKey">Secret key</string>
+    <string name="secretPlaceholder">Paste setup key</string>
+    <string name="save2fa">Save 2FA</string>
+    <string name="cancel">Cancel</string>
+    <string name="missingFieldsTitle">Missing fields</string>
+    <string name="missingFieldsMessage">Please fill in service name, account, and secret key.</string>
+
+    <string name="qrTitle">Scan 2FA QR Code</string>
+    <string name="qrSubtitle">Point your camera at the QR code from the service setup screen.</string>
+    <string name="qrPermissionRequired">Camera permission is required to scan 2FA QR codes.</string>
+    <string name="enableCamera">Enable camera</string>
+    <string name="invalidQrTitle">Invalid QR</string>
+    <string name="invalidQrMessage">This QR code is not a valid 2FA setup code.</string>
+    <string name="qrAddedTitle">2FA added</string>
+    <string name="qrAddedMessage">Account has been added from QR code.</string>
+    <string name="addManually">Add manually</string>
+
+    <string name="delete">Delete</string>
+    <string name="deleteTokenTitle">Delete token?</string>
+    <string name="deleteTokenMessage">This 2FA token will be permanently removed from your device.</string>
+    <string name="confirmDelete">Delete token</string>
+
+    <string name="pinSetupSubtitle">Set a 4-digit PIN to set up app sign-in and protect access to your tokens.</string>
+    <string name="pinUnlockTitle">Unlock CalmAuth</string>
+    <string name="pinUnlockSubtitle">Enter your PIN to access your tokens.</string>
+    <string name="pinCodePlaceholder">Enter 4 digits</string>
+    <string name="pinConfirmPlaceholder">Re-enter your PIN</string>
+    <string name="pinInvalidTitle">Invalid PIN</string>
+    <string name="pinInvalidMessage">PIN must contain exactly 4 digits.</string>
+    <string name="pinMismatchTitle">PIN does not match</string>
+    <string name="pinMismatchMessage">The confirmation PIN must match.</string>
+    <string name="pinIncorrectTitle">Wrong PIN</string>
+    <string name="pinIncorrectMessage">Entered PIN is incorrect.</string>
+    <string name="pinStorageErrorTitle">Cannot save PIN</string>
+    <string name="pinStorageErrorMessage">Could not save PIN in secure storage. Try again.</string>
+    <string name="continueLabel">Continue</string>
+    <string name="useBiometrics">Use biometrics</string>
+    <string name="biometricUnlockFailedMessage">Biometric verification failed. You can unlock with PIN.</string>
+    <string name="unlockingApp">Verifying access…</string>
+
+    <string name="settingsCta">Settings</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="settingsSubtitle">Export and restore entries as a CSV file. Your PIN only unlocks the app — the backup file is not encrypted, so keep it private.</string>
+    <string name="settingsBack">Back</string>
+    <string name="biometricsSettingTitle">Biometric unlock</string>
+    <string name="biometricsSettingDescription">Use fingerprint or face unlock on the PIN screen.</string>
+    <string name="biometricsUnavailableMessage">Biometrics are not available on this device.</string>
+    <string name="biometricSettingsErrorTitle">Could not update biometrics</string>
+    <string name="biometricSettingsErrorMessage">Try again after unlocking the app with your PIN.</string>
+
+    <string name="createBackup">Export CSV backup</string>
+    <string name="restoreBackup">Restore from CSV backup</string>
+    <string name="backupCreatedTitle">Backup created</string>
+    <string name="saveBackupDialogTitle">Choose where to save backup</string>
+    <string name="backupErrorTitle">Backup failed</string>
+    <string name="backupErrorMessage">Could not create backup file.</string>
+    <string name="backupSessionExpiredMessage">Session expired. Unlock the app with PIN and try again.</string>
+    <string name="restoreSuccessTitle">Restore complete</string>
+    <string name="restoreErrorTitle">Restore failed</string>
+    <string name="restoreErrorMessage">Could not restore data. Check that the file is a CalmAuth CSV backup.</string>
+    <string name="creatingBackupProgress">Creating backup…</string>
+    <string name="restoringBackupProgress">Restoring backup…</string>
+    <string name="backupProcessingHint">After selecting action, process runs on separate screen.</string>
+
+    <string name="tokenNotFound">Token not found.</string>
+    <string name="backToTokens">Back to tokens</string>
+    <string name="tokenCode">Code</string>
+    <string name="codeExpiresIn">Expires in</string>
+
+    <string name="developerModeTitle">Developer mode</string>
+    <string name="developerModeSubtitle">Danger zone for local app state. Use only for testing.</string>
+    <string name="developerResetStorage">Reset all app storage</string>
+    <string name="developerRemovePin">Remove PIN</string>
+    <string name="developerRemoveBiometrics">Remove biometrics</string>
+    <string name="developerResetStorageTitle">Reset app storage?</string>
+    <string name="developerResetStorageConfirmMessage">This will delete all local app data, including PIN, biometrics and 2FA entries.</string>
+    <string name="developerRemovePinTitle">Remove PIN?</string>
+    <string name="developerRemovePinConfirmMessage">This will remove PIN protection and biometric unlock configuration.</string>
+    <string name="developerRemoveBiometricsTitle">Remove biometrics?</string>
+    <string name="developerRemoveBiometricsConfirmMessage">This will disable biometric unlock for this app.</string>
+    <string name="developerConfirmAction">Confirm</string>
+    <string name="developerActionSuccessTitle">Done</string>
+    <string name="developerActionErrorTitle">Action failed</string>
+    <string name="developerActionErrorMessage">Could not complete this action. Try again.</string>
+    <string name="developerResetStorageSuccessMessage">All app storage has been reset.</string>
+    <string name="developerRemovePinSuccessMessage">PIN has been removed.</string>
+    <string name="developerRemoveBiometricsSuccessMessage">Biometric unlock has been removed.</string>
+</resources>
