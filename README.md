@@ -26,24 +26,32 @@ app/
       theme/     Material 3 theme
       nav/       Routes + AppNav
       viewmodel/ State holders
-      screens/   Compose screens (one per route)
+      screens/   Compose screens (see Routes below)
   src/test/kotlin/io/quiet/auth/domain/   JUnit ports of tests/domain
   src/main/res/                            strings, icons, themes
 ```
 
 ## Routes
 
-| Path                     | Screen                       |
-|--------------------------|------------------------------|
-| `/`                      | `OnboardingScreen`           |
-| `/pin`                   | `PinScreen`                  |
-| `/twofas`                | `TwoFAsScreen`               |
-| `/token/{id}`            | `TokenDetailsScreen`         |
-| `/add-2fa`               | `AddTwoFAScreen`             |
-| `/add-2fa-qr`            | `AddTwoFAQrScreen`           |
-| `/settings`              | `SettingsScreen`             |
-| `/backup-processing`     | `BackupProcessingScreen`     |
-| `/developer-mode`        | `DeveloperModeScreen`        |
+Route strings match [`Routes.kt`](app/src/main/kotlin/io/quiet/auth/ui/nav/Routes.kt) (Compose Navigation; no leading slash in code). Summarized here with a `/` prefix for readability.
+
+| Path                         | Screen                                                       |
+|------------------------------|--------------------------------------------------------------|
+| `/start`                     | Bootstrap `START` (blank; forwards to onboarding / PIN / list) |
+| `/onboarding`                | `OnboardingScreen`                                           |
+| `/pin/{pinMode}`             | `PinScreen`                                                  |
+| `/twofas`                    | `TwoFAsScreen`                                               |
+| `/token/{id}`                | `TokenDetailsScreen`                                         |
+| `/add-2fa`                   | `AddTwoFAScreen`                                             |
+| `/add-2fa-qr`                | `AddTwoFAQrScreen`                                           |
+| `/settings`                  | `SettingsScreen` (hub: Security, Backup, Danger zone)        |
+| `/settings/security`         | `SettingsSecurityScreen` (PIN + biometrics)                  |
+| `/settings/backup`          | `SettingsBackupScreen` (CSV export / restore)                |
+| `/settings/danger-zone`      | `DangerZoneScreen` (destructive local actions)             |
+| `/backup-processing/{action}`| `BackupProcessingScreen`                                     |
+| `/developer-mode`            | `DeveloperModeScreen` → `DangerZoneScreen` (onboarding only; hidden gesture) |
+
+`/settings/danger-zone` and `/developer-mode` share the same `DangerZoneScreen` UI; Settings uses the normal back label, onboarding uses “back to tokens”.
 
 ## Build
 
