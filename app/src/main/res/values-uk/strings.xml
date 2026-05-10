@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Знайдіть спокій перед входом</string>
-    <string name="onboardingSubtitle">Уважний і приватний процес, який тримає фокус там, де це важливо.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Збережіть концентрацію перед входом</string>
+    <string name="onboardingSubtitle">Простий і приватний процес для ваших кодів — без зайвого шуму й відволікань.</string>
     <string name="onboardingPinHint">PIN необов\'язковий. Він захищає локальний доступ до ваших токенів на цьому пристрої. Увімкнути можна будь-коли в Налаштуваннях.</string>
     <string name="continueWithoutPin">Продовжити без PIN</string>
     <string name="protectWithPin">Захистити застосунок PIN</string>
     <string name="begin">Почати</string>
-    <string name="secureTagline">Безпечно. М\'яко. Навмисно мінімалістично.</string>
+    <string name="secureTagline">Безпечно. Стримано. Навмисно мінімалістично.</string>
 
     <string name="twofaTitle">Ваші облікові записи 2FA</string>
     <string name="twofaSubtitle">Записи автентифікатора безпечно завантажуються з локального зашифрованого сховища.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Створіть 4-значний PIN для захисту доступу до токенів на цьому пристрої.</string>
     <string name="pinVerifyDisableSubtitle">Введіть PIN, щоб вимкнути захист PIN.</string>
     <string name="pinProtectionDisabledMessage">Захист PIN вимкнено.</string>
-    <string name="pinUnlockTitle">Розблокувати CalmAuth</string>
+    <string name="pinUnlockTitle">Розблокувати QuietAuth</string>
     <string name="pinUnlockSubtitle">Введіть PIN для доступу до токенів.</string>
     <string name="pinCodePlaceholder">Введіть 4 цифри</string>
     <string name="pinConfirmPlaceholder">Повторіть PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Сесію завершено. Розблокуйте застосунок PIN і спробуйте ще раз.</string>
     <string name="restoreSuccessTitle">Відновлення завершено</string>
     <string name="restoreErrorTitle">Помилка відновлення</string>
-    <string name="restoreErrorMessage">Не вдалося відновити дані. Переконайтеся, що файл — резервна копія CSV CalmAuth.</string>
+    <string name="restoreErrorMessage">Не вдалося відновити дані. Переконайтеся, що файл — резервна копія CSV QuietAuth.</string>
     <string name="creatingBackupProgress">Створення резервної копії…</string>
     <string name="restoringBackupProgress">Відновлення…</string>
     <string name="backupProcessingHint">Після вибору процес триває на окремому екрані.</string>

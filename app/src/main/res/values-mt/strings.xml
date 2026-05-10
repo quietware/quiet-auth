@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Sib il-kalm tiegħek qabel tidħol</string>
-    <string name="onboardingSubtitle">Fluss ta\' login attent u privat biex il-fokus tiegħek jibqa\' fejn hu l-aktar importanti.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Żomm il-fokus tiegħek qabel tidħol</string>
+    <string name="onboardingSubtitle">Proċess sempliċi u privat għall-kodiċi tiegħek — ftit storbju, bl-ebda distrazzjoni.</string>
     <string name="onboardingPinHint">PIN huwa mhux obbligatorju. Jipproteġi l-aċċess lokali għat-tokens fuq dan it-tagħmir. Tista\' tattivah kull meta mill-Issettjar.</string>
     <string name="continueWithoutPin">Kompli mingħajr PIN</string>
     <string name="protectWithPin">Ipproteġi l-app bil-PIN</string>
     <string name="begin">Ibda</string>
-    <string name="secureTagline">Sigur. Ġentili. Minimu bil-kunsens.</string>
+    <string name="secureTagline">Sigur. Diskret. Minimu bil-kunsens.</string>
 
     <string name="twofaTitle">Il-kontijiet 2FA tiegħek</string>
     <string name="twofaSubtitle">L-entrati tal-autentikatur jitgħabbew b\'mod sigur minn memorja lokali kriptata.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Oħloq PIN ta\' 4 ċifri biex tipproteġi l-aċċess għat-tokens fuq dan it-tagħmir.</string>
     <string name="pinVerifyDisableSubtitle">Daħħal il-PIN biex itfi l-protezzjoni bil-PIN.</string>
     <string name="pinProtectionDisabledMessage">Il-protezzjoni bil-PIN hija mitfija.</string>
-    <string name="pinUnlockTitle">Iftaħ CalmAuth</string>
+    <string name="pinUnlockTitle">Iftaħ QuietAuth</string>
     <string name="pinUnlockSubtitle">Daħħal il-PIN biex taċċessa t-tokens tiegħek.</string>
     <string name="pinCodePlaceholder">Daħħal 4 ċifri</string>
     <string name="pinConfirmPlaceholder">Erġa\' daħħal il-PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Is-sessjoni skadiet. Iftaħ l-app bil-PIN u erġa\' pprova.</string>
     <string name="restoreSuccessTitle">Irkuprar komplut</string>
     <string name="restoreErrorTitle">Irkuprar falla</string>
-    <string name="restoreErrorMessage">Ma setgħux jiġu rkuprati d-data. Ivverifika li l-fajl hu backup CSV validu ta\' CalmAuth.</string>
+    <string name="restoreErrorMessage">Ma setgħux jiġu rkuprati d-data. Ivverifika li l-fajl hu backup CSV validu ta\' QuietAuth.</string>
     <string name="creatingBackupProgress">Qed joħloq backup…</string>
     <string name="restoringBackupProgress">Qed jirkupra backup…</string>
     <string name="backupProcessingHint">Wara li tagħżel l-azzjoni, il-proċess ikompli fuq skrin separat.</string>

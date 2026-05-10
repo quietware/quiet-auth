@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Encontre calma antes de iniciar sessão</string>
-    <string name="onboardingSubtitle">Um fluxo atento e privado que mantém o foco onde mais importa.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Mantenha o foco antes de iniciar sessão</string>
+    <string name="onboardingSubtitle">Um fluxo simples e privado para os seus códigos — pouco ruído, zero distrações.</string>
     <string name="onboardingPinHint">O PIN é opcional. Protege o acesso local aos seus tokens neste dispositivo. Pode ativá-lo em Definições quando quiser.</string>
     <string name="continueWithoutPin">Continuar sem PIN</string>
     <string name="protectWithPin">Proteger a app com PIN</string>
     <string name="begin">Começar</string>
-    <string name="secureTagline">Seguro. Suave. Minimalista de propósito.</string>
+    <string name="secureTagline">Seguro. Discreto. Minimalista de propósito.</string>
 
     <string name="twofaTitle">As suas contas 2FA</string>
     <string name="twofaSubtitle">As suas entradas do autenticador são carregadas em segurança a partir do armazenamento local encriptado.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Crie um PIN de 4 dígitos para proteger o acesso aos tokens neste dispositivo.</string>
     <string name="pinVerifyDisableSubtitle">Introduza o PIN para desativar a proteção por PIN.</string>
     <string name="pinProtectionDisabledMessage">A proteção por PIN está desativada.</string>
-    <string name="pinUnlockTitle">Desbloquear CalmAuth</string>
+    <string name="pinUnlockTitle">Desbloquear QuietAuth</string>
     <string name="pinUnlockSubtitle">Introduza o PIN para aceder aos seus tokens.</string>
     <string name="pinCodePlaceholder">Introduza 4 dígitos</string>
     <string name="pinConfirmPlaceholder">Volte a introduzir o PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sessão expirada. Desbloqueie a app com o PIN e tente novamente.</string>
     <string name="restoreSuccessTitle">Restauro concluído</string>
     <string name="restoreErrorTitle">Falha no restauro</string>
-    <string name="restoreErrorMessage">Não foi possível restaurar os dados. Verifique se o ficheiro é uma cópia CSV CalmAuth.</string>
+    <string name="restoreErrorMessage">Não foi possível restaurar os dados. Verifique se o ficheiro é uma cópia CSV QuietAuth.</string>
     <string name="creatingBackupProgress">A criar cópia…</string>
     <string name="restoringBackupProgress">A restaurar…</string>
     <string name="backupProcessingHint">Depois de escolher, o processo continua noutro ecrã.</string>

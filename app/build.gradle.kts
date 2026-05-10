@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.calmauth"
+    namespace = "io.quiet.auth"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "dev.calmauth"
+        applicationId = "io.quiet.auth"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

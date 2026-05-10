@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Find roen, før du logger ind</string>
-    <string name="onboardingSubtitle">Et opmærksomt og privat loginflow, der holder dit fokus, hvor det betyder mest.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Behold fokus, før du logger ind</string>
+    <string name="onboardingSubtitle">Et enkelt og privat flow til dine koder — minimalt støj og ingen distraktioner.</string>
     <string name="onboardingPinHint">En PIN er valgfri. Den beskytter lokal adgang til dine tokens på denne enhed. Du kan slå den til når som helst under Indstillinger.</string>
     <string name="continueWithoutPin">Fortsæt uden PIN</string>
     <string name="protectWithPin">Beskytt app med PIN</string>
     <string name="begin">Kom i gang</string>
-    <string name="secureTagline">Sikkert. Roligt. Bevidst minimalt.</string>
+    <string name="secureTagline">Sikkert. Diskret. Bevidst minimalt.</string>
 
     <string name="twofaTitle">Dine 2FA-konti</string>
     <string name="twofaSubtitle">Dine autentifikatorposter indlæses sikkert fra lokal krypteret lagring.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Opret en 4-cifret PIN for at beskytte adgang til dine tokens på denne enhed.</string>
     <string name="pinVerifyDisableSubtitle">Indtast din PIN for at slå PIN-beskyttelse fra.</string>
     <string name="pinProtectionDisabledMessage">PIN-beskyttelse er slået fra.</string>
-    <string name="pinUnlockTitle">Lås CalmAuth op</string>
+    <string name="pinUnlockTitle">Lås QuietAuth op</string>
     <string name="pinUnlockSubtitle">Indtast din PIN for at få adgang til dine tokens.</string>
     <string name="pinCodePlaceholder">Indtast 4 cifre</string>
     <string name="pinConfirmPlaceholder">Indtast PIN igen</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Session udløb. Lås appen op med PIN og prøv igen.</string>
     <string name="restoreSuccessTitle">Gendannelse fuldført</string>
     <string name="restoreErrorTitle">Gendannelse mislykkedes</string>
-    <string name="restoreErrorMessage">Kunne ikke gendanne data. Kontroller at filen er en gyldig CalmAuth CSV-backup.</string>
+    <string name="restoreErrorMessage">Kunne ikke gendanne data. Kontroller at filen er en gyldig QuietAuth CSV-backup.</string>
     <string name="creatingBackupProgress">Opretter backup…</string>
     <string name="restoringBackupProgress">Gendanner backup…</string>
     <string name="backupProcessingHint">Efter du vælger handlingen kører processen på en separat skærm.</string>

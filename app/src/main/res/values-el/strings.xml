@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Βρείτε την ηρεμία πριν συνδεθείτε</string>
-    <string name="onboardingSubtitle">Μια συνειδητή και ιδιωτική ροή που κρατά την προσοχή σας εκεί που έχει σημασία.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Μείνετε συγκεντρωμένοι πριν συνδεθείτε</string>
+    <string name="onboardingSubtitle">Απλή και ιδιωτική ροή για τους κωδικούς σας — ελάχιστος θόρυβος, χωρίς περισπασμούς.</string>
     <string name="onboardingPinHint">Το PIN είναι προαιρετικό. Προστατεύει την τοπική πρόσβαση στα token σε αυτή τη συσκευή. Μπορείτε να το ενεργοποιήσετε οποτεδήποτε από τις Ρυθμίσεις.</string>
     <string name="continueWithoutPin">Συνέχεια χωρίς PIN</string>
     <string name="protectWithPin">Προστασία εφαρμογής με PIN</string>
     <string name="begin">Έναρξη</string>
-    <string name="secureTagline">Ασφαλές. Ήπιο. Σκόπιμα ελάχιστο.</string>
+    <string name="secureTagline">Ασφαλές. Διακριτικό. Σκόπιμα ελάχιστο.</string>
 
     <string name="twofaTitle">Οι λογαριασμοί 2FA σας</string>
     <string name="twofaSubtitle">Οι καταχωρίσεις του authenticator φορτώνονται με ασφάλεια από την τοπική κρυπτογραφημένη αποθήκευση.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Δημιουργήστε PIN 4 ψηφίων για προστασία πρόσβασης στα token σε αυτή τη συσκευή.</string>
     <string name="pinVerifyDisableSubtitle">Εισαγάγετε το PIN για απενεργοποίηση προστασίας PIN.</string>
     <string name="pinProtectionDisabledMessage">Η προστασία PIN είναι απενεργοποιημένη.</string>
-    <string name="pinUnlockTitle">Ξεκλείδωμα CalmAuth</string>
+    <string name="pinUnlockTitle">Ξεκλείδωμα QuietAuth</string>
     <string name="pinUnlockSubtitle">Εισαγάγετε το PIN για πρόσβαση στα token.</string>
     <string name="pinCodePlaceholder">Εισαγάγετε 4 ψηφία</string>
     <string name="pinConfirmPlaceholder">Επαναλάβετε το PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Η συνεδρία έληξε. Ξεκλειδώστε την εφαρμογή με PIN και δοκιμάστε ξανά.</string>
     <string name="restoreSuccessTitle">Η επαναφορά ολοκληρώθηκε</string>
     <string name="restoreErrorTitle">Αποτυχία επαναφοράς</string>
-    <string name="restoreErrorMessage">Αδυναμία επαναφοράς δεδομένων. Βεβαιωθείτε ότι το αρχείο είναι αντίγραφο CSV CalmAuth.</string>
+    <string name="restoreErrorMessage">Αδυναμία επαναφοράς δεδομένων. Βεβαιωθείτε ότι το αρχείο είναι αντίγραφο CSV QuietAuth.</string>
     <string name="creatingBackupProgress">Δημιουργία αντιγράφου…</string>
     <string name="restoringBackupProgress">Επαναφορά…</string>
     <string name="backupProcessingHint">Μετά την επιλογή, η διαδικασία συνεχίζεται σε ξεχωριστή οθόνη.</string>

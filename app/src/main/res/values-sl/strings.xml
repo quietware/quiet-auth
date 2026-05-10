@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Poiščite mir pred prijavo</string>
-    <string name="onboardingSubtitle">Pozoren in zaseben tok prijave, ki vašo pozornost ohranja tam, kjer je najpomembnejša.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Pred prijavo ohranite pozornost</string>
+    <string name="onboardingSubtitle">Preprost in zaseben tok za vaše kode — minimalen šum, brez motenj.</string>
     <string name="onboardingPinHint">PIN je neobvezen. Ščiti lokalni dostop do žetonov na tej napravi. Lahko ga kadar koli vklopite v Nastavitvah.</string>
     <string name="continueWithoutPin">Nadaljuj brez PIN</string>
     <string name="protectWithPin">Zaščiti aplikacijo s PIN</string>
     <string name="begin">Začni</string>
-    <string name="secureTagline">Varno. Nežno. Namerno minimalno.</string>
+    <string name="secureTagline">Varno. Diskretno. Namerno minimalno.</string>
 
     <string name="twofaTitle">Vaši 2FA računi</string>
     <string name="twofaSubtitle">Vpisi avtentikatorja se varno naložijo iz lokalne šifrirane shrambe.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Ustvarite 4-mestni PIN za zaščito dostopa do žetonov na tej napravi.</string>
     <string name="pinVerifyDisableSubtitle">Vnesite PIN, da izklopite PIN zaščito.</string>
     <string name="pinProtectionDisabledMessage">PIN zaščita je izklopljena.</string>
-    <string name="pinUnlockTitle">Odkleni CalmAuth</string>
+    <string name="pinUnlockTitle">Odkleni QuietAuth</string>
     <string name="pinUnlockSubtitle">Vnesite PIN za dostop do žetonov.</string>
     <string name="pinCodePlaceholder">Vnesite 4 številke</string>
     <string name="pinConfirmPlaceholder">Ponovno vnesite PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Seja je potekla. Odklenite aplikacijo s PIN in poskusite znova.</string>
     <string name="restoreSuccessTitle">Obnova končana</string>
     <string name="restoreErrorTitle">Obnova ni uspela</string>
-    <string name="restoreErrorMessage">Podatkov ni bilo mogoče obnoviti. Preverite, ali je datoteka veljavna CSV varnostna kopija CalmAuth.</string>
+    <string name="restoreErrorMessage">Podatkov ni bilo mogoče obnoviti. Preverite, ali je datoteka veljavna CSV varnostna kopija QuietAuth.</string>
     <string name="creatingBackupProgress">Ustvarjanje varnostne kopije…</string>
     <string name="restoringBackupProgress">Obnavljanje kopije…</string>
     <string name="backupProcessingHint">Po izbiri dejanja proces poteka na ločenem zaslonu.</string>

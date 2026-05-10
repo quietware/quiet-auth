@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Hitta ro innan du loggar in</string>
-    <string name="onboardingSubtitle">Ett mindful och privat flöde som håller fokus där det spelar roll.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Behåll fokus innan du loggar in</string>
+    <string name="onboardingSubtitle">Ett enkelt och privat flöde för dina koder — minimalt brus och inga distraktioner.</string>
     <string name="onboardingPinHint">PIN är valfritt. Det skyddar lokal åtkomst till dina tokens på den här enheten. Du kan slå på det när som helst under Inställningar.</string>
     <string name="continueWithoutPin">Fortsätt utan PIN</string>
     <string name="protectWithPin">Skydda appen med PIN</string>
     <string name="begin">Börja</string>
-    <string name="secureTagline">Tryggt. Mjukt. Avsiktligt minimalt.</string>
+    <string name="secureTagline">Tryggt. Diskret. Avsiktligt minimalt.</string>
 
     <string name="twofaTitle">Dina 2FA-konton</string>
     <string name="twofaSubtitle">Dina autentiseringsposter laddas säkert från lokalt krypterat lagringsutrymme.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Skapa en fyrsiffrig PIN för att skydda åtkomst till dina tokens på den här enheten.</string>
     <string name="pinVerifyDisableSubtitle">Ange din PIN för att stänga av PIN-skydd.</string>
     <string name="pinProtectionDisabledMessage">PIN-skydd är av.</string>
-    <string name="pinUnlockTitle">Lås upp CalmAuth</string>
+    <string name="pinUnlockTitle">Lås upp QuietAuth</string>
     <string name="pinUnlockSubtitle">Ange din PIN för att komma åt dina tokens.</string>
     <string name="pinCodePlaceholder">Ange 4 siffror</string>
     <string name="pinConfirmPlaceholder">Ange PIN igen</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sessionen har löpt ut. Lås upp appen med PIN och försök igen.</string>
     <string name="restoreSuccessTitle">Återställning klar</string>
     <string name="restoreErrorTitle">Återställning misslyckades</string>
-    <string name="restoreErrorMessage">Kunde inte återställa data. Kontrollera att filen är en CalmAuth CSV-säkerhetskopia.</string>
+    <string name="restoreErrorMessage">Kunde inte återställa data. Kontrollera att filen är en QuietAuth CSV-säkerhetskopia.</string>
     <string name="creatingBackupProgress">Skapar säkerhetskopia…</string>
     <string name="restoringBackupProgress">Återställer…</string>
     <string name="backupProcessingHint">Efter valet fortsätter processen på en separat skärm.</string>

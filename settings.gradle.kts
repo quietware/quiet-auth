@@ -24,5 +24,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CalmAuth"
+rootProject.name = "quiet-auth"
 include(":app")

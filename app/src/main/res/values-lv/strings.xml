@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Atrodiet mieru pirms pierakstīšanās</string>
-    <string name="onboardingSubtitle">Apzinīga un privāta pierakstīšanās plūsma, kas saglabā fokusu tur, kur tas ir svarīgākais.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Saglabājiet fokusu pirms pierakstīšanās</string>
+    <string name="onboardingSubtitle">Vienkārša un privāta plūsma jūsu kodiem — maz trokšņa, bez uzmanības novēršanas.</string>
     <string name="onboardingPinHint">PIN ir izvēles. Tas aizsargā lokālu piekļuvi jūsu žetoniem šajā ierīcē. Varat to ieslēgt jebkurā brīdī Iestatījumos.</string>
     <string name="continueWithoutPin">Turpināt bez PIN</string>
     <string name="protectWithPin">Aizsargāt lietotni ar PIN</string>
     <string name="begin">Sākt</string>
-    <string name="secureTagline">Droši. Maigi. Apzināti minimāli.</string>
+    <string name="secureTagline">Droši. Pieticīgi. Apzināti minimāli.</string>
 
     <string name="twofaTitle">Jūsu 2FA konti</string>
     <string name="twofaSubtitle">Autentifikatora ieraksti tiek droši ielādēti no lokālās šifrētās krātuves.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Izveidojiet 4 ciparu PIN, lai aizsargātu piekļuvi žetoniem šajā ierīcē.</string>
     <string name="pinVerifyDisableSubtitle">Ievadiet PIN, lai izslēgtu PIN aizsardzību.</string>
     <string name="pinProtectionDisabledMessage">PIN aizsardzība ir izslēgta.</string>
-    <string name="pinUnlockTitle">Atbloķēt CalmAuth</string>
+    <string name="pinUnlockTitle">Atbloķēt QuietAuth</string>
     <string name="pinUnlockSubtitle">Ievadiet PIN piekļuvei žetoniem.</string>
     <string name="pinCodePlaceholder">Ievadiet 4 ciparus</string>
     <string name="pinConfirmPlaceholder">Atkārtojiet PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sesija beidzās. Atbloķējiet lietotni ar PIN un mēģiniet vēlreiz.</string>
     <string name="restoreSuccessTitle">Atjaunošana pabeigta</string>
     <string name="restoreErrorTitle">Atjaunošana neizdevās</string>
-    <string name="restoreErrorMessage">Neizdevās atjaunot datus. Pārbaudiet, vai fails ir derīga CalmAuth CSV rezerves kopija.</string>
+    <string name="restoreErrorMessage">Neizdevās atjaunot datus. Pārbaudiet, vai fails ir derīga QuietAuth CSV rezerves kopija.</string>
     <string name="creatingBackupProgress">Veido rezerves kopiju…</string>
     <string name="restoringBackupProgress">Atjauno kopiju…</string>
     <string name="backupProcessingHint">Pēc darbības izvēles process turpinās atsevišķā ekrānā.</string>

@@ -1,8 +1,8 @@
-# CalmAuth (Android)
+# QuietAuth (Android)
 
-A mindful, fully native Android port of CalmAuth — a private 2FA (TOTP) authenticator with PIN unlock, optional biometric unlock and CSV backup. Built with Kotlin, Jetpack Compose and Material 3.
+A native Android **QuietAuth** — a private 2FA (TOTP) authenticator with PIN unlock, optional biometric unlock and CSV backup. Built with Kotlin, Jetpack Compose and Material 3.
 
-This repository is the production Android target. The original cross‑platform Expo source lives at `calmauth-expo` and remains the reference implementation for iOS/web; it is not used at runtime here.
+Repository: **`quiet-auth`**. Application ID: **`io.quiet.auth`**.
 
 ## Stack
 
@@ -17,7 +17,7 @@ This repository is the production Android target. The original cross‑platform 
 
 ```
 app/
-  src/main/kotlin/dev/calmauth/
+  src/main/kotlin/io/quiet/auth/
     domain/      pure Kotlin: TOTP, otpauth URI, backup CSV, PIN
     data/        SecureStorage (Keystore + AES-GCM), TokenRepository, PinRepository, BackupIO
     auth/        BiometricAuth (BiometricPrompt wrapper)
@@ -27,11 +27,11 @@ app/
       nav/       Routes + AppNav
       viewmodel/ State holders
       screens/   Compose screens (one per route)
-  src/test/kotlin/dev/calmauth/domain/   JUnit ports of tests/domain
+  src/test/kotlin/io/quiet/auth/domain/   JUnit ports of tests/domain
   src/main/res/                            strings, icons, themes
 ```
 
-## Routes (mirroring `calmauth-expo` paths)
+## Routes
 
 | Path                     | Screen                       |
 |--------------------------|------------------------------|
@@ -65,11 +65,11 @@ If you prefer a fixed JDK, install `openjdk-17-jdk` / Android Studio’s bundled
 
 > If you don't have the Gradle wrapper jar yet (e.g. fresh clone before opening in Android Studio), run once: `gradle wrapper` from a host with Gradle installed, or let Android Studio create it during the initial sync.
 
-## Compatibility with `calmauth-expo`
+## Compatibility with the reference TypeScript implementation
 
-The CSV backup format is bit‑for‑bit compatible with the Expo build's `domain/backup.ts`, so users can export from one and import into the other. The TOTP implementation is verified against the same vectors used in `tests/domain/totp.test.ts`.
+The CSV backup format follows the same column layout as the shared `domain/backup` contract used by the cross‑platform reference app, so exports remain interchangeable where that format is aligned. The TOTP implementation is verified against the same vectors used in `tests/domain/totp.test.ts` in that reference tree.
 
-The PIN hash is stored as a SHA‑256 hex digest exactly as in `domain/pin.ts`. The on‑disk JSON layout for tokens (key `calmauth_twofa_items_v1`) matches `adapters/expo/token-repository-adapter.ts`.
+The PIN hash is stored as a SHA‑256 hex digest matching `domain/pin.ts`. The on‑disk JSON layout for tokens uses preference key **`quietauth_twofa_items_v1`**, following the same JSON shape as the historical Expo adapter (`token-repository-adapter.ts`).
 
 ## Privacy notes
 

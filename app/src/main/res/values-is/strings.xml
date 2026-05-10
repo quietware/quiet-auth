@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Finndu rólegð áður en þú skráir þig inn</string>
-    <string name="onboardingSubtitle">Meðvituð og einkað innskráningarupplifun sem heldur athyglinni þar sem hún skiptir mestu máli.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Haltu athyglinni áður en þú skráir þig inn</string>
+    <string name="onboardingSubtitle">Einföld og einkað upplifun fyrir kóðana þína — lítill hávaði, engar truflanir.</string>
     <string name="onboardingPinHint">PIN er valkvætt. Það verndar staðværan aðgang að teiknum þínum á þessu tæki. Þú getur kveikt á því hvenær sem er í stillingum.</string>
     <string name="continueWithoutPin">Halda áfram án PIN</string>
     <string name="protectWithPin">Vernda app með PIN</string>
     <string name="begin">Byrja</string>
-    <string name="secureTagline">Öruggt. Mildur. Meðvitaður einfaldur.</string>
+    <string name="secureTagline">Öruggt. Hófstætt. Meðvitaður einfaldur.</string>
 
     <string name="twofaTitle">2FA reikningarnir þínir</string>
     <string name="twofaSubtitle">Færslur þínar frá auðkennisforriti eru hlaðnar örugglega úr staðværu dulkóðuðu geymslunni.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Búðu til 4 stafa PIN til að vernda aðgang að teiknum á þessu tæki.</string>
     <string name="pinVerifyDisableSubtitle">Sláðu inn PIN til að slökkva á PIN vernd.</string>
     <string name="pinProtectionDisabledMessage">PIN vernd er slökkt.</string>
-    <string name="pinUnlockTitle">Opna CalmAuth</string>
+    <string name="pinUnlockTitle">Opna QuietAuth</string>
     <string name="pinUnlockSubtitle">Sláðu inn PIN til að nálgast teiknin þín.</string>
     <string name="pinCodePlaceholder">Sláðu inn 4 tölustafi</string>
     <string name="pinConfirmPlaceholder">Sláðu PIN aftur inn</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Lot rann út. Opnaðu appið með PIN og reyndu aftur.</string>
     <string name="restoreSuccessTitle">Endurheimt lokið</string>
     <string name="restoreErrorTitle">Endurheimt mistókst</string>
-    <string name="restoreErrorMessage">Ekki tókst að endurheimta gögn. Athugaðu að skráin sé gilt CalmAuth CSV öryggisafrit.</string>
+    <string name="restoreErrorMessage">Ekki tókst að endurheimta gögn. Athugaðu að skráin sé gilt QuietAuth CSV öryggisafrit.</string>
     <string name="creatingBackupProgress">Bý til öryggisafrit…</string>
     <string name="restoringBackupProgress">Endurheimti öryggisafrit…</string>
     <string name="backupProcessingHint">Eftir að velja aðgerð keyrir ferlið á sér skjá.</string>

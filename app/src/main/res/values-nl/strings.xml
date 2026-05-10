@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Vind je rust voordat je inlogt</string>
-    <string name="onboardingSubtitle">Een aandachtige, privé flow die je focus houdt waar het toe doet.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Blijf gefocust voordat je inlogt</string>
+    <string name="onboardingSubtitle">Een eenvoudige, privé flow voor je codes — minimaal lawaai, geen afleiding.</string>
     <string name="onboardingPinHint">Een pincode is optioneel. Die beschermt lokale toegang tot je tokens op dit apparaat. Je kunt hem altijd inschakelen in Instellingen.</string>
     <string name="continueWithoutPin">Doorgaan zonder pincode</string>
     <string name="protectWithPin">App beschermen met pincode</string>
     <string name="begin">Beginnen</string>
-    <string name="secureTagline">Veilig. Zacht. Bewust minimaal.</string>
+    <string name="secureTagline">Veilig. Discrete. Bewust minimaal.</string>
 
     <string name="twofaTitle">Je 2FA-accounts</string>
     <string name="twofaSubtitle">Je authenticator-items worden veilig geladen uit lokale versleutelde opslag.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Maak een pincode van 4 cijfers om toegang tot je tokens op dit apparaat te beschermen.</string>
     <string name="pinVerifyDisableSubtitle">Voer je pincode in om pincodebeveiliging uit te zetten.</string>
     <string name="pinProtectionDisabledMessage">Pincodebeveiliging staat uit.</string>
-    <string name="pinUnlockTitle">CalmAuth ontgrendelen</string>
+    <string name="pinUnlockTitle">QuietAuth ontgrendelen</string>
     <string name="pinUnlockSubtitle">Voer je pincode in om je tokens te openen.</string>
     <string name="pinCodePlaceholder">Voer 4 cijfers in</string>
     <string name="pinConfirmPlaceholder">Pincode opnieuw invoeren</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sessie verlopen. Ontgrendel de app met je pincode en probeer opnieuw.</string>
     <string name="restoreSuccessTitle">Herstel voltooid</string>
     <string name="restoreErrorTitle">Herstel mislukt</string>
-    <string name="restoreErrorMessage">Gegevens konden niet worden hersteld. Controleer of het bestand een CalmAuth CSV-back-up is.</string>
+    <string name="restoreErrorMessage">Gegevens konden niet worden hersteld. Controleer of het bestand een QuietAuth CSV-back-up is.</string>
     <string name="creatingBackupProgress">Back-up maken…</string>
     <string name="restoringBackupProgress">Herstellen…</string>
     <string name="backupProcessingHint">Na je keuze gaat het proces verder op een apart scherm.</string>

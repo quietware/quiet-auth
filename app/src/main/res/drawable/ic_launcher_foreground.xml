@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Calm leaf glyph — central 60dp area on the 108dp adaptive canvas, leaving the standard
+  Launcher foreground glyph — central 60dp area on the 108dp adaptive canvas, leaving the standard
   18dp safe-zone padding for cropping into circles, squircles and squares.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"

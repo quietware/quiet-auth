@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Găsește calm înainte să te autentifici</string>
-    <string name="onboardingSubtitle">Un flux atent și privat care îți păstrează focusul unde contează.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Păstrează-te concentrat înainte să te autentifici</string>
+    <string name="onboardingSubtitle">Un flux simplu și privat pentru coduri — fără zgomot inutil și fără distrageri.</string>
     <string name="onboardingPinHint">PIN-ul este opțional. Protejează accesul local la tokenuri pe acest dispozitiv. Îl poți activa oricând din Setări.</string>
     <string name="continueWithoutPin">Continuă fără PIN</string>
     <string name="protectWithPin">Protejează aplicația cu PIN</string>
     <string name="begin">Începe</string>
-    <string name="secureTagline">Sigur. Blând. Minimal cu intenție.</string>
+    <string name="secureTagline">Sigur. Discret. Intenționat minimalist.</string>
 
     <string name="twofaTitle">Conturile tale 2FA</string>
     <string name="twofaSubtitle">Înregistrările tale de autentificare sunt încărcate în siguranță din stocarea locală criptată.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Creează un PIN din 4 cifre pentru a proteja accesul la tokenuri pe acest dispozitiv.</string>
     <string name="pinVerifyDisableSubtitle">Introdu PIN-ul pentru a dezactiva protecția PIN.</string>
     <string name="pinProtectionDisabledMessage">Protecția PIN este oprită.</string>
-    <string name="pinUnlockTitle">Deblochează CalmAuth</string>
+    <string name="pinUnlockTitle">Deblochează QuietAuth</string>
     <string name="pinUnlockSubtitle">Introdu PIN-ul pentru a accesa tokenurile.</string>
     <string name="pinCodePlaceholder">Introdu 4 cifre</string>
     <string name="pinConfirmPlaceholder">Introdu din nou PIN-ul</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sesiune expirată. Deblochează aplicația cu PIN și încearcă din nou.</string>
     <string name="restoreSuccessTitle">Restaurare finalizată</string>
     <string name="restoreErrorTitle">Restaurare eșuată</string>
-    <string name="restoreErrorMessage">Nu s-au putut restaura datele. Verifică dacă fișierul este un backup CSV CalmAuth.</string>
+    <string name="restoreErrorMessage">Nu s-au putut restaura datele. Verifică dacă fișierul este un backup CSV QuietAuth.</string>
     <string name="creatingBackupProgress">Se creează backupul…</string>
     <string name="restoringBackupProgress">Se restaurează…</string>
     <string name="backupProcessingHint">După selectare, procesul continuă pe un alt ecran.</string>

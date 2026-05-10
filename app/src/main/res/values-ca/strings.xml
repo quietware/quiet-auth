@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Troba la calma abans d\'iniciar sessió</string>
-    <string name="onboardingSubtitle">Un flux d\'inici de sessió conscient i privat dissenyat per mantenir el focus on més importa.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Mantingues el focus abans d\'iniciar sessió</string>
+    <string name="onboardingSubtitle">Un flux d\'inici de sessió simple i privat per als codis — poc soroll i sense distraccions.</string>
     <string name="onboardingPinHint">El PIN és opcional. Protegeix l\'accés local als teus testimonis en aquest dispositiu. Pots activar-lo quan vulguis a Configuració.</string>
     <string name="continueWithoutPin">Continuar sense PIN</string>
     <string name="protectWithPin">Protegir l\'app amb PIN</string>
     <string name="begin">Començar</string>
-    <string name="secureTagline">Segur. Suau. Minimalista amb intenció.</string>
+    <string name="secureTagline">Segur. Discret. Minimalista amb intenció.</string>
 
     <string name="twofaTitle">Els teus comptes 2FA</string>
     <string name="twofaSubtitle">Les entrades de l\'autenticador es carreguen amb seguretat des de l\'emmagatzematge local xifrat.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Crea un PIN de 4 dígits per protegir l\'accés als testimonis en aquest dispositiu.</string>
     <string name="pinVerifyDisableSubtitle">Introdueix el PIN per desactivar la protecció amb PIN.</string>
     <string name="pinProtectionDisabledMessage">La protecció amb PIN està desactivada.</string>
-    <string name="pinUnlockTitle">Desbloqueja CalmAuth</string>
+    <string name="pinUnlockTitle">Desbloqueja QuietAuth</string>
     <string name="pinUnlockSubtitle">Introdueix el PIN per accedir als testimonis.</string>
     <string name="pinCodePlaceholder">Introdueix 4 dígits</string>
     <string name="pinConfirmPlaceholder">Torna a introduir el PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">La sessió ha caducat. Desbloqueja l\'app amb PIN i torna-ho a provar.</string>
     <string name="restoreSuccessTitle">Restauració completa</string>
     <string name="restoreErrorTitle">La restauració ha fallat</string>
-    <string name="restoreErrorMessage">No s\'han pogut restaurar les dades. Comprova que el fitxer sigui una còpia CSV vàlida de CalmAuth.</string>
+    <string name="restoreErrorMessage">No s\'han pogut restaurar les dades. Comprova que el fitxer sigui una còpia CSV vàlida de QuietAuth.</string>
     <string name="creatingBackupProgress">Creant còpia…</string>
     <string name="restoringBackupProgress">Restaurant còpia…</string>
     <string name="backupProcessingHint">Després de triar l\'acció el procés continua en una pantalla separada.</string>

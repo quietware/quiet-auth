@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Retrouvez votre calme avant de vous connecter</string>
-    <string name="onboardingSubtitle">Un parcours attentif et privé qui garde votre attention là où elle compte.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Gardez l\'esprit clair avant de vous connecter</string>
+    <string name="onboardingSubtitle">Un parcours simple et privé pour vos codes — peu de bruit, aucune distraction.</string>
     <string name="onboardingPinHint">Le code PIN est facultatif. Il protège l\'accès local à vos jetons sur cet appareil. Vous pouvez l\'activer à tout moment dans Réglages.</string>
     <string name="continueWithoutPin">Continuer sans code PIN</string>
     <string name="protectWithPin">Protéger l\'app avec un code PIN</string>
     <string name="begin">Commencer</string>
-    <string name="secureTagline">Sûr. Doux. Volontairement minimal.</string>
+    <string name="secureTagline">Sûr. Discret. Volontairement minimal.</string>
 
     <string name="twofaTitle">Vos comptes 2FA</string>
     <string name="twofaSubtitle">Vos entrées d\'authentification sont chargées en toute sécurité depuis le stockage chiffré local.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Créez un code PIN à 4 chiffres pour protéger l\'accès à vos jetons sur cet appareil.</string>
     <string name="pinVerifyDisableSubtitle">Saisissez votre code PIN pour désactiver la protection par PIN.</string>
     <string name="pinProtectionDisabledMessage">La protection par PIN est désactivée.</string>
-    <string name="pinUnlockTitle">Déverrouiller CalmAuth</string>
+    <string name="pinUnlockTitle">Déverrouiller QuietAuth</string>
     <string name="pinUnlockSubtitle">Entrez votre code PIN pour accéder à vos jetons.</string>
     <string name="pinCodePlaceholder">Entrez 4 chiffres</string>
     <string name="pinConfirmPlaceholder">Confirmez votre code PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Session expirée. Déverrouillez l\'app avec votre code PIN et réessayez.</string>
     <string name="restoreSuccessTitle">Restauration terminée</string>
     <string name="restoreErrorTitle">Échec de la restauration</string>
-    <string name="restoreErrorMessage">Impossible de restaurer les données. Vérifiez que le fichier est une sauvegarde CSV CalmAuth.</string>
+    <string name="restoreErrorMessage">Impossible de restaurer les données. Vérifiez que le fichier est une sauvegarde CSV QuietAuth.</string>
     <string name="creatingBackupProgress">Création de la sauvegarde…</string>
     <string name="restoringBackupProgress">Restauration…</string>
     <string name="backupProcessingHint">Après votre choix, le traitement se poursuit sur un écran séparé.</string>

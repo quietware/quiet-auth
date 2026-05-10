@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Faigh do chiúnas sula síníonn tú isteach</string>
-    <string name="onboardingSubtitle">Sreabhadh logála aireach agus príobháideach chun do fhócas a choinneáil san áit is tábhachtaí.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Fan dírithe sula síníonn tú isteach</string>
+    <string name="onboardingSubtitle">Sreabhadh simplí agus príobháideach do do chóid — torann íosta, gan seachráin.</string>
     <string name="onboardingPinHint">Is roghnach PIN. Cosnaíonn sé rochtain áitiúil ar do thicéid ar an ngléas seo. Is féidir é a chasadh air am ar bith i Socruithe.</string>
     <string name="continueWithoutPin">Lean ar aghaidh gan PIN</string>
     <string name="protectWithPin">Cosain an aip le PIN</string>
     <string name="begin">Tosaigh</string>
-    <string name="secureTagline">Slán. Séimh. Íosta go feallsúnach.</string>
+    <string name="secureTagline">Slán. Ciúin. Íosta go feallsúnach.</string>
 
     <string name="twofaTitle">Do chuntais 2FA</string>
     <string name="twofaSubtitle">Lódáiltear do ghiorraitheoir iontaofa go slán ó stóráil áitiúil chriptithe.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Cruthaigh PIN 4-digit chun rochtain ar do thicéid ar an ngléas seo a chosaint.</string>
     <string name="pinVerifyDisableSubtitle">Iontráil do PIN chun cosaint PIN a mhúchadh.</string>
     <string name="pinProtectionDisabledMessage">Tá cosaint PIN as.</string>
-    <string name="pinUnlockTitle">Díghlasáil CalmAuth</string>
+    <string name="pinUnlockTitle">Díghlasáil QuietAuth</string>
     <string name="pinUnlockSubtitle">Iontráil do PIN chun rochtain a fháil ar do thicéid.</string>
     <string name="pinCodePlaceholder">Iontráil 4 dhigit</string>
     <string name="pinConfirmPlaceholder">Athiontráil do PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Chuaigh an seisiún in éag. Díghlasáil an aip le PIN agus bain triail eile as.</string>
     <string name="restoreSuccessTitle">Athchóiriú críochnaithe</string>
     <string name="restoreErrorTitle">Theip ar athchóiriú</string>
-    <string name="restoreErrorMessage">Níorbh fhéidir sonraí a athchóiriú. Dearbháil gur cúltaca CSV bailí CalmAuth é an comhad.</string>
+    <string name="restoreErrorMessage">Níorbh fhéidir sonraí a athchóiriú. Dearbháil gur cúltaca CSV bailí QuietAuth é an comhad.</string>
     <string name="creatingBackupProgress">Cúltaca á chruthú…</string>
     <string name="restoringBackupProgress">Cúltaca á athchóiriú…</string>
     <string name="backupProcessingHint">Tar éis an ghnímh a roghnú, ritheann an próiseas ar scáileán ar leith.</string>

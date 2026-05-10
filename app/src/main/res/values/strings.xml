@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Find your calm before you sign in</string>
-    <string name="onboardingSubtitle">A mindful and private login flow designed to keep your focus where it matters most.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Stay focused before you sign in</string>
+    <string name="onboardingSubtitle">A simple, private flow for your codes — minimal noise, zero distractions.</string>
     <string name="onboardingPinHint">A PIN is optional. It protects local access to your tokens on this device. You can turn it on anytime in Settings.</string>
     <string name="continueWithoutPin">Continue without PIN</string>
     <string name="protectWithPin">Protect app with PIN</string>
     <string name="begin">Begin</string>
-    <string name="secureTagline">Secure. Gentle. Intentionally minimal.</string>
+    <string name="secureTagline">Secure. Quiet. Intentionally minimal.</string>
 
     <string name="twofaTitle">Your 2FA Accounts</string>
     <string name="twofaSubtitle">Your personal authenticator entries loaded securely from local encrypted storage.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Create a 4-digit PIN to protect access to your tokens on this device.</string>
     <string name="pinVerifyDisableSubtitle">Enter your PIN to turn off PIN protection.</string>
     <string name="pinProtectionDisabledMessage">PIN protection is off.</string>
-    <string name="pinUnlockTitle">Unlock CalmAuth</string>
+    <string name="pinUnlockTitle">Unlock QuietAuth</string>
     <string name="pinUnlockSubtitle">Enter your PIN to access your tokens.</string>
     <string name="pinCodePlaceholder">Enter 4 digits</string>
     <string name="pinConfirmPlaceholder">Re-enter your PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Session expired. Unlock the app with PIN and try again.</string>
     <string name="restoreSuccessTitle">Restore complete</string>
     <string name="restoreErrorTitle">Restore failed</string>
-    <string name="restoreErrorMessage">Could not restore data. Check that the file is a CalmAuth CSV backup.</string>
+    <string name="restoreErrorMessage">Could not restore data. Check that the file is a QuietAuth CSV backup.</string>
     <string name="creatingBackupProgress">Creating backup…</string>
     <string name="restoringBackupProgress">Restoring backup…</string>
     <string name="backupProcessingHint">After selecting action, process runs on separate screen.</string>

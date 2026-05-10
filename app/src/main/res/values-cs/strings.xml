@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Najděte klid před přihlášením</string>
-    <string name="onboardingSubtitle">Všímavý a soukromý postup, který udrží pozornost tam, kde záleží.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Před přihlášením zůstaňte soustředění</string>
+    <string name="onboardingSubtitle">Jednoduchý a soukromý postup pro vaše kódy — minimum hluku, žádné rozptylování.</string>
     <string name="onboardingPinHint">PIN je volitelný. Chrání lokální přístup k tokenům na tomto zařízení. Kdykoli ho zapnete v Nastaveních.</string>
     <string name="continueWithoutPin">Pokračovat bez PINu</string>
     <string name="protectWithPin">Chraňte aplikaci PINem</string>
     <string name="begin">Začít</string>
-    <string name="secureTagline">Bezpečně. Jemně. Záměrně stručně.</string>
+    <string name="secureTagline">Bezpečně. Diskrétně. Záměrně stručně.</string>
 
     <string name="twofaTitle">Vaše 2FA účty</string>
     <string name="twofaSubtitle">Záznamy autentizátoru se bezpečně načítají z místního šifrovaného úložiště.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Vytvořte čtyřmístný PIN pro ochranu přístupu k tokenům na tomto zařízení.</string>
     <string name="pinVerifyDisableSubtitle">Zadejte PIN pro vypnutí ochrany PINem.</string>
     <string name="pinProtectionDisabledMessage">Ochrana PINem je vypnutá.</string>
-    <string name="pinUnlockTitle">Odemknout CalmAuth</string>
+    <string name="pinUnlockTitle">Odemknout QuietAuth</string>
     <string name="pinUnlockSubtitle">Zadejte PIN pro přístup k tokenům.</string>
     <string name="pinCodePlaceholder">Zadejte 4 číslice</string>
     <string name="pinConfirmPlaceholder">Zadejte PIN znovu</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Relace vypršela. Odemkněte aplikaci PINem a zkuste to znovu.</string>
     <string name="restoreSuccessTitle">Obnova dokončena</string>
     <string name="restoreErrorTitle">Obnova selhala</string>
-    <string name="restoreErrorMessage">Data se nepodařilo obnovit. Ověřte, že soubor je záloha CSV CalmAuth.</string>
+    <string name="restoreErrorMessage">Data se nepodařilo obnovit. Ověřte, že soubor je záloha CSV QuietAuth.</string>
     <string name="creatingBackupProgress">Vytváření zálohy…</string>
     <string name="restoringBackupProgress">Obnovování…</string>
     <string name="backupProcessingHint">Po výběru pokračuje proces na samostatné obrazovce.</string>

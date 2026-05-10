@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Löydä rauha ennen kirjautumista</string>
-    <string name="onboardingSubtitle">Huomaavainen ja yksityinen kirjautumiskokemus, joka pitää fokuksen siellä missä sillä on merkitystä.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Pysy keskittyneenä ennen kirjautumista</string>
+    <string name="onboardingSubtitle">Yksinkertainen ja yksityinen kirjautuminen koodeillesi — vähän hälinää, ei häiriöitä.</string>
     <string name="onboardingPinHint">PIN-koodi ei ole pakollinen. Se suojaa paikallista pääsyä tunnisteisiisi tällä laitteella. Voit ottaa sen käyttöön milloin tahansa asetuksista.</string>
     <string name="continueWithoutPin">Jatka ilman PIN-koodia</string>
     <string name="protectWithPin">Suojaa sovellus PIN-koodilla</string>
     <string name="begin">Aloita</string>
-    <string name="secureTagline">Turvallinen. Lempeä. Tietoisen pelkistetty.</string>
+    <string name="secureTagline">Turvallinen. Hillitty. Tietoisen pelkistetty.</string>
 
     <string name="twofaTitle">2FA-tilisi</string>
     <string name="twofaSubtitle">Autentikointimerkinnät ladataan turvallisesti paikallisesta salatusta tallennustilasta.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Luo nelinumeroinen PIN suojataksesi pääsyn tunnisteisiin tällä laitteella.</string>
     <string name="pinVerifyDisableSubtitle">Syötä PIN poistaaksesi PIN-suojauksen käytöstä.</string>
     <string name="pinProtectionDisabledMessage">PIN-suojaus on pois päältä.</string>
-    <string name="pinUnlockTitle">Avaa CalmAuth</string>
+    <string name="pinUnlockTitle">Avaa QuietAuth</string>
     <string name="pinUnlockSubtitle">Syötä PIN saadaksesi pääsyn tunnisteisiin.</string>
     <string name="pinCodePlaceholder">Syötä 4 numeroa</string>
     <string name="pinConfirmPlaceholder">Syötä PIN uudelleen</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Istunto vanhentui. Avaa sovellus PIN-koodilla ja yritä uudelleen.</string>
     <string name="restoreSuccessTitle">Palautus valmis</string>
     <string name="restoreErrorTitle">Palautus epäonnistui</string>
-    <string name="restoreErrorMessage">Tietoja ei voitu palauttaa. Varmista, että tiedosto on kelvollinen CalmAuth CSV-varmuuskopio.</string>
+    <string name="restoreErrorMessage">Tietoja ei voitu palauttaa. Varmista, että tiedosto on kelvollinen QuietAuth CSV-varmuuskopio.</string>
     <string name="creatingBackupProgress">Luodaan varmuuskopiota…</string>
     <string name="restoringBackupProgress">Palautetaan varmuuskopiota…</string>
     <string name="backupProcessingHint">Toiminnon valinnan jälkeen prosessi jatkuu erillisellä näytöllä.</string>

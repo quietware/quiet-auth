@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Találj nyugalmat bejelentkezés előtt</string>
-    <string name="onboardingSubtitle">Figyelmes, privát folyamat, amely ott tartja a fókuszt, ahol számít.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Maradjon fókuszálva belépés előtt</string>
+    <string name="onboardingSubtitle">Egyszerű, privát folyamat a kódjaihoz — kevés zaj, zavaró tényező nélkül.</string>
     <string name="onboardingPinHint">A PIN opcionális. Helyi hozzáférést véd a tokenekhez ezen az eszközön. A Beállításokban bármikor bekapcsolható.</string>
     <string name="continueWithoutPin">Folytatás PIN nélkül</string>
     <string name="protectWithPin">Alkalmazás védelme PIN-nel</string>
     <string name="begin">Kezdés</string>
-    <string name="secureTagline">Biztonságos. Lágy. Szándékosan minimalista.</string>
+    <string name="secureTagline">Biztonságos. Visszafogott. Szándékosan minimalista.</string>
 
     <string name="twofaTitle">2FA-fiókjaid</string>
     <string name="twofaSubtitle">A hitelesítő bejegyzéseid biztonságosan töltődnek a helyi titkosított tárból.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Hozz létre 4 számjegyű PIN-t a tokenekhez való hozzáférés védelméhez ezen az eszközön.</string>
     <string name="pinVerifyDisableSubtitle">Add meg a PIN-t a PIN-védelem kikapcsolásához.</string>
     <string name="pinProtectionDisabledMessage">A PIN-védelem ki van kapcsolva.</string>
-    <string name="pinUnlockTitle">CalmAuth feloldása</string>
+    <string name="pinUnlockTitle">QuietAuth feloldása</string>
     <string name="pinUnlockSubtitle">Add meg a PIN-t a tokenek eléréséhez.</string>
     <string name="pinCodePlaceholder">4 számjegy</string>
     <string name="pinConfirmPlaceholder">PIN megismétlése</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Munkamenet lejárt. Oldd fel PIN-nel az alkalmazást, és próbáld újra.</string>
     <string name="restoreSuccessTitle">Visszaállítás kész</string>
     <string name="restoreErrorTitle">Visszaállítás sikertelen</string>
-    <string name="restoreErrorMessage">Az adatok nem állíthatók vissza. Ellenőrizd, hogy a fájl CalmAuth CSV mentés-e.</string>
+    <string name="restoreErrorMessage">Az adatok nem állíthatók vissza. Ellenőrizd, hogy a fájl QuietAuth CSV mentés-e.</string>
     <string name="creatingBackupProgress">Mentés készítése…</string>
     <string name="restoringBackupProgress">Visszaállítás…</string>
     <string name="backupProcessingHint">A választás után a folyamat külön képernyőn fut.</string>

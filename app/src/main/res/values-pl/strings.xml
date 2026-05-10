@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Odzyskaj spokój przed logowaniem</string>
-    <string name="onboardingSubtitle">Uważny i prywatny przepływ logowania, zaprojektowany, by utrzymać Twój fokus.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Skup się przed logowaniem</string>
+    <string name="onboardingSubtitle">Prosty, prywatny przepływ dla kodów — bez zbędnego szumu i rozpraszaczy.</string>
     <string name="onboardingPinHint">PIN jest opcjonalny. Chroni lokalny dostęp do tokenów na tym urządzeniu. Włączysz go w każdej chwili w Ustawieniach.</string>
     <string name="continueWithoutPin">Kontynuuj bez PIN-u</string>
     <string name="protectWithPin">Chroń aplikację PIN-em</string>
     <string name="begin">Start</string>
-    <string name="secureTagline">Bezpiecznie. Łagodnie. Minimalistycznie.</string>
+    <string name="secureTagline">Bezpiecznie. Z większą dyskrecją. Świadomie minimalistycznie.</string>
 
     <string name="twofaTitle">Twoje konta 2FA</string>
     <string name="twofaSubtitle">Twoje wpisy uwierzytelniające są ładowane bezpiecznie z lokalnego magazynu szyfrowanego.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Utwórz 4-cyfrowy PIN, aby chronić dostęp do tokenów na tym urządzeniu.</string>
     <string name="pinVerifyDisableSubtitle">Wpisz PIN, aby wyłączyć ochronę PIN-em.</string>
     <string name="pinProtectionDisabledMessage">Ochrona PIN-em jest wyłączona.</string>
-    <string name="pinUnlockTitle">Odblokuj CalmAuth</string>
+    <string name="pinUnlockTitle">Odblokuj QuietAuth</string>
     <string name="pinUnlockSubtitle">Wpisz PIN, aby uzyskać dostęp do tokenów.</string>
     <string name="pinCodePlaceholder">Wpisz 4 cyfry</string>
     <string name="pinConfirmPlaceholder">Wpisz PIN ponownie</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sesja wygasła. Odblokuj aplikację PIN-em i spróbuj ponownie.</string>
     <string name="restoreSuccessTitle">Przywracanie zakończone</string>
     <string name="restoreErrorTitle">Błąd przywracania</string>
-    <string name="restoreErrorMessage">Nie udało się przywrócić danych. Sprawdź, czy plik jest poprawnym backupem CSV z CalmAuth.</string>
+    <string name="restoreErrorMessage">Nie udało się przywrócić danych. Sprawdź, czy plik jest poprawnym backupem CSV z QuietAuth.</string>
     <string name="creatingBackupProgress">Tworzenie backupu…</string>
     <string name="restoringBackupProgress">Przywracanie backupu…</string>
     <string name="backupProcessingHint">Po wybraniu akcji proces uruchomi się na osobnym ekranie.</string>

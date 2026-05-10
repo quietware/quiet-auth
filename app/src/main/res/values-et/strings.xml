@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Leia rahu enne sisselogimist</string>
-    <string name="onboardingSubtitle">Tähelepanelik ja privaatne sisselogimisvoog, mis hoiab fookuse seal, kus see kõige rohkem loeb.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Jää enne sisselogimist keskendunuks</string>
+    <string name="onboardingSubtitle">Lihtne ja privaatne voog koodide jaoks — minimaalne müra, null segajaid.</string>
     <string name="onboardingPinHint">PIN-kood on valikuline. See kaitseb kohalikku juurdepääsu sinu märkidele sellel seadmel. Saad selle igal ajal Seadetes sisse lülitada.</string>
     <string name="continueWithoutPin">Jätka ilma PIN-koodita</string>
     <string name="protectWithPin">Kaitse rakendust PIN-koodiga</string>
     <string name="begin">Alusta</string>
-    <string name="secureTagline">Turvaline. Pehme. Teadlikult minimaalne.</string>
+    <string name="secureTagline">Turvaline. Vaoshoidev. Teadlikult minimaalne.</string>
 
     <string name="twofaTitle">Sinu 2FA kontod</string>
     <string name="twofaSubtitle">Sinu autentikaatori kirjed laaditakse turvaliselt kohalikust krüptitud salvest.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Loo 4-kohaline PIN, et kaitsta märkidele juurdepääsu sellel seadmel.</string>
     <string name="pinVerifyDisableSubtitle">Sisesta PIN, et PIN-kaitse välja lülitada.</string>
     <string name="pinProtectionDisabledMessage">PIN-kaitse on välja lülitatud.</string>
-    <string name="pinUnlockTitle">Ava CalmAuth lukust</string>
+    <string name="pinUnlockTitle">Ava QuietAuth lukust</string>
     <string name="pinUnlockSubtitle">Sisesta PIN märkidele juurdepääsuks.</string>
     <string name="pinCodePlaceholder">Sisesta 4 numbrit</string>
     <string name="pinConfirmPlaceholder">Sisesta PIN uuesti</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Seanss aegus. Ava rakendus PIN-iga ja proovi uuesti.</string>
     <string name="restoreSuccessTitle">Taastamine lõpetatud</string>
     <string name="restoreErrorTitle">Taastamine nurjus</string>
-    <string name="restoreErrorMessage">Andmeid ei õnnestunud taastada. Kontrolli, et fail oleks kehtiv CalmAuth CSV varukoopia.</string>
+    <string name="restoreErrorMessage">Andmeid ei õnnestunud taastada. Kontrolli, et fail oleks kehtiv QuietAuth CSV varukoopia.</string>
     <string name="creatingBackupProgress">Loon varukoopiat…</string>
     <string name="restoringBackupProgress">Taastan varukoopiat…</string>
     <string name="backupProcessingHint">Pärast toimingu valikut käivitub protsess eraldi ekraanil.</string>

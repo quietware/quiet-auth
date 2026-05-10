@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Finde Ruhe, bevor du dich anmeldest</string>
-    <string name="onboardingSubtitle">Ein achtsamer und privater Ablauf, der deinen Fokus dort hält, wo er zählt.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Bleib fokussiert, bevor du dich anmeldest</string>
+    <string name="onboardingSubtitle">Ein schlichter, privater Ablauf für deine Codes — wenig Lärm, keine Ablenkung.</string>
     <string name="onboardingPinHint">Eine PIN ist optional. Sie schützt den lokalen Zugriff auf deine Tokens auf diesem Gerät. Du kannst sie jederzeit in den Einstellungen aktivieren.</string>
     <string name="continueWithoutPin">Ohne PIN fortfahren</string>
     <string name="protectWithPin">App mit PIN schützen</string>
     <string name="begin">Start</string>
-    <string name="secureTagline">Sicher. Sanft. Bewusst minimalistisch.</string>
+    <string name="secureTagline">Sicher. Zurückhaltend. Bewusst minimalistisch.</string>
 
     <string name="twofaTitle">Deine 2FA-Konten</string>
     <string name="twofaSubtitle">Deine Authenticator-Einträge werden sicher aus lokalem, verschlüsseltem Speicher geladen.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Erstelle eine 4-stellige PIN, um den Zugriff auf deine Tokens auf diesem Gerät zu schützen.</string>
     <string name="pinVerifyDisableSubtitle">Gib deine PIN ein, um den PIN-Schutz zu deaktivieren.</string>
     <string name="pinProtectionDisabledMessage">PIN-Schutz ist aus.</string>
-    <string name="pinUnlockTitle">CalmAuth entsperren</string>
+    <string name="pinUnlockTitle">QuietAuth entsperren</string>
     <string name="pinUnlockSubtitle">Gib deine PIN ein, um auf deine Tokens zuzugreifen.</string>
     <string name="pinCodePlaceholder">4 Ziffern eingeben</string>
     <string name="pinConfirmPlaceholder">PIN erneut eingeben</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sitzung abgelaufen. Entsperre die App mit der PIN und versuche es erneut.</string>
     <string name="restoreSuccessTitle">Wiederherstellung abgeschlossen</string>
     <string name="restoreErrorTitle">Wiederherstellung fehlgeschlagen</string>
-    <string name="restoreErrorMessage">Daten konnten nicht wiederhergestellt werden. Prüfe, ob die Datei ein CalmAuth-CSV-Backup ist.</string>
+    <string name="restoreErrorMessage">Daten konnten nicht wiederhergestellt werden. Prüfe, ob die Datei ein QuietAuth-CSV-Backup ist.</string>
     <string name="creatingBackupProgress">Backup wird erstellt…</string>
     <string name="restoringBackupProgress">Backup wird wiederhergestellt…</string>
     <string name="backupProcessingHint">Nach der Auswahl läuft der Vorgang auf einem separaten Bildschirm.</string>

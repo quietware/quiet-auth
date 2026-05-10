@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appName">CalmAuth</string>
-    <string name="onboardingTitle">Raskite ramybę prieš prisijungdami</string>
-    <string name="onboardingSubtitle">Dėmesingas ir privatus prisijungimo srautas, kad jūsų dėmesys liktų ten, kur svarbiausia.</string>
+    <string name="appName">QuietAuth</string>
+    <string name="onboardingTitle">Išlikite sutelkti prieš prisijungdami</string>
+    <string name="onboardingSubtitle">Paprastas ir privatus srautas kodams — mažai triukšmo, jokių blaškymų.</string>
     <string name="onboardingPinHint">PIN neprivalomas. Jis saugo vietinę prieigą prie žetonų šiame įrenginyje. Galite įjungti bet kuriuo metu Nustatymuose.</string>
     <string name="continueWithoutPin">Tęsti be PIN</string>
     <string name="protectWithPin">Apsaugoti programą PIN</string>
     <string name="begin">Pradėti</string>
-    <string name="secureTagline">Saugiai. Švelniai. Apgalvotai paprasta.</string>
+    <string name="secureTagline">Saugiai. Nepastebimai. Apgalvotai paprasta.</string>
 
     <string name="twofaTitle">Jūsų 2FA paskyros</string>
     <string name="twofaSubtitle">Autentifikatoriaus įrašai įkeliami saugiai iš vietinės užšifruotos saugyklos.</string>
@@ -47,7 +47,7 @@
     <string name="pinSetupSubtitleOptional">Sukurkite 4 skaitmenų PIN, kad apsaugotumėte prieigą prie žetonų šiame įrenginyje.</string>
     <string name="pinVerifyDisableSubtitle">Įveskite PIN, kad išjungtumėte PIN apsaugą.</string>
     <string name="pinProtectionDisabledMessage">PIN apsauga išjungta.</string>
-    <string name="pinUnlockTitle">Atrakinti CalmAuth</string>
+    <string name="pinUnlockTitle">Atrakinti QuietAuth</string>
     <string name="pinUnlockSubtitle">Įveskite PIN, kad pasiektumėte žetonus.</string>
     <string name="pinCodePlaceholder">Įveskite 4 skaitmenis</string>
     <string name="pinConfirmPlaceholder">Pakartokite PIN</string>
@@ -86,7 +86,7 @@
     <string name="backupSessionExpiredMessage">Sesija baigėsi. Atrakinkite programą PIN ir bandykite dar kartą.</string>
     <string name="restoreSuccessTitle">Atkūrimas baigtas</string>
     <string name="restoreErrorTitle">Atkūrimas nepavyko</string>
-    <string name="restoreErrorMessage">Nepavyko atkurti duomenų. Įsitikinkite, kad failas yra tinkama CalmAuth CSV kopija.</string>
+    <string name="restoreErrorMessage">Nepavyko atkurti duomenų. Įsitikinkite, kad failas yra tinkama QuietAuth CSV kopija.</string>
     <string name="creatingBackupProgress">Kuriama atsarginė kopija…</string>
     <string name="restoringBackupProgress">Atkuriama kopija…</string>
     <string name="backupProcessingHint">Pasirinkus veiksmą procesas vyksta atskirame ekrane.</string>
