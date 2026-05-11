@@ -88,7 +88,7 @@ fun TokenDetailsScreen(
                 modifier = Modifier.fillMaxWidth(),
             )
             Spacer(Modifier.height(24.dp))
-            SecondaryButton(text = stringResource(R.string.backToTokens), onClick = onBack)
+            PrimaryButton(text = stringResource(R.string.backToTokens), onClick = onBack)
         }
         return
     }
@@ -156,9 +156,9 @@ fun TokenDetailsScreen(
 
         Box(modifier = Modifier.fillMaxWidth().weight(1f))
 
-        SecondaryButton(text = stringResource(R.string.backToTokens), onClick = onBack)
+        PrimaryButton(text = stringResource(R.string.backToTokens), onClick = onBack)
         Spacer(Modifier.height(8.dp))
-        PrimaryButton(text = stringResource(R.string.confirmDelete), onClick = {
+        SecondaryButton(text = stringResource(R.string.confirmDelete), onClick = {
             AlertDialog.Builder(context)
                 .setTitle(R.string.deleteTokenTitle)
                 .setMessage(R.string.deleteTokenMessage)
