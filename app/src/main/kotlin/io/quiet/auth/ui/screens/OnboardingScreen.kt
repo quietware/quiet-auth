@@ -24,9 +24,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
 import io.quiet.auth.R
-import io.quiet.auth.ui.components.PageScaffold
-import io.quiet.auth.ui.components.PrimaryButton
-import io.quiet.auth.ui.components.SecondaryButton
+import io.quiet.auth.ui.components.QuietBottomActions
+import io.quiet.auth.ui.components.QuietScaffold
 
 @Composable
 fun OnboardingScreen(
@@ -36,28 +35,23 @@ fun OnboardingScreen(
 ) {
     val tapCounter = remember { intArrayOf(0) }
 
-    PageScaffold {
-        Text(
-            text = stringResource(R.string.appName),
-            style = MaterialTheme.typography.displayLarge,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Spacer(Modifier.height(20.dp))
+    QuietScaffold(
+        title = stringResource(R.string.appName),
+        subtitle = stringResource(R.string.onboardingSubtitle),
+        bottomBar = {
+            QuietBottomActions(
+                primaryLabel = stringResource(R.string.continueWithoutPin),
+                onPrimaryClick = onContinueWithoutPin,
+                secondaryLabel = stringResource(R.string.protectWithPin),
+                onSecondaryClick = onProtectWithPin,
+            )
+        },
+    ) {
         Text(
             text = stringResource(R.string.onboardingTitle),
             style = MaterialTheme.typography.headlineMedium,
             color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Spacer(Modifier.height(8.dp))
-        Text(
-            text = stringResource(R.string.onboardingSubtitle),
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.Center,
+            textAlign = TextAlign.Start,
             modifier = Modifier.fillMaxWidth(),
         )
 
@@ -101,14 +95,5 @@ fun OnboardingScreen(
             }
         }
 
-        PrimaryButton(
-            text = stringResource(R.string.continueWithoutPin),
-            onClick = onContinueWithoutPin,
-        )
-        Spacer(Modifier.height(8.dp))
-        SecondaryButton(
-            text = stringResource(R.string.protectWithPin),
-            onClick = onProtectWithPin,
-        )
     }
 }

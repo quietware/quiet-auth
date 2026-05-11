@@ -15,9 +15,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
 import io.quiet.auth.R
 import io.quiet.auth.data.PinRepository
-import io.quiet.auth.ui.components.PageScaffold
-import io.quiet.auth.ui.components.PrimaryButton
-import io.quiet.auth.ui.components.SecondaryButton
+import io.quiet.auth.ui.components.QuietBottomActions
+import io.quiet.auth.ui.components.QuietScaffold
 import io.quiet.auth.ui.viewmodel.PinViewModel
 import io.quiet.auth.ui.viewmodel.TwoFAViewModel
 
@@ -65,25 +64,18 @@ fun DangerZoneScreen(
             .show()
     }
 
-    PageScaffold {
-        Text(
-            text = stringResource(R.string.dangerZoneTitle),
-            style = MaterialTheme.typography.displayLarge,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Spacer(Modifier.height(16.dp))
-        Text(
-            text = stringResource(R.string.dangerZoneSubtitle),
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-
-        Spacer(Modifier.height(40.dp))
-        PrimaryButton(text = stringResource(R.string.developerResetStorage), onClick = {
+    QuietScaffold(
+        title = stringResource(R.string.dangerZoneTitle),
+        subtitle = stringResource(R.string.dangerZoneSubtitle),
+        bottomBar = {
+            QuietBottomActions(
+                primaryLabel = stringResource(backButtonLabelRes),
+                onPrimaryClick = onBack,
+            )
+        },
+    ) {
+        Spacer(Modifier.height(20.dp))
+        io.quiet.auth.ui.components.PrimaryButton(text = stringResource(R.string.developerResetStorage), onClick = {
             confirm(
                 titleRes = R.string.developerResetStorageTitle,
                 messageRes = R.string.developerResetStorageConfirmMessage,
@@ -98,7 +90,7 @@ fun DangerZoneScreen(
             )
         })
         Spacer(Modifier.height(8.dp))
-        PrimaryButton(text = stringResource(R.string.developerRemovePin), onClick = {
+        io.quiet.auth.ui.components.PrimaryButton(text = stringResource(R.string.developerRemovePin), onClick = {
             confirm(
                 titleRes = R.string.developerRemovePinTitle,
                 messageRes = R.string.developerRemovePinConfirmMessage,
@@ -111,7 +103,7 @@ fun DangerZoneScreen(
             )
         })
         Spacer(Modifier.height(8.dp))
-        PrimaryButton(text = stringResource(R.string.developerRemoveBiometrics), onClick = {
+        io.quiet.auth.ui.components.PrimaryButton(text = stringResource(R.string.developerRemoveBiometrics), onClick = {
             confirm(
                 titleRes = R.string.developerRemoveBiometricsTitle,
                 messageRes = R.string.developerRemoveBiometricsConfirmMessage,
@@ -120,8 +112,5 @@ fun DangerZoneScreen(
                 navigateAfter = false,
             )
         })
-
-        Spacer(Modifier.weight(1f))
-        SecondaryButton(text = stringResource(backButtonLabelRes), onClick = onBack)
     }
 }

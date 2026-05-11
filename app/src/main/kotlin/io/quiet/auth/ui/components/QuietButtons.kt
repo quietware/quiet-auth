@@ -20,11 +20,12 @@ fun PrimaryButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
+    fullWidth: Boolean = true,
 ) {
     Button(
         onClick = onClick,
         enabled = enabled,
-        modifier = modifier.fillMaxWidth(),
+        modifier = if (fullWidth) modifier.fillMaxWidth() else modifier,
         shape = RoundedCornerShape(12.dp),
         colors = ButtonDefaults.buttonColors(
             containerColor = MaterialTheme.colorScheme.primary,
@@ -45,11 +46,12 @@ fun SecondaryButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
+    fullWidth: Boolean = true,
 ) {
     OutlinedButton(
         onClick = onClick,
         enabled = enabled,
-        modifier = modifier.fillMaxWidth(),
+        modifier = if (fullWidth) modifier.fillMaxWidth() else modifier,
         shape = RoundedCornerShape(12.dp),
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         colors = ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.onSurface),

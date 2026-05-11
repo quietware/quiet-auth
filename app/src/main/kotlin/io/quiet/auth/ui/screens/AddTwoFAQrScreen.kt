@@ -1,14 +1,11 @@
 package io.quiet.auth.ui.screens
 
 import android.Manifest
-import android.app.AlertDialog
 import android.content.pm.PackageManager
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -18,7 +15,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
 import androidx.core.content.ContextCompat
@@ -26,8 +22,10 @@ import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanOptions
 import io.quiet.auth.R
 import io.quiet.auth.domain.parseOtpAuthUri
-import io.quiet.auth.ui.components.PageScaffold
+import io.quiet.auth.ui.components.ConfirmActionSheet
 import io.quiet.auth.ui.components.PrimaryButton
+import io.quiet.auth.ui.components.QuietBottomActions
+import io.quiet.auth.ui.components.QuietScaffold
 import io.quiet.auth.ui.components.SecondaryButton
 import io.quiet.auth.ui.viewmodel.TwoFAViewModel
 
@@ -39,6 +37,7 @@ fun AddTwoFAQrScreen(
     onAdded: () -> Unit,
 ) {
     val context = LocalContext.current
+    var dialogMessage by remember { mutableStateOf<Int?>(null) }
     var permissionGranted by remember {
         mutableStateOf(
             ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) ==
@@ -50,20 +49,11 @@ fun AddTwoFAQrScreen(
         val raw = result.contents ?: return@rememberLauncherForActivityResult
         val parsed = parseOtpAuthUri(raw)
         if (parsed == null) {
-            AlertDialog.Builder(context)
-                .setTitle(R.string.invalidQrTitle)
-                .setMessage(R.string.invalidQrMessage)
-                .setPositiveButton(android.R.string.ok, null)
-                .show()
+            dialogMessage = R.string.invalidQrMessage
             return@rememberLauncherForActivityResult
         }
         twoFAViewModel.addParsedOtpAuth(parsed)
-        AlertDialog.Builder(context)
-            .setTitle(R.string.qrAddedTitle)
-            .setMessage(R.string.qrAddedMessage)
-            .setPositiveButton(android.R.string.ok) { _, _ -> onAdded() }
-            .setOnDismissListener { onAdded() }
-            .show()
+        dialogMessage = R.string.qrAddedMessage
     }
 
     val permissionLauncher = rememberLauncherForActivityResult(
@@ -77,39 +67,23 @@ fun AddTwoFAQrScreen(
         if (permissionGranted) launchScan(scanLauncher, context)
     }
 
-    PageScaffold {
-        Text(
-            text = stringResource(R.string.appName),
-            style = MaterialTheme.typography.displayLarge,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Spacer(Modifier.height(20.dp))
-        Text(
-            text = stringResource(R.string.qrTitle),
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Spacer(Modifier.height(8.dp))
-        Text(
-            text = stringResource(R.string.qrSubtitle),
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
+    QuietScaffold(
+        title = stringResource(R.string.qrTitle),
+        subtitle = stringResource(R.string.qrSubtitle),
+        bottomBar = {
+            QuietBottomActions(
+                primaryLabel = stringResource(R.string.addManually),
+                onPrimaryClick = onAddManually,
+                secondaryLabel = stringResource(R.string.cancel),
+                onSecondaryClick = onCancel,
+            )
+        },
+    ) {
 
         Spacer(Modifier.height(24.dp))
         if (!permissionGranted) {
             Text(
                 text = stringResource(R.string.qrPermissionRequired),
-                style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center,
-                modifier = Modifier.fillMaxWidth(),
             )
             Spacer(Modifier.height(16.dp))
             PrimaryButton(
@@ -123,10 +97,25 @@ fun AddTwoFAQrScreen(
             )
         }
 
-        Spacer(Modifier.weight(1f))
-        SecondaryButton(text = stringResource(R.string.addManually), onClick = onAddManually)
-        Spacer(Modifier.height(8.dp))
-        SecondaryButton(text = stringResource(R.string.cancel), onClick = onCancel)
+    }
+
+    if (dialogMessage != null) {
+        ConfirmActionSheet(
+            title = stringResource(if (dialogMessage == R.string.qrAddedMessage) R.string.qrAddedTitle else R.string.invalidQrTitle),
+            message = stringResource(dialogMessage!!),
+            confirmLabel = "OK",
+            dismissLabel = stringResource(R.string.cancel),
+            onConfirm = {
+                val msg = dialogMessage
+                dialogMessage = null
+                if (msg == R.string.qrAddedMessage) onAdded()
+            },
+            onDismiss = {
+                val msg = dialogMessage
+                dialogMessage = null
+                if (msg == R.string.qrAddedMessage) onAdded()
+            },
+        )
     }
 }
 

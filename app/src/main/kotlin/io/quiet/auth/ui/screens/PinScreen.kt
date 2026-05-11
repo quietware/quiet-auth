@@ -1,21 +1,10 @@
 package io.quiet.auth.ui.screens
 
 import android.widget.Toast
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,15 +17,15 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
 import io.quiet.auth.R
-import io.quiet.auth.ui.components.PageScaffold
-import io.quiet.auth.ui.components.PrimaryButton
+import io.quiet.auth.ui.components.PINPad
+import io.quiet.auth.ui.components.QuietBottomActions
+import io.quiet.auth.ui.components.QuietScaffold
 import io.quiet.auth.ui.components.SecondaryButton
 import io.quiet.auth.ui.nav.PinRouteMode
 import io.quiet.auth.ui.viewmodel.PinViewModel
@@ -175,17 +164,20 @@ fun PinScreen(
         else -> stringResource(R.string.pinUnlockSubtitle)
     }
 
-    PageScaffold {
+    QuietScaffold(
+        title = stringResource(R.string.pinUnlockTitle),
+        subtitle = subtitle,
+        bottomBar = {
+            QuietBottomActions(
+                primaryLabel = stringResource(R.string.continueLabel),
+                onPrimaryClick = ::onContinue,
+                primaryEnabled = pin.length >= PIN_LENGTH,
+            )
+        },
+    ) {
+        Spacer(Modifier.height(24.dp))
         Text(
-            text = stringResource(R.string.appName),
-            style = MaterialTheme.typography.displayLarge,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
-        Spacer(Modifier.height(36.dp))
-        Text(
-            text = subtitle,
+            text = stringResource(R.string.pinCodePlaceholder),
             style = MaterialTheme.typography.headlineMedium.copy(fontWeight = FontWeight.SemiBold),
             color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center,
@@ -196,26 +188,13 @@ fun PinScreen(
             modifier = Modifier.fillMaxWidth().weight(1f),
             contentAlignment = Alignment.Center,
         ) {
-            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-                repeat(PIN_LENGTH) { index ->
-                    val filled = index < pin.length
-                    Box(
-                        modifier = Modifier
-                            .size(20.dp)
-                            .clip(CircleShape)
-                            .border(BorderStroke(1.dp, MaterialTheme.colorScheme.outline), CircleShape)
-                            .background(if (filled) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surface),
-                    )
-                }
-            }
+            PINPad(
+                pinLength = pin.length,
+                onDigit = { digit -> if (pin.length < PIN_LENGTH) pin += digit },
+                onBackspace = { pin = pin.dropLast(1) },
+            )
         }
 
-        Keypad(
-            onDigit = { digit -> if (pin.length < PIN_LENGTH) pin += digit },
-            onBackspace = { pin = pin.dropLast(1) },
-        )
-
-        Spacer(Modifier.height(8.dp))
         if (
             mode == PinRouteMode.UNLOCK &&
             state.isPinEnabled &&
@@ -247,78 +226,6 @@ fun PinScreen(
                 enabled = !biometricBusy,
             )
             Spacer(Modifier.height(8.dp))
-        }
-        PrimaryButton(
-            text = stringResource(R.string.continueLabel),
-            onClick = ::onContinue,
-            enabled = pin.length >= PIN_LENGTH,
-        )
-    }
-}
-
-@Composable
-private fun Keypad(
-    onDigit: (String) -> Unit,
-    onBackspace: () -> Unit,
-) {
-    val rows = listOf(
-        listOf("1", "2", "3"),
-        listOf("4", "5", "6"),
-        listOf("7", "8", "9"),
-        listOf("", "0", "<x"),
-    )
-
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        for (row in rows) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
-            ) {
-                for (key in row) {
-                    KeypadKey(
-                        label = key,
-                        onClick = {
-                            when (key) {
-                                "" -> Unit
-                                "<x" -> onBackspace()
-                                else -> onDigit(key)
-                            }
-                        },
-                        isPlaceholder = key == "",
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Composable
-private fun KeypadKey(
-    label: String,
-    onClick: () -> Unit,
-    isPlaceholder: Boolean,
-) {
-    val display = if (label == "<x") "\u232B" else label
-    Box(
-        modifier = Modifier
-            .height(56.dp)
-            .width(96.dp)
-            .clip(RoundedCornerShape(12.dp))
-            .let { mod ->
-                if (isPlaceholder) mod
-                else mod
-                    .border(BorderStroke(1.dp, MaterialTheme.colorScheme.outline), RoundedCornerShape(12.dp))
-                    .background(MaterialTheme.colorScheme.surface)
-                    .clickable(onClick = onClick)
-            },
-        contentAlignment = Alignment.Center,
-    ) {
-        if (!isPlaceholder) {
-            Text(
-                text = display,
-                style = MaterialTheme.typography.headlineSmall.copy(fontWeight = FontWeight.SemiBold),
-                color = MaterialTheme.colorScheme.onSurface,
-            )
         }
     }
 }

@@ -13,6 +13,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mudita.mmd.ThemeMMD
 
 private val LightColors = lightColorScheme(
     primary = Color.Black,
@@ -69,10 +70,12 @@ fun QuietAuthTheme(
     useDarkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit,
 ) {
-    MaterialTheme(
-        colorScheme = if (useDarkTheme) DarkColors else LightColors,
-        shapes = QuietShapes,
-        typography = QuietTypography,
-        content = content,
-    )
+    ThemeMMD {
+        MaterialTheme(
+            colorScheme = if (useDarkTheme) DarkColors else LightColors,
+            shapes = QuietShapes,
+            typography = QuietTypography,
+            content = content,
+        )
+    }
 }
